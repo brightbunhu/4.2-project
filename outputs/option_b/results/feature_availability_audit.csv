@@ -1,0 +1,24 @@
+feature_name,source_category,information_date_rule,forbidden_check,audit_status
+spi_lag_1,Market Lag,Available at month T (Information Date <= Prediction Month T),Verified absent from target-month information,PASSED
+spi_lag_2,Market Lag,Available at month T (Information Date <= Prediction Month T),Verified absent from target-month information,PASSED
+spi_pct_change_3m,Market Lag,Available at month T (Information Date <= Prediction Month T),Verified absent from target-month information,PASSED
+months_since_last_reported_price,Market Lag,Available at month T (Information Date <= Prediction Month T),Verified absent from target-month information,PASSED
+rainfall_1m,Rainfall,Available at month T (Information Date <= Prediction Month T),Verified absent from target-month information,PASSED
+rainfall_3m_total,Rainfall,Available at month T (Information Date <= Prediction Month T),Verified absent from target-month information,PASSED
+rainfall_6m_total,Rainfall,Available at month T (Information Date <= Prediction Month T),Verified absent from target-month information,PASSED
+rainfall_12m_total,Rainfall,Available at month T (Information Date <= Prediction Month T),Verified absent from target-month information,PASSED
+rainfall_3m_anomaly,Rainfall,Available at month T (Information Date <= Prediction Month T),Verified absent from target-month information,PASSED
+log_population,Population/Context,Available at month T (Information Date <= Prediction Month T),Verified absent from target-month information,PASSED
+is_urban,Population/Context,Available at month T (Information Date <= Prediction Month T),Verified absent from target-month information,PASSED
+month_of_year,Population/Context,Available at month T (Information Date <= Prediction Month T),Verified absent from target-month information,PASSED
+year,Population/Context,Available at month T (Information Date <= Prediction Month T),Verified absent from target-month information,PASSED
+commodity_laundry_soap,Commodity,Available at month T (Information Date <= Prediction Month T),Verified absent from target-month information,PASSED
+commodity_sugar,Commodity,Available at month T (Information Date <= Prediction Month T),Verified absent from target-month information,PASSED
+commodity_oil_(vegetable),Commodity,Available at month T (Information Date <= Prediction Month T),Verified absent from target-month information,PASSED
+commodity_rice,Commodity,Available at month T (Information Date <= Prediction Month T),Verified absent from target-month information,PASSED
+commodity_toothpaste,Commodity,Available at month T (Information Date <= Prediction Month T),Verified absent from target-month information,PASSED
+commodity_handwash_soap,Commodity,Available at month T (Information Date <= Prediction Month T),Verified absent from target-month information,PASSED
+commodity_salt,Commodity,Available at month T (Information Date <= Prediction Month T),Verified absent from target-month information,PASSED
+commodity_fish_(kapenta),Commodity,Available at month T (Information Date <= Prediction Month T),Verified absent from target-month information,PASSED
+commodity_maize_meal,Commodity,Available at month T (Information Date <= Prediction Month T),Verified absent from target-month information,PASSED
+commodity_beans_(sugar),Commodity,Available at month T (Information Date <= Prediction Month T),Verified absent from target-month information,PASSED

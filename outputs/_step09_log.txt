@@ -1,0 +1,30 @@
+
+================================================================================================
+  9  EXPLAINABILITY
+================================================================================================
+baseline balanced accuracy on test: 0.8012
+    [result ] outputs\results\step09_permutation_importance.csv  shape=(15, 3)
+
+permutation importance:
+                   feature  importance_mean  importance_std
+        spi_pct_change_3m          0.16809         0.00659
+                spi_lag_2          0.05944         0.00352
+                spi_lag_1          0.05862         0.00525
+      rainfall_3m_anomaly          0.01350         0.00249
+           log_population          0.01283         0.00276
+       rainfall_12m_total          0.01048         0.00313
+        rainfall_3m_total          0.00838         0.00169
+              rainfall_1m          0.00807         0.00269
+        rainfall_6m_total          0.00762         0.00296
+                 is_urban          0.00619         0.00224
+                     year          0.00547         0.00222
+commodity_Oil (vegetable)          0.00117         0.00090
+   commodity_Laundry soap         -0.00005         0.00052
+     commodity_Maize meal         -0.00008         0.00042
+  commodity_Beans (sugar)         -0.00017         0.00068
+    [figure] outputs\figures\step09_permutation_importance.png
+    [report ] reports\step09_explainability.md
+
+================================================================================================
+  9  EXPLAINABILITY COMPLETE -> outputs/results/step09_permutation_importance.csv
+================================================================================================

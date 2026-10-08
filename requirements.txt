@@ -1,0 +1,15 @@
+﻿pandas
+numpy
+scikit-learn
+xgboost
+shap
+geopandas
+plotly
+matplotlib
+streamlit
+joblib
+xarray
+netCDF4
+scipy
+seaborn
+pyarrow

@@ -1,0 +1,75 @@
+
+================================================================================================
+  5  EXPLORATORY DATA ANALYSIS
+================================================================================================
+loaded commodity_training_table.csv: (10418, 46)
+
+target:
+               count    pct
+price_stress              
+0              5456  52.37
+1              4962  47.63
+    [result ] outputs\results\step05_numeric_summary.csv  shape=(33, 8)
+
+numeric summary:
+                              count         mean          std         min         25%          50%          75%           max
+price                      10418.0    2559.4215    9171.2766      0.1700     50.2525     136.4025    1267.6125  2.000000e+05
+n_markets                  10418.0       1.8332       1.3179      1.0000      1.0000       1.0000       2.0000  8.000000e+00
+n_price_obs                10418.0       1.8332       1.3179      1.0000      1.0000       1.0000       2.0000  8.000000e+00
+country_median_price       10418.0    2395.9099    7917.9548      0.2300     53.1425     131.5000    1299.0800  7.000000e+04
+n_districts_reporting      10418.0      22.0004      11.6583      3.0000     12.0000      23.0000      29.0000  5.100000e+01
+price_spi_raw              10418.0       1.0773       0.7022      0.0008      0.9020       1.0000       1.1214  2.109700e+01
+spi_pct_dev                10418.0       7.7327      70.2169    -99.9202     -9.7985       0.0000      12.1446  2.009705e+03
+year                       10418.0    2021.7083       1.7543   2017.0000   2021.0000    2021.0000    2023.0000  2.026000e+03
+month_num                  10418.0       6.5923       3.3948      1.0000      4.0000       7.0000       9.0000  1.200000e+01
+rainfall_1m                10418.0      58.6652      88.8045      0.0000      2.8029      11.9816      76.4596  4.361626e+02
+rainfall_3m_total          10418.0     179.3239     214.9952      0.0459     16.2034      69.0637     290.1085  1.017818e+03
+rainfall_6m_total          10418.0     365.3895     290.2548      3.6594     94.5741     311.4009     556.7330  1.411489e+03
+rainfall_12m_total         10418.0     742.4872     224.8509    255.2809    575.5970     723.8831     890.1647  1.586495e+03
+rainfall_3m_anomaly        10418.0       1.0988      60.4298    -94.8097    -33.9776      -7.9452      21.4657  8.473895e+02
+population                 10418.0  216353.1910  289508.5779  31921.0000  80760.0000  130350.0000  235250.0000  1.957108e+06
+log_population             10418.0      11.8715       0.8426     10.3711     11.2992      11.7780      12.3684  1.448700e+01
+is_urban                   10418.0       0.2847       0.4513      0.0000      0.0000       0.0000       1.0000  1.000000e+00
+spi_lag_1                  10418.0       1.0435       0.3261      0.2108      0.9025       1.0000       1.1215  2.728600e+00
+spi_lag_2                  10418.0       1.0419       0.3171      0.2108      0.9029       1.0000       1.1185  2.728600e+00
+spi_pct_change_3m          10418.0       7.2899      53.5070    -92.2746    -12.3372       0.2059      14.4079  1.194440e+03
+month_of_year              10418.0       6.5923       3.3948      1.0000      4.0000       7.0000       9.0000  1.200000e+01
+commodity_Beans (sugar)    10418.0       0.0678       0.2514      0.0000      0.0000       0.0000       0.0000  1.000000e+00
+commodity_Fish (kapenta)   10418.0       0.0962       0.2949      0.0000      0.0000       0.0000       0.0000  1.000000e+00
+commodity_Handwash soap    10418.0       0.0861       0.2805      0.0000      0.0000       0.0000       0.0000  1.000000e+00
+commodity_Laundry soap     10418.0       0.1051       0.3067      0.0000      0.0000       0.0000       0.0000  1.000000e+00
+commodity_Maize meal       10418.0       0.0800       0.2712      0.0000      0.0000       0.0000       0.0000  1.000000e+00
+commodity_OTHER            10418.0       0.0605       0.2384      0.0000      0.0000       0.0000       0.0000  1.000000e+00
+commodity_Oil (vegetable)  10418.0       0.1092       0.3119      0.0000      0.0000       0.0000       0.0000  1.000000e+00
+commodity_Rice             10418.0       0.1048       0.3063      0.0000      0.0000       0.0000       0.0000  1.000000e+00
+commodity_Salt             10418.0       0.0853       0.2794      0.0000      0.0000       0.0000       0.0000  1.000000e+00
+commodity_Sugar            10418.0       0.1047       0.3062      0.0000      0.0000       0.0000       0.0000  1.000000e+00
+commodity_Toothpaste       10418.0       0.1003       0.3004      0.0000      0.0000       0.0000       0.0000  1.000000e+00
+price_stress               10418.0       0.4763       0.4995      0.0000      0.0000       0.0000       1.0000  1.000000e+00
+    [result ] outputs\results\step05_correlation_target.csv  shape=(34, 2)
+
+top correlations with target:
+ price_spi_raw             0.3364
+spi_pct_dev               0.3364
+spi_lag_1                 0.3214
+spi_pct_change_3m         0.2518
+spi_lag_2                 0.2518
+price                     0.0840
+n_price_obs               0.0797
+n_markets                 0.0797
+n_districts_reporting     0.0656
+commodity_Laundry soap    0.0109
+commodity_Rice            0.0100
+commodity_Sugar           0.0096
+    [figure] outputs\figures\step05_target_balance.png
+    [figure] outputs\figures\step05_top_correlations.png
+    [figure] outputs\figures\step05_seasonality.png
+    [result ] outputs\results\step05_stress_by_province.csv  shape=(10, 2)
+    [figure] outputs\figures\step05_stress_by_province.png
+    [result ] outputs\results\step05_stress_by_commodity.csv  shape=(20, 4)
+    [figure] outputs\figures\step05_stress_by_commodity.png
+    [report ] reports\step05_eda.md
+
+================================================================================================
+  5  EDA COMPLETE -> reports/step05_eda.md
+================================================================================================

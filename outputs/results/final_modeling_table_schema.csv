@@ -1,0 +1,40 @@
+column_name,dtype
+district_key,float64
+month,str
+commodity_name,str
+currency_code,str
+price,float64
+admin1_name,float64
+commodity_category,str
+is_food,bool
+unit,str
+price_flag,str
+country_median_price,float64
+n_districts_reporting,int64
+price_spi_raw,float64
+spatial_price_index,float64
+price_stress,int64
+rainfall_1m,float64
+rainfall_3m_total,float64
+rainfall_6m_total,float64
+rainfall_12m_total,float64
+rainfall_3m_anomaly,float64
+population,float64
+log_population,float64
+is_urban,float64
+months_since_last_reported_price,float64
+spi_lag_1,float64
+spi_lag_2,float64
+spi_pct_change_3m,float64
+commodity_Rice,int64
+commodity_Laundry soap,int64
+commodity_Sugar,int64
+commodity_Oil (vegetable),int64
+commodity_Toothpaste,int64
+commodity_Fish (kapenta),int64
+commodity_Handwash soap,int64
+commodity_Salt,int64
+commodity_Maize meal,int64
+commodity_Beans (sugar),int64
+commodity_OTHER,int64
+year,int64

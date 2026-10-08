@@ -1,0 +1,2 @@
+table,rows_in,exact_duplicate_rows,duplicate_keys,rows_out,rows_removed,deduplication_key,keep_rule
+food_price,25554,0,0,25554,0,district_key + market_name + commodity_name + currency_code + month,keep='first' after sort (deterministic)

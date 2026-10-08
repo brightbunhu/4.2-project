@@ -1,0 +1,16 @@
+Opening C:\Users\brigh\Downloads\another\data\raw\chirps_v3_monthly_global.nc
+Zimbabwe subset: {'time': 548, 'latitude': 160, 'longitude': 180}
+grid cells: 28800; matched to a district: 13411
+districts receiving cells: 90
+districts with no cell (nearest-cell fallback): ['Mvurwi']
+
+Saved C:\Users\brigh\Downloads\another\data\processed\d_rainfall_chirps_district_month.csv
+rows: 49,868  districts: 91  months: 548
+date range: 1981-01-01 -> 2026-08-01
+missing rainfall: 0
+  district_key    district            province      month  rainfall_mm   rain_lta  rain_anom_pct  rainfall_3m_total  rainfall_6m_total  rainfall_12m_total  rainfall_3m_anomaly  n_cells
+0   BEITBRIDGE  Beitbridge  Matabeleland South 1981-01-01   201.205143  86.978379     131.327769                NaN                NaN                 NaN                  NaN      444
+1   BEITBRIDGE  Beitbridge  Matabeleland South 1981-02-01    91.991088  77.379796      18.882567                NaN                NaN                 NaN                  NaN      444
+2   BEITBRIDGE  Beitbridge  Matabeleland South 1981-03-01    43.022886  42.082839       2.233801         336.219117                NaN                 NaN            62.864496      444
+3   BEITBRIDGE  Beitbridge  Matabeleland South 1981-04-01    19.490272  14.949027      30.378197         154.504246                NaN                 NaN            14.948542      444
+4   BEITBRIDGE  Beitbridge  Matabeleland South 1981-05-01    15.830039   5.733057     176.118661          78.343197                NaN                 NaN            24.820033      444

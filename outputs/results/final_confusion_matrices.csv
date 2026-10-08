@@ -1,0 +1,10 @@
+model,fold,tn,fp,fn,tp
+dummy,1,441,0,22,0
+dummy,2,290,0,51,0
+dummy,3,404,0,88,0
+logreg,1,423,18,10,12
+logreg,2,269,21,23,28
+logreg,3,229,175,8,80
+xgboost,1,437,4,14,8
+xgboost,2,287,3,32,19
+xgboost,3,377,27,40,48

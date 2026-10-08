@@ -1,0 +1,25 @@
+feature,mutual_info,rank
+rainfall_1m,0.18735269553578915,1
+rainfall_6m_total,0.18642490776477616,2
+rainfall_3m_anomaly,0.18275067643354115,3
+rainfall_3m_total,0.18110959385726533,4
+rainfall_12m_total,0.17763418887921723,5
+spi_pct_change_3m,0.10590134392996942,6
+spi_lag_1,0.09518046050551865,7
+log_population,0.07732177689454311,8
+spi_lag_2,0.04676723868188093,9
+year,0.011872963231749578,10
+commodity_Oil (vegetable),0.011274492900946509,11
+commodity_Sugar,0.010523721611951364,12
+commodity_Rice,0.004619620380449385,13
+commodity_OTHER,0.004518150018999245,14
+commodity_Salt,0.003872859392376027,15
+commodity_Laundry soap,0.002334288315363864,16
+commodity_Handwash soap,0.0011899264073966798,17
+commodity_Fish (kapenta),0.0004747651114493934,18
+is_urban,0.0,19
+month_of_year,0.0,20
+commodity_Beans (sugar),0.0,21
+months_since_last_reported_price,0.0,22
+commodity_Maize meal,0.0,23
+commodity_Toothpaste,0.0,24

@@ -1,0 +1,4 @@
+model,n_outer_folds,mean_balanced_accuracy,std_balanced_accuracy,mean_macro_f1,std_macro_f1,mean_roc_auc,mean_pr_auc,mean_brier
+logreg,5,0.7487,0.0193,0.748,0.0188,0.8203,0.7711,0.1781
+xgboost,5,0.786,0.0122,0.7836,0.0128,0.8648,0.8467,0.1487
+dummy,5,0.5,0.0,0.342,0.0374,,,

@@ -1,0 +1,1 @@
+data/raw/chirps_v3_monthly_global.nc filter=lfs diff=lfs merge=lfs -text

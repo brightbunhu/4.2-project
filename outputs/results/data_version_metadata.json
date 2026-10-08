@@ -1,0 +1,30 @@
+{
+  "data_period": "2017-04-01 to 2026-05-01",
+  "n_observations": 10418,
+  "feature_names": [
+    "rainfall_1m",
+    "rainfall_6m_total",
+    "rainfall_3m_anomaly",
+    "rainfall_3m_total",
+    "rainfall_12m_total",
+    "spi_pct_change_3m",
+    "spi_lag_1",
+    "log_population",
+    "spi_lag_2",
+    "year",
+    "commodity_Oil (vegetable)",
+    "commodity_Sugar",
+    "commodity_Rice",
+    "commodity_OTHER",
+    "commodity_Salt",
+    "commodity_Laundry soap",
+    "commodity_Handwash soap",
+    "commodity_Fish (kapenta)"
+  ],
+  "target_definition": "price_stress = 1 if SPI > 1.25 else 0",
+  "model_type": "Logistic Regression and XGBoost",
+  "validation_method": "GroupKFold by district (primary)",
+  "tuning_score": "balanced_accuracy",
+  "random_seed": 42,
+  "training_date": "2026-10-04"
+}

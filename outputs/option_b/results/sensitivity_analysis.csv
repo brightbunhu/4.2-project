@@ -1,0 +1,4 @@
+spi_threshold,observations_retained,stress_class_count,stress_prevalence_pct,definition
+1.2,8289,1416,17.08,price_stress = 1 if SPI > 1.2 else 0
+1.25,8289,1136,13.7,price_stress = 1 if SPI > 1.25 else 0
+1.3,8289,963,11.62,price_stress = 1 if SPI > 1.3 else 0

@@ -1,0 +1,11 @@
+year,raw_records,valid_price_records,final_modelling_records,records_removed_thin_cell,records_removed_gap_filter,records_removed_april_2024,used_for_training,used_for_validation,used_for_final_testing,exclusion_reason
+2017,1095,1095,426,See thin_cell_audit.csv,See reporting_gap_filter_audit.csv,0,Yes,No,No,
+2018,899,899,71,See thin_cell_audit.csv,See reporting_gap_filter_audit.csv,0,Yes,No,No,
+2019,171,171,68,See thin_cell_audit.csv,See reporting_gap_filter_audit.csv,0,Yes,No,No,
+2020,8267,8267,3118,See thin_cell_audit.csv,See reporting_gap_filter_audit.csv,0,Yes,No,No,
+2021,5482,5482,2513,See thin_cell_audit.csv,See reporting_gap_filter_audit.csv,0,Yes,No,No,
+2022,2456,2456,817,See thin_cell_audit.csv,See reporting_gap_filter_audit.csv,0,Yes,Yes,Yes,
+2023,4651,4651,2301,See thin_cell_audit.csv,See reporting_gap_filter_audit.csv,0,Yes,Yes,Yes,
+2024,1734,1734,793,See thin_cell_audit.csv,See reporting_gap_filter_audit.csv,4,Yes,Yes,Yes,
+2025,604,604,0,See thin_cell_audit.csv,See reporting_gap_filter_audit.csv,0,No,No,No,Insufficient valid observations after thin-cell and gap filtering; most records lack required rainfall features
+2026,195,195,0,See thin_cell_audit.csv,See reporting_gap_filter_audit.csv,0,No,No,No,Insufficient valid observations after thin-cell and gap filtering; most records lack required rainfall features

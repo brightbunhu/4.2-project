@@ -1,0 +1,2 @@
+table,rows_in,exact_duplicate_rows,duplicate_keys,rows_out,rows_removed,deduplication_key,keep_rule
+rainfall_dekad,5100,0,0,5100,0,province_key + reference_period_start + aggregation_period,keep='first' after sort (deterministic)

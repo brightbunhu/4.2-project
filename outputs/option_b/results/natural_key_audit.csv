@@ -1,0 +1,2 @@
+total_observations,natural_key_definition,duplicate_key_count,null_key_count,unique_districts,unique_commodities,unique_currencies,min_prediction_month,max_prediction_month,min_target_month,max_target_month,audit_status
+8289,district_key + commodity_name + prediction_month + currency_code,0,0,80,16,2,2017-01-01,2024-09-01,2017-02-01,2024-10-01,PASSED

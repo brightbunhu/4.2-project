@@ -1,0 +1,12 @@
+source_searched,source_used,url_or_file_path,variable,date_range,currencies_covered,formula,rows_adjusted,rows_removed,implementation_status,limitation
+cpi,None,C:\Users\brigh\Downloads\another\data,N/A,N/A,N/A,N/A,0,0,NOT IMPLEMENTED,No verified CPI or exchange-rate series found in project data files
+consumer_price,None,C:\Users\brigh\Downloads\another\data,N/A,N/A,N/A,N/A,0,0,NOT IMPLEMENTED,No verified CPI or exchange-rate series found in project data files
+inflation,None,C:\Users\brigh\Downloads\another\data,N/A,N/A,N/A,N/A,0,0,NOT IMPLEMENTED,No verified CPI or exchange-rate series found in project data files
+deflator,None,C:\Users\brigh\Downloads\another\data,N/A,N/A,N/A,N/A,0,0,NOT IMPLEMENTED,No verified CPI or exchange-rate series found in project data files
+exchange_rate,None,C:\Users\brigh\Downloads\another\data,N/A,N/A,N/A,N/A,0,0,NOT IMPLEMENTED,No verified CPI or exchange-rate series found in project data files
+fx_rate,None,C:\Users\brigh\Downloads\another\data,N/A,N/A,N/A,N/A,0,0,NOT IMPLEMENTED,No verified CPI or exchange-rate series found in project data files
+forex,None,C:\Users\brigh\Downloads\another\data,N/A,N/A,N/A,N/A,0,0,NOT IMPLEMENTED,No verified CPI or exchange-rate series found in project data files
+parallel_market,None,C:\Users\brigh\Downloads\another\data,N/A,N/A,N/A,N/A,0,0,NOT IMPLEMENTED,No verified CPI or exchange-rate series found in project data files
+CPI/exchange columns in food_price CSV,None,C:\Users\brigh\Downloads\another\data\raw\hdx_hapi_food_price_zwe.csv,N/A,N/A,N/A,N/A,0,0,NOT IMPLEMENTED,No verified CPI or exchange-rate series found in project data files
+Currency isolation (within-currency SPI),currency_code column in hdx_hapi_food_price_zwe.csv,C:\Users\brigh\Downloads\another\data\raw\hdx_hapi_food_price_zwe.csv,currency_code,2017-01 to 2026-05,"USD, ZWL","SPI(i,c,m,u) = price(i,c,m,u) / median(price(j,c,m,u))",All (within-currency ratio),0,IMPLEMENTED (partial safeguard only),Controls direct USD/ZWL comparison but does not remove intra-currency inflation effects
+April 2024 ZWL redenomination filter,Redenomination date knowledge,N/A,month == 2024-04 AND currency_code == ZWL,2024-04,ZWL,Exclude rows where month == 2024-04 AND currency_code == ZWL,0,See redenomination_audit.csv,IMPLEMENTED,Addresses redenomination transition only; does not adjust for ongoing inflation

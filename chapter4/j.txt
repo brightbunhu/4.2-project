@@ -1,0 +1,723 @@
+You are preparing one complete evidence file for Chapter 4: Results and Findings of my Zimbabwe Commodity Price Stress Classifier (ZCPSC) dissertation.
+
+Do not write the Chapter 4 narrative. Do not create multiple evidence files. Instead, inspect all project files and consolidate every verified Chapter 4 result into one Markdown file:
+
+chapter 4/chapter4_complete_evidence.md
+
+This single Markdown file will be uploaded for another writer to use when writing the final Chapter 4.
+
+==================================================
+1. IMPORTANT RULES
+==================================================
+
+Use only results from the latest authoritative final pipeline.
+
+Do not:
+
+- Invent values.
+- Estimate missing values.
+- Copy outdated results from an earlier pipeline.
+- Mix results from different pipeline versions.
+- Claim statistical significance without a formal test.
+- Claim a feature caused price stress based only on correlation or SHAP.
+- Delete raw data.
+- Delete source code.
+- Delete generated results before inspecting them.
+
+If two files contain different results:
+
+1. Identify the conflict.
+2. Determine which result belongs to the latest authoritative pipeline.
+3. Use the latest authoritative result.
+4. Record the conflict and resolution in the evidence file.
+
+If a required result is not available, write:
+
+NOT AVAILABLE — REQUIRES PROJECT CONFIRMATION
+
+Do not leave vague statements such as “see the files.” Extract the actual values into the Markdown file.
+
+==================================================
+2. INSPECT THESE LOCATIONS
+==================================================
+
+Search the entire repository, including:
+
+- Chapter 1.
+- Chapter 2.
+- Chapter 3.
+- src/
+- app/
+- data/
+- outputs/
+- reports/
+- tests/
+- chapter 4/
+- configuration files.
+- requirements.txt.
+- pyproject.toml.
+- Git history.
+- Streamlit configuration files.
+- All CSV, JSON, TXT, MD, PNG, JPG, SVG and log files related to results.
+
+Search for files containing:
+
+- model
+- evaluation
+- metrics
+- classification
+- confusion
+- roc
+- precision
+- recall
+- shap
+- feature importance
+- correlation
+- summary
+- anomaly
+- outlier
+- sensitivity
+- robustness
+- eda
+- figure
+- dashboard
+- streamlit
+
+==================================================
+3. VERIFY THE AUTHORITATIVE PIPELINE
+==================================================
+
+Identify the final authoritative pipeline.
+
+The pipeline may be:
+
+src/final_correction_pipeline.py
+
+but verify this from the repository.
+
+Record:
+
+- Final pipeline path.
+- Git commit hash.
+- Current branch.
+- Commit date.
+- Latest commit message.
+- Python version.
+- Operating system.
+- Package versions.
+- Exact pipeline command.
+- Exact test command.
+- Test result.
+- Date and time of the final run.
+
+The current evidence already indicates:
+
+- Python version: 3.12.10.
+- Operating system: Windows.
+- Pipeline command: python src/final_correction_pipeline.py.
+- Test command: python -m pytest -v.
+- Tests passed: 24.
+
+Verify these values and correct them if the repository shows different values.
+
+==================================================
+4. COPY THE EXACT RESEARCH OBJECTIVES
+==================================================
+
+Read Chapter 1 and copy the exact wording of the five research objectives.
+
+Create this table:
+
+| Objective | Exact objective wording | Related analysis | Verified result | Supporting file |
+|---|---|---|---|---|
+
+The objectives are expected to address:
+
+1. Data integration.
+2. SPI and price-stress target construction.
+3. Model development and comparison.
+4. Spatial, commodity and feature-level analysis.
+5. Interactive dashboard development.
+
+Do not paraphrase the objectives if the exact wording is available in Chapter 1.
+
+==================================================
+5. DATASET SUMMARY
+==================================================
+
+Extract and report actual values for:
+
+- Total raw observations.
+- Total cleaned observations.
+- Total final observations.
+- Number of columns.
+- Number of districts.
+- Number of provinces.
+- Number of commodities.
+- Number of currencies.
+- Start date.
+- End date.
+- Number of reporting months.
+- Number of stress observations.
+- Number of non-stress observations.
+- Stress-class percentage.
+- Non-stress percentage.
+- Number of observations removed.
+- Number of records retained.
+
+Create this table:
+
+| Dataset measure | Verified value | Source file |
+|---|---:|---|
+
+The current evidence indicates:
+
+- Final observations: 10,107.
+- Columns: 39.
+- District keys: 81.
+- Commodities: 18.
+- Currencies: 2.
+- Date range: 2017-01-01 to 2024-10-01.
+- price_stress=1: 1,390.
+- price_stress=0: 8,717.
+- Stress prevalence: 13.8%.
+- Non-stress prevalence: 86.2%.
+
+Verify these values against the final output files.
+
+==================================================
+6. FINAL PIPELINE CONFIGURATION
+==================================================
+
+Extract the actual final configuration:
+
+- SPI formula.
+- SPI threshold.
+- Minimum district/reference-group size.
+- Target definition.
+- Currency treatment.
+- April 2024 treatment.
+- Date range.
+- Feature list.
+- Number of validation folds.
+- Validation method.
+- Temporal ordering method.
+- District grouping method.
+- Random seed.
+- Class-weight settings.
+- Hyperparameter-tuning method.
+- Final Logistic Regression settings.
+- Final XGBoost settings.
+- SHAP method.
+- Number of features used for modelling.
+- Number of features used for SHAP.
+
+Create this table:
+
+| Configuration item | Final verified value | Source file |
+|---|---|---|
+
+==================================================
+7. DATA-CLEANING AND PREPROCESSING RESULTS
+==================================================
+
+Extract the actual counts and reasons for:
+
+- Duplicate records removed.
+- Invalid prices removed.
+- Missing district identifiers.
+- Missing commodity names.
+- Missing currency values.
+- Invalid dates.
+- April 2024 records excluded.
+- Records excluded because of insufficient reporting districts.
+- Rainfall records excluded.
+- Unmatched geographical records.
+- Missing values before imputation.
+- Missing values after preprocessing.
+- Winsorised values.
+- Records excluded during target construction.
+
+Create this table:
+
+| Cleaning or preprocessing action | Records affected | Treatment | Reason | Source file |
+|---|---:|---|---|---|
+
+Also report:
+
+- Whether raw data were preserved.
+- Whether processed data were overwritten.
+- Where the preprocessing log is stored.
+
+==================================================
+8. COMPLETE EDA RESULTS
+==================================================
+
+Extract actual numerical results for:
+
+A. Price variables
+
+- Mean.
+- Median.
+- Standard deviation.
+- Minimum.
+- Maximum.
+- Quartiles.
+- Skewness.
+- Price results by commodity.
+- Price results by currency.
+- Price results by province.
+- Price results by month.
+
+B. SPI
+
+- Mean.
+- Median.
+- Standard deviation.
+- Minimum.
+- Maximum.
+- Number above SPI 1.00.
+- Number above SPI 1.25.
+- SPI by commodity.
+- SPI by province.
+- SPI by month.
+
+C. Rainfall
+
+- Mean.
+- Median.
+- Standard deviation.
+- Minimum.
+- Maximum.
+- Monthly rainfall.
+- Three-month totals.
+- Six-month totals.
+- Twelve-month totals.
+- Rainfall anomalies.
+- Wet-season and dry-season patterns.
+
+D. Population and geography
+
+- Population summary.
+- Urban versus non-urban summaries.
+- District coverage.
+- Province coverage.
+- Commodity coverage by province.
+- Spatial matching results.
+
+E. Target patterns
+
+- Stress prevalence by province.
+- Stress prevalence by district.
+- Stress prevalence by commodity.
+- Stress prevalence by month.
+- Stress prevalence by currency.
+- Stress prevalence by urban status.
+
+For each EDA result, include:
+
+- Actual value.
+- Interpretation.
+- Exact source filename.
+- Figure filename, if available.
+
+Create tables such as:
+
+| Group | Count | Stress count | Stress percentage | Source |
+|---|---:|---:|---:|---|
+
+==================================================
+9. LIST ALL GENERATED FIGURES
+==================================================
+
+Find all 13 generated figures and list:
+
+- Figure number.
+- Exact filename.
+- Full path.
+- Figure title.
+- Analysis represented.
+- Main verified finding.
+- Variables shown.
+- Whether the figure is suitable for Chapter 4.
+
+Create this table:
+
+| Figure number | Filename | Analysis | Main finding | Suitable for Chapter 4 |
+|---|---|---|---|---|
+
+Do not invent figure titles. If the title must be inferred from the file or code, state that it was inferred.
+
+==================================================
+10. CORRELATIONS AND STATISTICAL ANALYSIS
+==================================================
+
+Extract all actual statistical outputs, including:
+
+- Pearson correlations.
+- Spearman correlations.
+- Correlation with price_stress.
+- Correlation between important predictors.
+- Grouped means.
+- Grouped medians.
+- Statistical tests.
+- Test statistics.
+- P-values.
+- Confidence intervals.
+- Effect sizes.
+- Statistical assumptions.
+- Multiple-testing corrections, if used.
+
+For every formal test, include:
+
+| Test | Variables/groups | Statistic | P-value | Effect size | Interpretation | Source |
+|---|---|---:|---:|---:|---|---|
+
+If no formal tests were performed, include exactly:
+
+“No formal hypothesis-testing procedure was implemented in the final pipeline. The analysis therefore reports descriptive, correlational and predictive results without claiming statistical significance.”
+
+Do not create p-values yourself.
+
+==================================================
+11. MODEL PERFORMANCE RESULTS
+==================================================
+
+Extract the final results for:
+
+- DummyClassifier.
+- Logistic Regression.
+- XGBoost.
+
+Required metrics:
+
+- Accuracy.
+- Balanced accuracy.
+- Precision.
+- Recall.
+- F1-score.
+- Macro-F1.
+- ROC-AUC.
+- PR-AUC.
+- Brier score.
+- Standard deviation across folds.
+- Number of evaluated observations.
+
+Create this table:
+
+| Model | Accuracy | Balanced accuracy | Precision | Recall | F1-score | Macro-F1 | ROC-AUC | PR-AUC | Brier score | Evaluation observations |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+
+The current evidence indicates:
+
+- DummyClassifier: accuracy 0.862, balanced accuracy 0.500, Macro-F1 0.463, ROC-AUC 0.500, PR-AUC 0.138.
+- Logistic Regression: accuracy 0.857, balanced accuracy 0.823, Macro-F1 0.756, ROC-AUC 0.901, PR-AUC 0.627.
+- XGBoost: accuracy 0.924, balanced accuracy 0.777, Macro-F1 0.817, ROC-AUC 0.948, PR-AUC 0.796.
+
+Verify these against the final results files and report any differences.
+
+Also extract:
+
+- Per-class precision.
+- Per-class recall.
+- Per-class F1-score.
+- Macro average.
+- Weighted average.
+- Class support.
+- Confusion matrix for every model.
+- ROC curve data.
+- Precision-recall curve data.
+- Calibration results.
+- Threshold results.
+
+Create this table:
+
+| Model | Class | Precision | Recall | F1-score | Support |
+|---|---|---:|---:|---:|---:|
+
+For each confusion matrix, verify that:
+
+- Matrix totals equal the evaluation sample size.
+- Class totals match the classification report.
+- The model and evaluation design are clearly identified.
+
+==================================================
+12. FEATURE IMPORTANCE AND SHAP RESULTS
+==================================================
+
+Extract all actual feature-importance evidence.
+
+For Logistic Regression, extract:
+
+- Feature name.
+- Coefficient.
+- Direction.
+- Absolute coefficient.
+- Whether the feature was encoded or transformed.
+
+For XGBoost, extract:
+
+- Built-in feature importance.
+- Mean absolute SHAP value.
+- Rank.
+- Direction of contribution, if available.
+- Feature interpretation supported by the code.
+
+For local SHAP explanations, extract at least three examples with:
+
+- District.
+- Commodity.
+- Month.
+- Actual class.
+- Predicted class.
+- Predicted probability.
+- Top positive contributors.
+- Top negative contributors.
+- Source file.
+
+Create this table:
+
+| Rank | Feature | Importance or mean absolute SHAP | Direction | Verified interpretation | Source |
+|---:|---|---:|---|---|---|
+
+List all SHAP files and figures.
+
+Important:
+
+- Do not state that a feature caused price stress.
+- Use wording such as “contributed to the model prediction” or “was associated with the prediction.”
+- Distinguish global importance from local explanation.
+
+==================================================
+13. OUTLIERS AND ANOMALIES
+==================================================
+
+Extract actual anomaly findings:
+
+- Duplicate records.
+- Invalid prices.
+- Missing identifiers.
+- Missing dates.
+- Currency-transition records.
+- Sparse reference groups.
+- Extreme prices.
+- Extreme SPI values.
+- Rainfall anomalies.
+- Unusual districts.
+- Unusual commodities.
+- Data-coverage gaps.
+
+For each anomaly, report:
+
+| Anomaly | Detection method | Count | Treatment | Reason | Source |
+|---|---|---:|---|---|---|
+
+Do not claim an anomaly was removed unless the code or output confirms it.
+
+==================================================
+14. ROBUSTNESS AND SENSITIVITY ANALYSIS
+==================================================
+
+Search for and extract completed comparisons involving:
+
+- SPI > 1.25 versus SPI > 1.00.
+- Different models.
+- Different feature sets.
+- With and without rainfall.
+- With and without population.
+- Different class weights.
+- Different validation folds.
+- Different random seeds.
+- Different probability thresholds.
+- Before and after winsorisation.
+
+For every completed sensitivity analysis, report:
+
+| Sensitivity test | Baseline | Alternative | Metric comparison | Difference | Interpretation | Source |
+|---|---|---|---|---:|---|---|
+
+If no formal sensitivity analysis exists, state:
+
+“No formal sensitivity analysis was implemented in the final pipeline.”
+
+Do not invent sensitivity results.
+
+==================================================
+15. STREAMLIT DASHBOARD EVIDENCE
+==================================================
+
+Inspect the actual application and report:
+
+- Entry file.
+- Repository source.
+- Streamlit deployment source.
+- Verified live URL.
+- Number of pages.
+- Page names.
+- Page purpose.
+- Filters.
+- Controls.
+- Data sources used.
+- Models used.
+- Figures shown.
+- Tables shown.
+- SHAP content shown.
+- Methodology content shown.
+- Responsible-use disclaimer.
+- Limitations page.
+
+Create this table:
+
+| Page | Name | Purpose | User controls | Data/model outputs shown | Source |
+|---:|---|---|---|---|---|
+
+Do not claim a live Streamlit URL unless it is verified.
+
+==================================================
+16. REPRODUCIBILITY AND TESTING
+==================================================
+
+Report:
+
+- Exact pipeline command.
+- Exact test command.
+- Number of tests passed.
+- Number of tests failed.
+- Test log path.
+- Number of figures generated.
+- Number of tables generated.
+- Number of models serialized.
+- SHAP completion status.
+- Dashboard inspection status.
+- Git commit hash.
+- Raw-data preservation status.
+- Repository status.
+- Any unresolved warnings.
+
+Create this checklist:
+
+| Item | Status | Evidence |
+|---|---|---|
+| Final pipeline completed |  |  |
+| Tests passed |  |  |
+| Tables generated |  |  |
+| Figures generated |  |  |
+| Models serialized |  |  |
+| SHAP completed |  |  |
+| Dashboard inspected |  |  |
+| Raw data preserved |  |  |
+| No outdated results mixed |  |  |
+
+==================================================
+17. CREATE THE SINGLE MARKDOWN FILE
+==================================================
+
+Create exactly:
+
+chapter 4/chapter4_complete_evidence.md
+
+Use this structure:
+
+# Chapter 4 Complete Evidence: Results and Findings
+
+## 1. Evidence generation information
+
+## 2. Repository and reproducibility information
+
+## 3. Authoritative final pipeline
+
+## 4. Exact research objectives
+
+## 5. Objective-to-evidence mapping
+
+## 6. Dataset summary
+
+## 7. Data-cleaning and preprocessing results
+
+## 8. Exploratory data-analysis results
+
+## 9. Figures generated
+
+## 10. Correlations and statistical analysis
+
+## 11. Model-performance results
+
+## 12. Per-class results and confusion matrices
+
+## 13. Feature importance and SHAP results
+
+## 14. Outliers and anomalies
+
+## 15. Robustness and sensitivity analysis
+
+## 16. Streamlit dashboard evidence
+
+## 17. Limitations supported by the evidence
+
+## 18. Chapter 4 section-by-section writing guide
+
+For Section 18, create a table:
+
+| Chapter 4 section | Verified evidence to use | Table/file | Figure/file | Important interpretation |
+|---|---|---|---|---|
+
+Include rows for:
+
+- 4.1 Introduction.
+- 4.2.1 Objective 1.
+- 4.2.2 Objective 2.
+- 4.2.3 Objective 3.
+- 4.2.4 Objective 4.
+- 4.2.5 Objective 5.
+- 4.3 Descriptive statistics and visualisations.
+- 4.4 Model performance and evaluation.
+- 4.5 Inferential statistics.
+- 4.6 Statistical analysis results.
+- 4.7 Feature importance and insights.
+- 4.8 Outliers and anomalies.
+- 4.9 Robustness and sensitivity analysis.
+- 4.10 Discussion and interpretation.
+- 4.11 Chapter summary.
+
+## 19. Reproducibility checklist
+
+==================================================
+20. FINAL VALIDATION
+==================================================
+
+Before finishing:
+
+- Confirm chapter 4/chapter4_complete_evidence.md exists.
+- Confirm it is complete and readable.
+- Confirm all important numerical results are copied into it.
+- Confirm all source paths are included.
+- Confirm all figure filenames are included.
+- Confirm all model metrics are included.
+- Confirm all per-class metrics are included.
+- Confirm all confusion matrices are included.
+- Confirm all SHAP results are included.
+- Confirm all statistical results are included.
+- Confirm all anomaly results are included.
+- Confirm all sensitivity results are included.
+- Confirm the dashboard evidence is included.
+- Confirm no raw data were deleted.
+- Confirm no numbers were invented.
+- Confirm no old results were mixed with final results.
+
+At the end of the terminal output, print:
+
+1. The exact path to chapter4_complete_evidence.md.
+2. The number of words in the file.
+3. The number of tables included.
+4. The number of figures listed.
+5. The number of model metrics included.
+6. The number of SHAP features included.
+7. The number of statistical tests included.
+8. The number of sensitivity analyses included.
+9. Any unresolved missing evidence.
+
+After completing the file, print the entire contents of:
+
+chapter 4/chapter4_complete_evidence.md
+
+Do not print binary images or large raw datasets. Print only the consolidated Markdown evidence.

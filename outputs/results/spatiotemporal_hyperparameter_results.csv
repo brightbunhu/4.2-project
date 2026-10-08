@@ -1,0 +1,211 @@
+model,outer_fold,inner_fold,params,macro_f1
+logreg,1,1,"{""classifier__C"": 0.01, ""classifier__class_weight"": null}",0.6503034404009219
+logreg,1,1,"{""classifier__C"": 0.01, ""classifier__class_weight"": ""balanced""}",0.5346726881357363
+logreg,1,1,"{""classifier__C"": 0.1, ""classifier__class_weight"": null}",0.7409477872809277
+logreg,1,1,"{""classifier__C"": 0.1, ""classifier__class_weight"": ""balanced""}",0.5458974639650029
+logreg,1,1,"{""classifier__C"": 1.0, ""classifier__class_weight"": null}",0.7505212439126816
+logreg,1,1,"{""classifier__C"": 1.0, ""classifier__class_weight"": ""balanced""}",0.5648820326678766
+logreg,1,1,"{""classifier__C"": 10.0, ""classifier__class_weight"": null}",0.746407609795588
+logreg,1,1,"{""classifier__C"": 10.0, ""classifier__class_weight"": ""balanced""}",0.5730179028132992
+logreg,1,2,"{""classifier__C"": 0.01, ""classifier__class_weight"": null}",0.6699089479650419
+logreg,1,2,"{""classifier__C"": 0.01, ""classifier__class_weight"": ""balanced""}",0.7738603536954838
+logreg,1,2,"{""classifier__C"": 0.1, ""classifier__class_weight"": null}",0.7043717900538644
+logreg,1,2,"{""classifier__C"": 0.1, ""classifier__class_weight"": ""balanced""}",0.750779961682946
+logreg,1,2,"{""classifier__C"": 1.0, ""classifier__class_weight"": null}",0.7214547997901731
+logreg,1,2,"{""classifier__C"": 1.0, ""classifier__class_weight"": ""balanced""}",0.7402822824166237
+logreg,1,2,"{""classifier__C"": 10.0, ""classifier__class_weight"": null}",0.7305726369320983
+logreg,1,2,"{""classifier__C"": 10.0, ""classifier__class_weight"": ""balanced""}",0.7402822824166237
+logreg,2,1,"{""classifier__C"": 0.01, ""classifier__class_weight"": null}",0.656450712611171
+logreg,2,1,"{""classifier__C"": 0.01, ""classifier__class_weight"": ""balanced""}",0.6994800509337861
+logreg,2,1,"{""classifier__C"": 0.1, ""classifier__class_weight"": null}",0.712929778161602
+logreg,2,1,"{""classifier__C"": 0.1, ""classifier__class_weight"": ""balanced""}",0.6592376514396185
+logreg,2,1,"{""classifier__C"": 1.0, ""classifier__class_weight"": null}",0.7290594625500286
+logreg,2,1,"{""classifier__C"": 1.0, ""classifier__class_weight"": ""balanced""}",0.6467639864197877
+logreg,2,1,"{""classifier__C"": 10.0, ""classifier__class_weight"": null}",0.7329939342847922
+logreg,2,1,"{""classifier__C"": 10.0, ""classifier__class_weight"": ""balanced""}",0.6442498581962564
+logreg,2,2,"{""classifier__C"": 0.01, ""classifier__class_weight"": null}",0.6462459913223919
+logreg,2,2,"{""classifier__C"": 0.01, ""classifier__class_weight"": ""balanced""}",0.7205964892973092
+logreg,2,2,"{""classifier__C"": 0.1, ""classifier__class_weight"": null}",0.6462459913223919
+logreg,2,2,"{""classifier__C"": 0.1, ""classifier__class_weight"": ""balanced""}",0.7413564952549376
+logreg,2,2,"{""classifier__C"": 1.0, ""classifier__class_weight"": null}",0.6462459913223919
+logreg,2,2,"{""classifier__C"": 1.0, ""classifier__class_weight"": ""balanced""}",0.7381275820585593
+logreg,2,2,"{""classifier__C"": 10.0, ""classifier__class_weight"": null}",0.6462459913223919
+logreg,2,2,"{""classifier__C"": 10.0, ""classifier__class_weight"": ""balanced""}",0.7328703703703704
+logreg,3,1,"{""classifier__C"": 0.01, ""classifier__class_weight"": null}",0.6553352219074599
+logreg,3,1,"{""classifier__C"": 0.01, ""classifier__class_weight"": ""balanced""}",0.6856496931854882
+logreg,3,1,"{""classifier__C"": 0.1, ""classifier__class_weight"": null}",0.6661059962228517
+logreg,3,1,"{""classifier__C"": 0.1, ""classifier__class_weight"": ""balanced""}",0.7026274696177609
+logreg,3,1,"{""classifier__C"": 1.0, ""classifier__class_weight"": null}",0.6572706101537028
+logreg,3,1,"{""classifier__C"": 1.0, ""classifier__class_weight"": ""balanced""}",0.7026551112615068
+logreg,3,1,"{""classifier__C"": 10.0, ""classifier__class_weight"": null}",0.6572706101537028
+logreg,3,1,"{""classifier__C"": 10.0, ""classifier__class_weight"": ""balanced""}",0.7026551112615068
+logreg,3,2,"{""classifier__C"": 0.01, ""classifier__class_weight"": null}",0.5843532036563706
+logreg,3,2,"{""classifier__C"": 0.01, ""classifier__class_weight"": ""balanced""}",0.7245360937842836
+logreg,3,2,"{""classifier__C"": 0.1, ""classifier__class_weight"": null}",0.6037762191270817
+logreg,3,2,"{""classifier__C"": 0.1, ""classifier__class_weight"": ""balanced""}",0.7236666784581461
+logreg,3,2,"{""classifier__C"": 1.0, ""classifier__class_weight"": null}",0.6057764942299881
+logreg,3,2,"{""classifier__C"": 1.0, ""classifier__class_weight"": ""balanced""}",0.7228367561373543
+logreg,3,2,"{""classifier__C"": 10.0, ""classifier__class_weight"": null}",0.6057764942299881
+logreg,3,2,"{""classifier__C"": 10.0, ""classifier__class_weight"": ""balanced""}",0.7228367561373543
+xgboost,1,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.466824644549763
+xgboost,1,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.5674555707450445
+xgboost,1,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.659247757073844
+xgboost,1,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.466824644549763
+xgboost,1,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.5421950441582438
+xgboost,1,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.6211340206185567
+xgboost,1,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.466824644549763
+xgboost,1,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.537747102931152
+xgboost,1,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.6182126696832579
+xgboost,1,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.7037617554858934
+xgboost,1,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.7215312039334175
+xgboost,1,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.7123733217442764
+xgboost,1,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.6577354102104491
+xgboost,1,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.683727626658034
+xgboost,1,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.6787862555654934
+xgboost,1,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.6556048073600553
+xgboost,1,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.6542108524593997
+xgboost,1,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.6403090153090153
+xgboost,1,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.7141341178383205
+xgboost,1,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.7052616076599316
+xgboost,1,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.6986426459181416
+xgboost,1,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.6813727769923358
+xgboost,1,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.6818870649191066
+xgboost,1,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.6657824933687002
+xgboost,1,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.6843750626239955
+xgboost,1,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.6646485040379952
+xgboost,1,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.645893798798185
+xgboost,1,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.4857971171073837
+xgboost,1,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.6122271825396826
+xgboost,1,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.6608025756007819
+xgboost,1,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.5020199482822313
+xgboost,1,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.5996439604167757
+xgboost,1,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.6441751019183336
+xgboost,1,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.5020199482822313
+xgboost,1,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.5942262789216727
+xgboost,1,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.6454438334642576
+xgboost,1,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.6763813215343548
+xgboost,1,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.7137260954724602
+xgboost,1,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.7242407051472021
+xgboost,1,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.6527221858443955
+xgboost,1,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.6777727463929185
+xgboost,1,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.6814398200224971
+xgboost,1,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.6416788171641341
+xgboost,1,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.6464419475655431
+xgboost,1,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.6504918272571032
+xgboost,1,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.6712631049059068
+xgboost,1,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.706256403308976
+xgboost,1,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.7048055642710792
+xgboost,1,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.6857005346888454
+xgboost,1,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.7077212806026365
+xgboost,1,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.7107690882251988
+xgboost,1,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.6878753792139619
+xgboost,1,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.688512533135428
+xgboost,1,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.7242407051472021
+xgboost,2,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.5118737526108146
+xgboost,2,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.6387027192363389
+xgboost,2,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.657163302837005
+xgboost,2,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.5118737526108146
+xgboost,2,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.632308077098929
+xgboost,2,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.6509860650502843
+xgboost,2,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.52589943471167
+xgboost,2,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.6214629884271835
+xgboost,2,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.6418136162112066
+xgboost,2,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.674282733437663
+xgboost,2,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.699151295133438
+xgboost,2,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.6973918456271397
+xgboost,2,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.6884307155159284
+xgboost,2,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.7020969396016625
+xgboost,2,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.6961434706011891
+xgboost,2,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.6871668621124165
+xgboost,2,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.7059010426010657
+xgboost,2,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.6936852510366254
+xgboost,2,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.7075133588816322
+xgboost,2,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.7224148918156283
+xgboost,2,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.7196824746797423
+xgboost,2,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.6973918456271397
+xgboost,2,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.699151295133438
+xgboost,2,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.6930714817986676
+xgboost,2,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.6855053538782971
+xgboost,2,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.6996183491730898
+xgboost,2,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.6918394024276378
+xgboost,2,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.546537726361499
+xgboost,2,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.6190341445010376
+xgboost,2,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.6688127792067144
+xgboost,2,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.546537726361499
+xgboost,2,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.6190341445010376
+xgboost,2,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.6586023272631648
+xgboost,2,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.5330018176206317
+xgboost,2,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.6190341445010376
+xgboost,2,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.6481453763297799
+xgboost,2,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.6540767386091128
+xgboost,2,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.6669316576451585
+xgboost,2,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.6692055692055692
+xgboost,2,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.6928337428337429
+xgboost,2,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.6692055692055692
+xgboost,2,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.6786182661488371
+xgboost,2,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.671526235981514
+xgboost,2,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.676264903316301
+xgboost,2,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.673957977070291
+xgboost,2,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.6497393925439056
+xgboost,2,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.6595817354717508
+xgboost,2,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.6878268710550045
+xgboost,2,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.6786182661488371
+xgboost,2,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.6968381190302706
+xgboost,2,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.6786182661488371
+xgboost,2,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.6786182661488371
+xgboost,2,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.6786182661488371
+xgboost,2,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.6692055692055692
+xgboost,3,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.5916562911636803
+xgboost,3,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.6250642013353878
+xgboost,3,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.6749189384767391
+xgboost,3,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.5653115357548855
+xgboost,3,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.6390413485932502
+xgboost,3,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.6749189384767391
+xgboost,3,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.5664904915696333
+xgboost,3,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.6372588878348466
+xgboost,3,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.6666889108208445
+xgboost,3,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.6690518480927007
+xgboost,3,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.7121743996743997
+xgboost,3,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.6936050061050061
+xgboost,3,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.7041107541421504
+xgboost,3,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.7019387808861492
+xgboost,3,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.6807430833651547
+xgboost,3,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.684708180643275
+xgboost,3,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.6882562277580071
+xgboost,3,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.690273140578135
+xgboost,3,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.7217029858822372
+xgboost,3,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.6997302169152784
+xgboost,3,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.6916053734185397
+xgboost,3,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.684708180643275
+xgboost,3,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.6750068938938374
+xgboost,3,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.6628651977763302
+xgboost,3,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.6947710167740666
+xgboost,3,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.6713808755673931
+xgboost,3,1,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.6693626658039469
+xgboost,3,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.44794969988917294
+xgboost,3,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.5863551083063279
+xgboost,3,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.6373505179162251
+xgboost,3,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.44416138285024154
+xgboost,3,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.58128173670978
+xgboost,3,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.6504781009780813
+xgboost,3,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.44794969988917294
+xgboost,3,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.5748263436389437
+xgboost,3,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.01, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.632071198204558
+xgboost,3,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.6672055586130985
+xgboost,3,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.6747809813779628
+xgboost,3,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.6668774375410279
+xgboost,3,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.676217322469784
+xgboost,3,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.6909864526411658
+xgboost,3,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.6852153110047847
+xgboost,3,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.6632138641603512
+xgboost,3,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.6622725575848076
+xgboost,3,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.6639054464703132
+xgboost,3,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.6975224198206414
+xgboost,3,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.7055528198592242
+xgboost,3,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.6823225414196686
+xgboost,3,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.6978368455122073
+xgboost,3,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.6814799834449544
+xgboost,3,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 4, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.6806402447967204
+xgboost,3,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 100, ""classifier__subsample"": 0.8}",0.6795891858230604
+xgboost,3,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 200, ""classifier__subsample"": 0.8}",0.6734569214368988
+xgboost,3,2,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.1, ""classifier__max_depth"": 5, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}",0.6567376774617685

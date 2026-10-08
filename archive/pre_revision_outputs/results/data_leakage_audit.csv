@@ -1,0 +1,28 @@
+feature,transformation,fitted_where,inside_pipeline,fitted_per_fold,target_derived,status
+rainfall_1m,pipeline (imputer+scaler per fold),inside pipeline per fold,YES,YES,NO,PASS
+rainfall_6m_total,pipeline (imputer+scaler per fold),inside pipeline per fold,YES,YES,NO,PASS
+rainfall_3m_anomaly,pipeline (imputer+scaler per fold),inside pipeline per fold,YES,YES,NO,PASS
+rainfall_3m_total,pipeline (imputer+scaler per fold),inside pipeline per fold,YES,YES,NO,PASS
+rainfall_12m_total,pipeline (imputer+scaler per fold),inside pipeline per fold,YES,YES,NO,PASS
+spi_pct_change_3m,pipeline (imputer+scaler per fold),inside pipeline per fold,YES,YES,NO,PASS
+spi_lag_1,pipeline (imputer+scaler per fold),inside pipeline per fold,YES,YES,NO,PASS
+log_population,pipeline (imputer+scaler per fold),inside pipeline per fold,YES,YES,NO,PASS
+spi_lag_2,pipeline (imputer+scaler per fold),inside pipeline per fold,YES,YES,NO,PASS
+year,pipeline (imputer+scaler per fold),inside pipeline per fold,YES,YES,NO,PASS
+commodity_Oil (vegetable),one-hot encoded before split (categorical),inside pipeline per fold,YES,YES,NO,PASS
+commodity_Sugar,one-hot encoded before split (categorical),inside pipeline per fold,YES,YES,NO,PASS
+commodity_Rice,one-hot encoded before split (categorical),inside pipeline per fold,YES,YES,NO,PASS
+commodity_OTHER,one-hot encoded before split (categorical),inside pipeline per fold,YES,YES,NO,PASS
+commodity_Salt,one-hot encoded before split (categorical),inside pipeline per fold,YES,YES,NO,PASS
+commodity_Laundry soap,one-hot encoded before split (categorical),inside pipeline per fold,YES,YES,NO,PASS
+commodity_Handwash soap,one-hot encoded before split (categorical),inside pipeline per fold,YES,YES,NO,PASS
+commodity_Fish (kapenta),one-hot encoded before split (categorical),inside pipeline per fold,YES,YES,NO,PASS
+months_since_last_reported_price,pipeline (imputer+scaler per fold),inside pipeline per fold,YES,YES,NO,PASS
+country_median_price,EXCLUDED from features,N/A,N/A,N/A,POTENTIAL,PASS - EXCLUDED
+district_key,EXCLUDED from features,N/A,N/A,N/A,POTENTIAL,PASS - EXCLUDED
+price,EXCLUDED from features,N/A,N/A,N/A,POTENTIAL,PASS - EXCLUDED
+price_spi_raw,EXCLUDED from features,N/A,N/A,N/A,POTENTIAL,PASS - EXCLUDED
+price_stress,EXCLUDED from features,N/A,N/A,N/A,YES,PASS - EXCLUDED
+spatial_price_index,EXCLUDED from features,N/A,N/A,N/A,POTENTIAL,PASS - EXCLUDED
+spi_pct_dev,EXCLUDED from features,N/A,N/A,N/A,POTENTIAL,PASS - EXCLUDED
+spi_winsorised,EXCLUDED from features,N/A,N/A,N/A,POTENTIAL,PASS - EXCLUDED

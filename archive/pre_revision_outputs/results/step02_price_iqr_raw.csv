@@ -1,0 +1,2 @@
+variable,n,q1,q3,iqr,lower_bound,upper_bound,n_outliers,pct_outliers,min,max,skew,kurtosis,decision
+price,25554,28.5375,812.42,783.8824999999999,-1147.28625,1988.24375,4074,15.942709556233858,0.13,200000.0,9.751550697621893,125.35114917481349,RETAINED (see assumption A11)

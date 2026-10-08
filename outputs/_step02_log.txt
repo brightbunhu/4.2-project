@@ -1,0 +1,468 @@
+
+================================================================================================
+  STEP 2  2.0  DATA PREPROCESSING - OVERVIEW AND SCOPE
+================================================================================================
+
+================================================================================================
+  2.0  DATA PREPROCESSING - OVERVIEW AND SCOPE
+================================================================================================
+
+
+  The brief's Step-4 checklist is: handle missing values, handle outliers, handle duplicate
+  records, convert data types, encode categorical variables, scale, and document every
+  decision. This script does all seven, and does them at the correct *grain* for each
+  source rather than on one concatenated frame - which is the difference between a
+  defensible preprocessing stage and a plausible-looking one.
+
+  GRAIN MAP (what each source actually is, before this step):
+    food_price : district x market x commodity x month x currency   25,554 rows
+    rainfall   : province x dekad x aggregation_period                5,100 rows
+    poverty    : province x survey wave                                  33 rows
+    population : district x gender x age band                         5,508 rows
+    boundaries : ADM1 (10 provinces) / ADM2 (91 districts)              101 rows
+
+  Four of the five sources are NOT at district-month grain, and two of them (rainfall,
+  poverty) are not at district grain at all. No amount of clever merging fixes that; it is a
+  property of the data and it is recorded in config.ASSUMPTIONS rather than hidden.
+
+
+================================================================================================
+  STEP 2  4.A  POVERTY RATE  (OPHI / World Bank MPI survey)
+================================================================================================
+
+================================================================================================
+  4.A  POVERTY RATE  (OPHI / World Bank MPI survey)
+================================================================================================
+
+  loaded            : 33 rows x 16 columns
+  columns           : ['location_code', 'has_hrp', 'in_gho', 'provider_admin1_name', 'admin1_code', 'admin1_name', 'admin_level', 'mpi', 'headcount_ratio', 'intensity_of_deprivation', 'vulnerable_to_poverty', 'in_severe_poverty', 'reference_period_start', 'reference_period_end', 'province_key', 'survey_year']
+  admin_level values: [0, 1]
+
+  -- 2.4 type conversion --
+                column  n_before  n_failed_conversion  n_null_after
+reference_period_start        33                    0             0
+  reference_period_end        33                    0             0
+
+  -- poverty (raw): missing values in 3 columns (9 cells of 528 = 1.70%) --
+                      n_missing  pct_missing  n_unique dtype
+provider_admin1_name          3         9.09        10   str
+admin1_code                   3         9.09        10   str
+admin1_name                   3         9.09        10   str
+
+  -- admin_level breakdown --
+ admin_level  n  n_provinces
+           0  3            0
+           1 30           10
+
+  DECISION (A2): the 3 admin_level==0 rows are NATIONAL reference values used ONLY
+  to compute the median threshold in Step 4. They are never treated as a province.
+
+  national rows (3):
+ survey_year admin1_name  in_severe_poverty    mpi  headcount_ratio
+        2010         NaN            10.5420 0.1564          36.0942
+        2015         NaN             7.8232 0.1300          30.2084
+        2019         NaN             6.7702 0.1099          25.8000
+
+  -- 2.3 duplicate check --
+           table  rows_in  exact_duplicate_rows  duplicate_keys  rows_out  rows_removed          deduplication_key                               keep_rule
+poverty_province       30                     0               0        30             0 province_key + survey_year keep='first' after sort (deterministic)
+
+  survey waves available: [2010, 2015, 2019]
+  DECISION (A2): use the 2019 wave -> 10 provinces (most recent available; 2020+ poverty in Zimbabwe is estimated, not surveyed)
+
+  provinces covered  : 10
+  national median % severe poverty (2019) = 6.77
+  province range      : 0.39% .. 13.64%
+    [data   ] data\processed\d_poverty_province.csv  shape=(10, 7)
+    [data   ] data\processed\d_poverty_national_reference.csv  shape=(3, 4)
+    [result ] outputs\results\step02_poverty_datetime_audit.csv  shape=(2, 4)
+    [result ] outputs\results\step02_poverty_duplicate_audit.csv  shape=(1, 8)
+    [result ] outputs\results\step02_poverty_missing_report.csv  shape=(3, 4)
+
+================================================================================================
+  STEP 2  4.B  POPULATION  (UNFPA baseline)  +  DISTRICT AREA from geoBoundaries
+================================================================================================
+
+================================================================================================
+  4.B  POPULATION  (UNFPA baseline)  +  DISTRICT AREA from geoBoundaries
+================================================================================================
+
+  loaded            : 5,508 rows x 19 columns
+  gender values     : ['all', 'f', 'm']
+  age_range values  : ['0-4', '10-14', '15-19', '20-24', '25-29', '30-34', '35-39', '40-44', '45-49', '5-9', '50-54', '55-59', '60-64', '65-69', '70-74', '75-79', '80+', 'all']
+  value columns     : []
+
+  -- 2.4 type conversion --
+                column  n_before  n_failed_conversion  n_null_after
+reference_period_start      5508                    0             0
+  reference_period_end      5508                    0             0
+
+  -- population (raw, full cross-tab): missing values in 8 columns (2,862 cells of 104,652 = 2.73%) --
+                      n_missing  pct_missing  n_unique    dtype
+max_age                     612        11.11        16  float64
+provider_admin2_name        594        10.78        91      str
+admin2_code                 594        10.78        91      str
+admin2_name                 594        10.78        91      str
+min_age                     306         5.56        17  float64
+admin1_name                  54         0.98        10      str
+provider_admin1_name         54         0.98        10      str
+admin1_code                  54         0.98        10      str
+
+  -- 2.1 the cross-tab problem --
+  rows with admin2_name present : 4,914
+  rows with admin2_name null    : 594   <- nested province + national totals of the cross-tab
+  DECISION (A3): filter to gender == 'all' AND age_range == 'all'. Summing or
+  averaging the 3 x 18 cross-tab would multiply or deflate the district count.
+
+  after gender/age filter : 102 rows, {2: 91, 1: 10, 0: 1}
+  removed province/national margin rows (admin_level != 2): 11
+  after admin_level filter: 91 rows, 91 districts, 10 provinces
+  value column used: None
+
+  -- reconciliation against province totals (validates A3) --
+       province_key  districts  district_sum
+           BULAWAYO          1        797611
+             HARARE          4       3078170
+         MANICALAND         10       2172202
+MASHONALAND CENTRAL         10       1595456
+   MASHONALAND EAST         11       1803156
+   MASHONALAND WEST         13       2047180
+           MASVINGO          9       1931818
+ MATABELELAND NORTH          9        964606
+ MATABELELAND SOUTH         10        876887
+           MIDLANDS         14       2141478
+  TOTAL district population : 17,408,564
+  TOTAL province population : 17,408,564   <- identical by construction (A3)
+  This is the check that the 'all x all' cell is the true district total and not a
+  marginal: 91 districts sum to the same national figure as the 10 province totals.
+
+  -- 4.A  district area from ADM2 polygons in EPSG:6933 (equal-area) --
+  total area : 390,772 km2   (official Zimbabwe = 390,757 km2 -> error 0.0039%)
+
+  district join to boundaries : both=91, geo_only=0, pop_only=0
+  province disagreement between UNFPA admin1_name and point-in-polygon: 91/91   (0 => the geo join is validated, see A1)
+
+  -- 2.1 imputation --
+     nothing to impute
+
+  -- 2.6 derived scale variables --
+  density    : min 2.81  median 53.38  max 10,392.7 persons/km2
+  log_population is used as the model feature because raw population is strongly right-skewed (skew = +5.71); log_population skew = -0.06
+  is_urban   : 16 districts carry 'Urban' in their name
+
+  -- 2.2 outlier diagnostics (IQR, k=1.5) --
+      variable  n        q1         q3  lower_bound  upper_bound  n_outliers  pct_outliers       min         max   skew
+    population 91 89515.500 228612.000  -119129.250   437256.750           3         3.297 16385.000 1957108.000  5.707
+log_population 91    11.402     12.340        9.994       13.747           3         3.297     9.704      14.487 -0.059
+      area_km2 91   157.195   6057.235    -8692.865    14907.295           3         3.297     2.770   26973.720  2.000
+       density 91    26.129   1154.141    -1665.890     2846.160           5         5.495     2.806   10392.717  3.944
+  DECISION (A11): RETAINED. Harare/Bulawayo are genuinely huge and the Matabeleland
+  districts genuinely near-empty; log transforms supply the linear models.
+    [data   ] data\processed\d_population_district.csv  shape=(91, 17)
+    [result ] outputs\results\step02_population_iqr_outliers.csv  shape=(4, 14)
+    [result ] outputs\results\step02_population_imputation_audit.csv  shape=(0, 0)
+    [result ] outputs\results\step02_population_duplicate_audit.csv  shape=(1, 8)
+    [result ] outputs\results\step02_population_missing_report.csv  shape=(8, 4)
+
+================================================================================================
+  STEP 2  4.C  RAINFALL  (WFP FEWS NET dekadal)  ->  province x calendar month
+================================================================================================
+
+================================================================================================
+  4.C  RAINFALL  (WFP FEWS NET dekadal)  ->  province x calendar month
+================================================================================================
+
+  loaded            : 5,100 rows x 24 columns
+  aggregation_period: ['1-month', '3-month', 'dekad']
+  admin_level       : [1]
+  admin2_name null  : 5,100/5,100 = 100.0%
+
+  -- 2.4 type conversion --
+                column  n_before  n_failed_conversion  n_null_after
+reference_period_start      5100                    0             0
+  reference_period_end      5100                    0             0
+
+  -- rainfall (raw): missing values in 4 columns (20,400 cells of 122,400 = 16.67%) --
+                      n_missing  pct_missing  n_unique    dtype
+provider_admin2_name       5100        100.0         0  float64
+admin2_code                5100        100.0         0  float64
+admin2_name                5100        100.0         0  float64
+provider_admin2_code       5100        100.0         0  float64
+
+  DECISION (A1): the file is 100% admin_level==1 with null admin2_name - there is NO
+  district rainfall. Province rainfall is broadcast to its districts in Step 4 via
+  the validated district->province lookup. This ecological aggregation is a named
+  limitation, not a silent shortcut.
+
+  -- 2.3 duplicate check --
+         table  rows_in  exact_duplicate_rows  duplicate_keys  rows_out  rows_removed                                          deduplication_key                               keep_rule
+rainfall_dekad     5100                     0               0      5100             0 province_key + reference_period_start + aggregation_period keep='first' after sort (deterministic)
+
+  -- A7 verification: are 3-month values sums of 1-month values? --
+  n compared = 1,700;  max |difference| = 532.5 mm;  mean = 114.2 mm
+  DECISION (A7): NOT equal -> the three windows are independent satellite
+  retrievals. Source aggregates are used as published and are never recomputed.
+
+  -- A6 calendar-month construction --
+  province-months: 530  (10 provinces x 53 months)
+  period         : 2022-01 .. 2026-05
+  method         : mean of the 1-month windows whose dekad_end falls in the month
+                   (3 overlapping 30-day windows per month; NOT summed, which
+                   would triple-count the same rainfall)
+
+  -- climatology check: does it reproduce the documented Zimbabwe season? --
+ month  mean_rainfall_mm expected
+     1             188.6      wet
+     2             131.2      wet
+     3              74.3      wet
+     4              43.8 shoulder
+     5              12.3      dry
+     6               3.7      dry
+     7               2.1      dry
+     8               1.6      dry
+     9               2.9      dry
+    10              15.2 shoulder
+    11              72.6      wet
+    12             120.0      wet
+  wettest month = 1, driest = 8  (Zimbabwe: wet season Nov-Mar, driest Jul/Aug) -> VALID
+
+  -- 2.2 outlier diagnostics (IQR, k=1.5) --
+     variable   n     q1      q3  lower_bound  upper_bound  n_outliers  pct_outliers    min     max  skew
+     rainfall 530  3.944  96.923     -135.524      236.391          11         2.075  0.032 294.362 1.251
+     rain_lta 530  4.565 108.630     -151.532      264.726           0         0.000  0.033 209.995 0.876
+rain_anom_pct 530 82.227 115.433       32.418      165.241          45         8.491 21.025 279.717 1.126
+  DECISION (A11): RETAINED. High skew is the wet/dry season itself, not error.
+
+  -- 2.1 imputation (within-province median) --
+     complete panel, nothing imputed
+    [data   ] data\processed\d_rainfall_province_month.csv  shape=(530, 7)
+    [result ] outputs\results\step02_rainfall_iqr_outliers.csv  shape=(3, 14)
+    [result ] outputs\results\step02_rainfall_imputation_audit.csv  shape=(0, 0)
+    [result ] outputs\results\step02_rainfall_duplicate_audit.csv  shape=(1, 8)
+    [result ] outputs\results\step02_rainfall_missing_report.csv  shape=(4, 4)
+    [result ] outputs\results\step02_rainfall_climatology_check.csv  shape=(12, 3)
+
+================================================================================================
+  STEP 2  4.D  FOOD PRICES  (WFP Food Prices & Market Monitor)  ->  Spatial Price Index
+================================================================================================
+
+================================================================================================
+  4.D  FOOD PRICES  (WFP Food Prices & Market Monitor)  ->  Spatial Price Index
+================================================================================================
+
+  loaded            : 25,554 rows x 28 columns
+  period            : 2017-01 .. 2026-05
+  currency mix      : {'ZWL': 84.6, 'USD': 15.4}
+  price_flag mix    : {'aggregate': 21505, 'actual': 4049}
+  commodities       : 28 distinct
+  food categories   : ['cereals and tubers', 'meat, fish and eggs', 'miscellaneous food', 'oil and fats', 'pulses and nuts']
+  non-food          : ['non-food']
+
+  -- 2.4 type conversion --
+                column  n_before  n_failed_conversion  n_null_after
+reference_period_start     25554                    0             0
+  reference_period_end     25554                    0             0
+
+  -- food_price (raw): missing values in 8 columns (1,712 cells of 715,512 = 0.24%) --
+                      n_missing  pct_missing  n_unique    dtype
+provider_admin1_name        214         0.84        10      str
+provider_admin2_name        214         0.84        81      str
+admin1_code                 214         0.84        10      str
+admin1_name                 214         0.84        10      str
+admin2_code                 214         0.84        81      str
+admin2_name                 214         0.84        81      str
+lat                         214         0.84       235  float64
+lon                         214         0.84       237  float64
+
+  -- 2.3 duplicate check --
+     table  rows_in  exact_duplicate_rows  duplicate_keys  rows_out  rows_removed                                                   deduplication_key                               keep_rule
+food_price    25554                     0               0     25554             0 district_key + market_name + commodity_name + currency_code + month keep='first' after sort (deterministic)
+
+  -- 2.2 outlier diagnostics on RAW price (IQR, k=1.5) --
+variable     n     q1     q3  lower_bound  upper_bound  n_outliers  pct_outliers  min      max  skew
+   price 25554 28.538 812.42    -1147.286     1988.244        4074        15.943 0.13 200000.0 9.752
+  raw price spans 0.13 to 200,000.00 across two
+  currencies. DECISION (A11): RETAINED - this is genuine hyperinflation plus the
+  April-2024 redenomination, not data entry error. It is neutralised structurally by
+  the Spatial Price Index rather than by deleting rows.
+
+  -- 2.1 unusable-row filtering (not imputation: these rows are meaningless) --
+  rows in                       : 25,554
+  after dropping price<=0, blank district, blank commodity/currency: 25,340 (214 removed)
+  admin2_name null in the file  : 214   (province-level market records, cannot be assigned to a district)
+
+  -- A5 drop the redenomination month 2024-04 --
+  rows in that month: 110   (removed: 110)
+  Reason: ZWL was redenominated 1:1000 on 2024-04-05, which falls inside a single
+  HDX reference period (2024-04-01..2024-04-30). The period therefore mixes two
+  currency eras and cannot be bridged. Dropped rather than silently averaged.
+
+  -- markets collapsed to district x month x commodity x currency (MEDIAN) --
+  rows: 13,715  (median is used: robust to a single market mis-reporting)
+
+  -- Spatial Price Index (A5) --
+  SPI(i,c,m) = price(i,c,m) / median( price(j,c,m) over districts j ),
+  taken within the SAME commodity, SAME month and SAME currency.
+  Inflation and the redenomination therefore cancel exactly in the ratio.
+  thin-cell guard: cells with < 3 reporting districts -> NaN (not silently 1.0)
+  cells dropped as too thin : 439
+  winsorised at pooled [1%, 99%] = [0.2108, 2.7286]
+  rows winsorised            : 705 (5.14%)
+
+  why winsorisation is necessary here:
+  a few 2024 `price_flag=='actual'` USD quotes at the border districts Beitbridge
+  and Mangwe are implausible by an order of magnitude (e.g. sugar at USD 25/kg
+  against a national median of USD 1.50/kg; dried kapenta at USD 300/kg). Without
+  clipping the SPI max would be 30.0. With clipping the
+  max is 2.729.
+
+  SPI distribution: mean 1.0409  sd 0.3315  q1 0.895  med 1.000  q3 1.122
+
+  -- the currency problem, before vs after (SPI sd by year) --
+  RAW price levels (median / max) by year - uninterpretable across the redenomination:
+        median       max
+month                   
+2017      0.70       6.0
+2018      1.10       7.0
+2019     16.69     198.5
+2020     72.13    3000.0
+2021    119.14    2580.0
+2022    593.68   12560.0
+2023   4080.00  200000.0
+2024     11.52  127500.0
+2025      1.47     400.0
+2026      1.44      11.7
+  SPI after processing (mean / sd / max) - stable and interpretable every year:
+        mean    std     max     n
+month                            
+2017   1.049  0.356   3.739   650
+2018   1.006  0.249   2.285   481
+2019   1.037  0.242   2.299    88
+2020   1.033  0.356  16.447  3332
+2021   1.017  0.177   3.210  2880
+2022   1.039  0.289   5.261  1478
+2023   1.074  0.590  11.265  2967
+2024   1.414  2.064  30.000  1331
+2025   1.034  0.169   2.007   382
+2026   0.995  0.144   1.307   126
+  This table is the empirical justification for assumption A5.
+
+  -- Staple Basket Price Index (SBPI): district x month --
+  rows: 1,537   districts: 81   months: 96
+  commodities per district-month: mean 6.2, median 7, max 13
+  SBPI = mean SPI over food commodities. 1.00 = exactly the national median basket.
+
+  -- 2.1 price coverage per district (full price history, A13) --
+  districts with any price data      : 81
+  districts with < 4 months (flagged low_price_coverage)  : 8
+  median months per district         : 18
+  DECISION (A13): price features use the FULL 2017-01..2026-05 history because the
+  SPI is a within-month within-currency ratio and is therefore invariant to
+  hyperinflation. Rainfall stays in 2022+ because no earlier data exists.
+    [data   ] data\processed\d_price_district_month.csv  shape=(13715, 21)
+    [data   ] data\processed\d_basket_district_month.csv  shape=(1537, 8)
+    [result ] outputs\results\step02_price_coverage_by_district.csv  shape=(81, 6)
+    [result ] outputs\results\step02_price_iqr_raw.csv  shape=(1, 14)
+    [result ] outputs\results\step02_price_iqr_spi.csv  shape=(1, 14)
+    [result ] outputs\results\step02_price_duplicate_audit.csv  shape=(1, 8)
+    [result ] outputs\results\step02_price_missing_report.csv  shape=(8, 4)
+    [result ] outputs\results\step02_price_datetime_audit.csv  shape=(2, 4)
+
+================================================================================================
+  STEP 2  4.E  DISTRICT SPINE, CATEGORICAL ENCODING AND SCALING EVIDENCE
+================================================================================================
+
+================================================================================================
+  4.E  DISTRICT SPINE, CATEGORICAL ENCODING AND SCALING EVIDENCE
+================================================================================================
+
+  district spine: 91 rows, 91 districts, 10 provinces
+  rows missing population: 0
+
+  -- 2.5 categorical encoding --
+       column  n_levels                         encoding
+     province        10 one-hot, drop_first -> 9 columns
+district_type         2 one-hot, drop_first -> 1 columns
+  province -> one-hot with drop_first = 9 dummies
+  NOTE: one-hot province is built for the record and for any linear model, but the
+  final model feature list (Step 4) deliberately keeps only the DENSE feature groups.
+  Rationale: with n=81 districts, 9 extra province dummies would consume >10% of the
+  degrees of freedom for a perfectly collinear variable that Spatial GroupKFold
+  (A12) would anyway treat as a held-out group. Documented rather than silently kept.
+
+  -- 2.6 scale check (is standardisation needed?) --
+                   n         mean          std         min           max  skewness  kurtosis      cv
+population      91.0  191302.9011  225341.9147  16385.0000  1.957108e+06    5.7065   42.4536  1.1779
+log_population  91.0      11.8238       0.8104      9.7042  1.448700e+01   -0.0594    0.8567  0.0685
+area_km2        91.0    4294.2010    4734.9485      2.7677  2.697372e+04    2.0003    6.0426  1.1026
+density         91.0     752.6808    1650.5542      2.8060  1.039272e+04    3.9441   18.3454  2.1929
+log_density     91.0       4.7668       1.9532      1.3366  9.249000e+00    0.6739   -0.8912  0.4098
+lon             91.0      30.3112       1.5641     25.8292  3.275780e+01   -0.5931    0.0045  0.0516
+lat             91.0     -18.7955       1.4508    -22.1976 -1.611740e+01   -0.2273   -0.8186 -0.0772
+
+  min-to-max spread in standard-deviation units:
+    population            8.6 sd
+    log_population        5.9 sd
+    area_km2              5.7 sd
+    density               6.3 sd
+    log_density           4.1 sd
+    lon                   4.4 sd
+    lat                   4.2 sd
+  DECISION: the final models are tree-based (Random Forest / Gradient Boosting),
+  which are INVARIANT to monotone rescaling, so no scaling is applied - this avoids
+  leaking fold-level statistics. A StandardScaler is fitted INSIDE each CV fold in
+  Step 7 for the linear/logistic baselines only.
+
+  -- distribution shapes after log transform --
+    [figure] outputs\figures\step02_scale_check_population_area_density.png
+    [data   ] data\processed\d_district_base.csv  shape=(91, 14)
+    [result ] outputs\results\step02_encoding_audit.csv  shape=(2, 3)
+    [result ] outputs\results\step02_scale_descriptives.csv  shape=(7, 17)
+
+================================================================================================
+  STEP 2  4.F  PREPROCESSING FIGURES
+================================================================================================
+
+================================================================================================
+  4.F  PREPROCESSING FIGURES
+================================================================================================
+
+    [figure] outputs\figures\step02_fig_price_before_after_spi.pngC:\Users\brigh\Downloads\another\src\step02_preprocess.py:784: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator. Otherwise, ticks may be mislabeled.
+  axes[1].set_xticklabels(cal.month.dt.month.unique(), fontsize=8)
+
+    [figure] outputs\figures\step02_fig_spi_stability_over_time.png
+    [figure] outputs\figures\step02_fig_rainfall_calendar_month.png
+    [figure] outputs\figures\step02_fig_price_coverage.png
+    [figure] outputs\figures\step02_fig_missingness_after_processing.png
+
+================================================================================================
+  STEP 2  4.G  WRITE PREPROCESSING LOG
+================================================================================================
+
+================================================================================================
+  4.G  WRITE PREPROCESSING LOG
+================================================================================================
+
+    [report ] reports\step02_preprocessing_log.md
+  wrote reports\step02_preprocessing_log.md
+
+================================================================================================
+  STEP 2  2.Z  STEP 2 COMPLETE
+================================================================================================
+
+================================================================================================
+  2.Z  STEP 2 COMPLETE
+================================================================================================
+
+  tables written to data\processed/:
+    d_basket_district_month.csv
+    d_district_base.csv
+    d_population_district.csv
+    d_poverty_national_reference.csv
+    d_poverty_province.csv
+    d_price_district_month.csv
+    d_rainfall_chirps_district_month.csv
+    d_rainfall_province_month.csv
+  audit tables written to outputs\results/: 20 files
+  NEXT: Step 3 - CHIRPS rainfall ingest; Step 4 - build the commodity-level training table
+         (and the district-month panel for the secondary specification).

@@ -1,0 +1,23 @@
+feature,mean_abs_shap
+spi_pct_change_3m,0.79763013
+spi_lag_1,0.74634886
+spi_lag_2,0.38948733
+year,0.21089327
+rainfall_12m_total,0.19058858
+rainfall_3m_anomaly,0.08950634
+rainfall_3m_total,0.07528837
+rainfall_1m,0.07389558
+log_population,0.06276997
+commodity_Salt,0.0466476
+rainfall_6m_total,0.04648962
+commodity_Rice,0.01777651
+commodity_Maize meal,0.01748294
+months_since_last_reported_price,0.017439837
+commodity_Fish (kapenta),0.015931556
+commodity_Handwash soap,0.014089213
+commodity_Oil (vegetable),0.010327146
+commodity_OTHER,0.0071709985
+commodity_Sugar,0.0068318755
+commodity_Toothpaste,0.0019010708
+commodity_Laundry soap,0.0013147594
+commodity_Beans (sugar),0.00091001164

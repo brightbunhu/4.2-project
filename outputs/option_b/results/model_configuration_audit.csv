@@ -1,0 +1,4 @@
+model_name,artifact_path,model_type,strategy,hyperparameters,scaling,imputation
+Dummy Baseline,outputs\option_b\models\dummy_baseline.joblib,DummyClassifier,most_frequent,strategy=most_frequent,None,None
+Logistic Regression,outputs\option_b\models\logreg_pipeline.joblib,LogisticRegression,L2 regularized with balanced class weighting,"class_weight='balanced', max_iter=1000, random_state=42",StandardScaler() inside fold,SimpleImputer(strategy='median') inside fold
+XGBoost Classifier,outputs\option_b\models\xgboost_pipeline.joblib,XGBClassifier,Gradient Boosted Decision Trees,"n_estimators=150, max_depth=4, learning_rate=0.05, subsample=0.8, colsample_bytree=0.8, scale_pos_weight=2.5, random_state=42",None required (tree invariant),SimpleImputer(strategy='median') inside fold

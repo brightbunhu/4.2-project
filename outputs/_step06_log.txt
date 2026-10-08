@@ -1,0 +1,41 @@
+
+================================================================================================
+  6  FEATURE SELECTION
+================================================================================================
+candidate features: 23
+dropped constant features: []
+    [result ] outputs\results\step06_feature_ranking.csv  shape=(23, 3)
+
+feature ranking:
+                       feature  mutual_info  rank
+0           rainfall_6m_total     0.188724     1
+1                 rainfall_1m     0.184938     2
+2         rainfall_3m_anomaly     0.184513     3
+3           rainfall_3m_total     0.184457     4
+4          rainfall_12m_total     0.170377     5
+5           spi_pct_change_3m     0.106725     6
+6                   spi_lag_1     0.094044     7
+7              log_population     0.064530     8
+8                   spi_lag_2     0.047761     9
+9                        year     0.013407    10
+10  commodity_Oil (vegetable)     0.005411    11
+11                   is_urban     0.004147    12
+12    commodity_Beans (sugar)     0.003702    13
+13     commodity_Laundry soap     0.000791    14
+14       commodity_Maize meal     0.000021    15
+15    commodity_Handwash soap     0.000000    16
+16   commodity_Fish (kapenta)     0.000000    17
+17              month_of_year     0.000000    18
+18            commodity_OTHER     0.000000    19
+19             commodity_Rice     0.000000    20
+20             commodity_Salt     0.000000    21
+21            commodity_Sugar     0.000000    22
+22       commodity_Toothpaste     0.000000    23
+
+dropped zero-information features: ['commodity_Handwash soap', 'commodity_Fish (kapenta)', 'month_of_year', 'commodity_OTHER', 'commodity_Rice', 'commodity_Salt', 'commodity_Sugar', 'commodity_Toothpaste']
+selected features (15): ['rainfall_6m_total', 'rainfall_1m', 'rainfall_3m_anomaly', 'rainfall_3m_total', 'rainfall_12m_total', 'spi_pct_change_3m', 'spi_lag_1', 'log_population', 'spi_lag_2', 'year', 'commodity_Oil (vegetable)', 'is_urban', 'commodity_Beans (sugar)', 'commodity_Laundry soap', 'commodity_Maize meal']
+    [report ] reports\step06_feature_selection.md
+
+================================================================================================
+  6  SELECTED 15 FEATURES -> data/processed/selected_features.json
+================================================================================================

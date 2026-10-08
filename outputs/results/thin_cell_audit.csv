@@ -1,0 +1,1259 @@
+month,commodity_name,currency_code,n_reporting_districts,retained,min_required_districts
+2017-01-01,Beans,USD,7,False,8
+2017-01-01,Cowpeas,USD,3,False,8
+2017-01-01,Groundnuts (shelled),USD,5,False,8
+2017-01-01,Maize,USD,10,True,8
+2017-01-01,"Maize meal (white, roller)",USD,11,True,8
+2017-01-01,Millet,USD,2,False,8
+2017-01-01,Oil (vegetable),USD,11,True,8
+2017-01-01,Sorghum,USD,5,False,8
+2017-01-01,Wheat,USD,2,False,8
+2017-02-01,Beans,USD,7,False,8
+2017-02-01,Cowpeas,USD,3,False,8
+2017-02-01,Groundnuts (shelled),USD,5,False,8
+2017-02-01,Maize,USD,10,True,8
+2017-02-01,"Maize meal (white, roller)",USD,11,True,8
+2017-02-01,Oil (vegetable),USD,11,True,8
+2017-02-01,Sorghum,USD,6,False,8
+2017-03-01,Beans,USD,7,False,8
+2017-03-01,Cowpeas,USD,3,False,8
+2017-03-01,Groundnuts (shelled),USD,5,False,8
+2017-03-01,Maize,USD,10,True,8
+2017-03-01,"Maize meal (white, roller)",USD,11,True,8
+2017-03-01,Oil (vegetable),USD,11,True,8
+2017-03-01,Sorghum,USD,6,False,8
+2017-04-01,Beans,USD,7,False,8
+2017-04-01,Cowpeas,USD,3,False,8
+2017-04-01,Groundnuts (shelled),USD,5,False,8
+2017-04-01,Maize,USD,10,True,8
+2017-04-01,"Maize meal (white, roller)",USD,11,True,8
+2017-04-01,Oil (vegetable),USD,11,True,8
+2017-04-01,Sorghum,USD,6,False,8
+2017-05-01,Beans,USD,7,False,8
+2017-05-01,Cowpeas,USD,3,False,8
+2017-05-01,Groundnuts (shelled),USD,5,False,8
+2017-05-01,Maize,USD,11,True,8
+2017-05-01,"Maize meal (white, roller)",USD,11,True,8
+2017-05-01,Oil (vegetable),USD,11,True,8
+2017-05-01,Sorghum,USD,5,False,8
+2017-06-01,Beans,USD,2,False,8
+2017-06-01,Cowpeas,USD,2,False,8
+2017-06-01,Groundnuts (shelled),USD,3,False,8
+2017-06-01,Maize,USD,5,False,8
+2017-06-01,"Maize meal (white, roller)",USD,5,False,8
+2017-06-01,Oil (vegetable),USD,3,False,8
+2017-06-01,Sorghum,USD,4,False,8
+2017-07-01,Beans,USD,3,False,8
+2017-07-01,Cowpeas,USD,1,False,8
+2017-07-01,Groundnuts (shelled),USD,3,False,8
+2017-07-01,Maize,USD,5,False,8
+2017-07-01,"Maize meal (white, roller)",USD,5,False,8
+2017-07-01,Oil (vegetable),USD,3,False,8
+2017-07-01,Sorghum,USD,3,False,8
+2017-08-01,Beans,USD,10,True,8
+2017-08-01,Groundnuts (shelled),USD,5,False,8
+2017-08-01,Maize,USD,10,True,8
+2017-08-01,"Maize meal (white, fortified)",USD,3,False,8
+2017-08-01,"Maize meal (white, roller)",USD,10,True,8
+2017-08-01,Millet,USD,9,True,8
+2017-08-01,Oil (vegetable),USD,10,True,8
+2017-08-01,"Oil (vegetable, fortified)",USD,3,False,8
+2017-08-01,Sorghum,USD,6,False,8
+2017-08-01,"Sugar (white, fortified)",USD,3,False,8
+2017-08-01,Wheat flour (fortified),USD,3,False,8
+2017-09-01,Beans,USD,11,True,8
+2017-09-01,Groundnuts (shelled),USD,4,False,8
+2017-09-01,Maize,USD,9,True,8
+2017-09-01,"Maize meal (white, fortified)",USD,4,False,8
+2017-09-01,"Maize meal (white, roller)",USD,10,True,8
+2017-09-01,Millet,USD,6,False,8
+2017-09-01,Oil (vegetable),USD,11,True,8
+2017-09-01,"Oil (vegetable, fortified)",USD,4,False,8
+2017-09-01,Sorghum,USD,7,False,8
+2017-09-01,"Sugar (white, fortified)",USD,4,False,8
+2017-09-01,Wheat flour (fortified),USD,4,False,8
+2017-10-01,Beans,USD,11,True,8
+2017-10-01,Groundnuts (shelled),USD,4,False,8
+2017-10-01,Maize,USD,8,True,8
+2017-10-01,"Maize meal (white, fortified)",USD,2,False,8
+2017-10-01,"Maize meal (white, roller)",USD,12,True,8
+2017-10-01,Millet,USD,4,False,8
+2017-10-01,Oil (vegetable),USD,11,True,8
+2017-10-01,"Oil (vegetable, fortified)",USD,4,False,8
+2017-10-01,Sorghum,USD,4,False,8
+2017-10-01,"Sugar (white, fortified)",USD,4,False,8
+2017-11-01,Beans,USD,14,True,8
+2017-11-01,"Beans (sugar, biofortified)",USD,3,False,8
+2017-11-01,Cowpeas,USD,5,False,8
+2017-11-01,Groundnuts (shelled),USD,11,True,8
+2017-11-01,Maize,USD,14,True,8
+2017-11-01,"Maize (yellow, biofortified)",USD,1,False,8
+2017-11-01,"Maize meal (white, fortified)",USD,4,False,8
+2017-11-01,"Maize meal (white, roller)",USD,14,True,8
+2017-11-01,Millet,USD,7,False,8
+2017-11-01,Millet (biofortified),USD,1,False,8
+2017-11-01,Oil (vegetable),USD,15,True,8
+2017-11-01,"Oil (vegetable, fortified)",USD,6,False,8
+2017-11-01,Sorghum,USD,8,True,8
+2017-11-01,"Sugar (white, fortified)",USD,4,False,8
+2017-11-01,Wheat flour (fortified),USD,3,False,8
+2017-12-01,Beans,USD,14,True,8
+2017-12-01,"Beans (sugar, biofortified)",USD,3,False,8
+2017-12-01,Cowpeas,USD,5,False,8
+2017-12-01,Groundnuts (shelled),USD,10,True,8
+2017-12-01,Maize,USD,13,True,8
+2017-12-01,"Maize (yellow, biofortified)",USD,1,False,8
+2017-12-01,"Maize meal (white, fortified)",USD,4,False,8
+2017-12-01,"Maize meal (white, roller)",USD,13,True,8
+2017-12-01,Millet,USD,7,False,8
+2017-12-01,Millet (biofortified),USD,1,False,8
+2017-12-01,Oil (vegetable),USD,14,True,8
+2017-12-01,"Oil (vegetable, fortified)",USD,6,False,8
+2017-12-01,Sorghum,USD,8,True,8
+2017-12-01,Wheat flour (fortified),USD,3,False,8
+2018-01-01,Beans,USD,7,False,8
+2018-01-01,"Beans (sugar, biofortified)",USD,2,False,8
+2018-01-01,Cowpeas,USD,2,False,8
+2018-01-01,Groundnuts (shelled),USD,4,False,8
+2018-01-01,Maize,USD,4,False,8
+2018-01-01,"Maize meal (white, fortified)",USD,1,False,8
+2018-01-01,"Maize meal (white, roller)",USD,6,False,8
+2018-01-01,Millet,USD,4,False,8
+2018-01-01,Oil (vegetable),USD,7,False,8
+2018-01-01,"Oil (vegetable, fortified)",USD,3,False,8
+2018-01-01,Sorghum,USD,2,False,8
+2018-01-01,"Sugar (white, fortified)",USD,5,False,8
+2018-01-01,Wheat flour (fortified),USD,2,False,8
+2018-02-01,Beans,USD,7,False,8
+2018-02-01,Cowpeas,USD,3,False,8
+2018-02-01,Groundnuts (shelled),USD,3,False,8
+2018-02-01,Maize,USD,6,False,8
+2018-02-01,"Maize meal (white, fortified)",USD,4,False,8
+2018-02-01,"Maize meal (white, roller)",USD,10,True,8
+2018-02-01,Millet,USD,5,False,8
+2018-02-01,Oil (vegetable),USD,7,False,8
+2018-02-01,"Oil (vegetable, fortified)",USD,8,True,8
+2018-02-01,Sorghum,USD,4,False,8
+2018-02-01,Sorghum (biofortified),USD,1,False,8
+2018-02-01,"Sugar (white, fortified)",USD,8,True,8
+2018-02-01,Wheat flour (fortified),USD,7,False,8
+2018-03-01,Beans,USD,9,True,8
+2018-03-01,"Beans (sugar, biofortified)",USD,5,False,8
+2018-03-01,Cowpeas,USD,2,False,8
+2018-03-01,Groundnuts (shelled),USD,2,False,8
+2018-03-01,Maize,USD,9,True,8
+2018-03-01,"Maize (yellow, biofortified)",USD,2,False,8
+2018-03-01,"Maize meal (white, fortified)",USD,6,False,8
+2018-03-01,"Maize meal (white, roller)",USD,9,True,8
+2018-03-01,Millet,USD,3,False,8
+2018-03-01,Oil (vegetable),USD,10,True,8
+2018-03-01,"Oil (vegetable, fortified)",USD,9,True,8
+2018-03-01,Sorghum,USD,1,False,8
+2018-03-01,Wheat flour (fortified),USD,7,False,8
+2018-04-01,Beans,USD,8,True,8
+2018-04-01,"Beans (sugar, biofortified)",USD,2,False,8
+2018-04-01,Cowpeas,USD,1,False,8
+2018-04-01,Maize,USD,4,False,8
+2018-04-01,"Maize meal (white, fortified)",USD,4,False,8
+2018-04-01,"Maize meal (white, roller)",USD,8,True,8
+2018-04-01,Millet,USD,1,False,8
+2018-04-01,Oil (vegetable),USD,7,False,8
+2018-04-01,"Oil (vegetable, fortified)",USD,5,False,8
+2018-04-01,Sorghum,USD,2,False,8
+2018-04-01,Wheat flour (fortified),USD,5,False,8
+2018-06-01,Beans,USD,7,False,8
+2018-06-01,Cowpeas,USD,1,False,8
+2018-06-01,Groundnuts (shelled),USD,1,False,8
+2018-06-01,Maize,USD,6,False,8
+2018-06-01,"Maize meal (white, fortified)",USD,1,False,8
+2018-06-01,"Maize meal (white, roller)",USD,6,False,8
+2018-06-01,Millet,USD,5,False,8
+2018-06-01,Oil (vegetable),USD,6,False,8
+2018-06-01,"Oil (vegetable, fortified)",USD,5,False,8
+2018-06-01,Sorghum,USD,3,False,8
+2018-06-01,Wheat flour (fortified),USD,5,False,8
+2018-07-01,Beans,USD,5,False,8
+2018-07-01,Groundnuts (shelled),USD,3,False,8
+2018-07-01,Maize,USD,5,False,8
+2018-07-01,"Maize meal (white, fortified)",USD,2,False,8
+2018-07-01,"Maize meal (white, roller)",USD,3,False,8
+2018-07-01,Millet,USD,3,False,8
+2018-07-01,Oil (vegetable),USD,4,False,8
+2018-07-01,"Oil (vegetable, fortified)",USD,4,False,8
+2018-07-01,Sorghum,USD,2,False,8
+2018-07-01,"Sugar (white, fortified)",USD,4,False,8
+2018-07-01,Wheat flour (fortified),USD,3,False,8
+2018-08-01,Beans,USD,8,True,8
+2018-08-01,Cowpeas,USD,1,False,8
+2018-08-01,Groundnuts (shelled),USD,2,False,8
+2018-08-01,Maize,USD,8,True,8
+2018-08-01,"Maize meal (white, fortified)",USD,1,False,8
+2018-08-01,"Maize meal (white, roller)",USD,7,False,8
+2018-08-01,Millet,USD,5,False,8
+2018-08-01,Oil (vegetable),USD,7,False,8
+2018-08-01,"Oil (vegetable, fortified)",USD,7,False,8
+2018-08-01,Sorghum,USD,3,False,8
+2018-08-01,"Sugar (white, fortified)",USD,5,False,8
+2018-08-01,Wheat flour (fortified),USD,4,False,8
+2018-09-01,Beans,USD,6,False,8
+2018-09-01,Cowpeas,USD,1,False,8
+2018-09-01,Maize,USD,5,False,8
+2018-09-01,"Maize meal (white, fortified)",USD,3,False,8
+2018-09-01,"Maize meal (white, roller)",USD,4,False,8
+2018-09-01,Millet,USD,3,False,8
+2018-09-01,Oil (vegetable),USD,6,False,8
+2018-09-01,"Oil (vegetable, fortified)",USD,5,False,8
+2018-09-01,Sorghum,USD,2,False,8
+2018-09-01,"Sugar (white, fortified)",USD,3,False,8
+2018-09-01,Wheat flour (fortified),USD,3,False,8
+2018-11-01,Beans,USD,9,True,8
+2018-11-01,"Beans (sugar, biofortified)",USD,1,False,8
+2018-11-01,Groundnuts (shelled),USD,2,False,8
+2018-11-01,Maize,USD,8,True,8
+2018-11-01,"Maize meal (white, fortified)",USD,1,False,8
+2018-11-01,"Maize meal (white, roller)",USD,9,True,8
+2018-11-01,Millet,USD,2,False,8
+2018-11-01,Millet (biofortified),USD,1,False,8
+2018-11-01,Oil (vegetable),USD,8,True,8
+2018-11-01,Sorghum,USD,3,False,8
+2018-11-01,"Sugar (white, fortified)",USD,9,True,8
+2018-11-01,Wheat flour (fortified),USD,2,False,8
+2018-12-01,Beans,USD,10,True,8
+2018-12-01,Maize,USD,3,False,8
+2018-12-01,"Maize meal (white, fortified)",USD,1,False,8
+2018-12-01,"Maize meal (white, roller)",USD,8,True,8
+2018-12-01,Oil (vegetable),USD,12,True,8
+2019-03-01,Fuel (diesel),ZWL,1,False,8
+2019-03-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2019-04-01,Fuel (diesel),ZWL,1,False,8
+2019-04-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2019-05-01,Fuel (diesel),ZWL,1,False,8
+2019-05-01,Handwash soap,ZWL,1,False,8
+2019-05-01,Laundry soap,ZWL,1,False,8
+2019-05-01,Rice,ZWL,1,False,8
+2019-05-01,Salt,ZWL,1,False,8
+2019-05-01,Sugar,ZWL,1,False,8
+2019-05-01,Toothpaste,ZWL,1,False,8
+2019-06-01,Fuel (diesel),ZWL,1,False,8
+2019-07-01,Fuel (diesel),ZWL,1,False,8
+2019-07-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2019-08-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2019-09-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2019-10-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2019-11-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2019-12-01,Fish (kapenta),ZWL,10,True,8
+2019-12-01,Fuel (diesel),ZWL,1,False,8
+2019-12-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2019-12-01,Handwash soap,ZWL,9,True,8
+2019-12-01,Laundry soap,ZWL,10,True,8
+2019-12-01,Rice,ZWL,10,True,8
+2019-12-01,Salt,ZWL,10,True,8
+2019-12-01,Sugar,ZWL,10,True,8
+2019-12-01,Toothpaste,ZWL,9,True,8
+2020-01-01,Fish (kapenta),ZWL,37,True,8
+2020-01-01,Fuel (diesel),ZWL,1,False,8
+2020-01-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2020-01-01,Handwash soap,ZWL,37,True,8
+2020-01-01,Laundry soap,ZWL,38,True,8
+2020-01-01,Rice,ZWL,38,True,8
+2020-01-01,Salt,ZWL,38,True,8
+2020-01-01,Sugar,ZWL,38,True,8
+2020-01-01,Toothpaste,ZWL,37,True,8
+2020-02-01,Fish (kapenta),ZWL,32,True,8
+2020-02-01,Fuel (diesel),ZWL,1,False,8
+2020-02-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2020-02-01,Handwash soap,ZWL,35,True,8
+2020-02-01,Laundry soap,ZWL,34,True,8
+2020-02-01,Rice,ZWL,35,True,8
+2020-02-01,Salt,ZWL,35,True,8
+2020-02-01,Sugar,ZWL,35,True,8
+2020-02-01,Toothpaste,ZWL,34,True,8
+2020-03-01,Fish (kapenta),ZWL,33,True,8
+2020-03-01,Fuel (diesel),ZWL,1,False,8
+2020-03-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2020-03-01,Handwash soap,ZWL,34,True,8
+2020-03-01,Laundry soap,ZWL,33,True,8
+2020-03-01,Maize meal,ZWL,1,False,8
+2020-03-01,Oil (vegetable),ZWL,1,False,8
+2020-03-01,Rice,ZWL,34,True,8
+2020-03-01,Salt,ZWL,34,True,8
+2020-03-01,Sugar,ZWL,34,True,8
+2020-03-01,Toothpaste,ZWL,33,True,8
+2020-04-01,Fish (kapenta),ZWL,31,True,8
+2020-04-01,Fuel (diesel),ZWL,1,False,8
+2020-04-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2020-04-01,Handwash soap,ZWL,32,True,8
+2020-04-01,Laundry soap,ZWL,32,True,8
+2020-04-01,Rice,ZWL,31,True,8
+2020-04-01,Salt,ZWL,32,True,8
+2020-04-01,Sugar,ZWL,31,True,8
+2020-04-01,Toothpaste,ZWL,31,True,8
+2020-05-01,Beans (sugar),ZWL,22,True,8
+2020-05-01,Fish (kapenta),ZWL,29,True,8
+2020-05-01,Fuel (diesel),ZWL,1,False,8
+2020-05-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2020-05-01,Handwash soap,ZWL,28,True,8
+2020-05-01,Laundry soap,ZWL,30,True,8
+2020-05-01,Maize,ZWL,2,False,8
+2020-05-01,Maize meal,ZWL,21,True,8
+2020-05-01,Oil (vegetable),ZWL,23,True,8
+2020-05-01,Rice,ZWL,27,True,8
+2020-05-01,Salt,ZWL,31,True,8
+2020-05-01,Sugar,ZWL,28,True,8
+2020-05-01,Toothpaste,ZWL,29,True,8
+2020-06-01,Beans (sugar),ZWL,21,True,8
+2020-06-01,Fish (kapenta),ZWL,21,True,8
+2020-06-01,Handwash soap,ZWL,23,True,8
+2020-06-01,Laundry soap,ZWL,22,True,8
+2020-06-01,Maize,ZWL,5,False,8
+2020-06-01,Maize meal,ZWL,23,True,8
+2020-06-01,Oil (vegetable),ZWL,23,True,8
+2020-06-01,Rice,ZWL,23,True,8
+2020-06-01,Salt,ZWL,23,True,8
+2020-06-01,Sugar,ZWL,23,True,8
+2020-06-01,Toothpaste,ZWL,22,True,8
+2020-07-01,Beans (sugar),ZWL,23,True,8
+2020-07-01,Fish (kapenta),ZWL,22,True,8
+2020-07-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2020-07-01,Handwash soap,ZWL,26,True,8
+2020-07-01,Laundry soap,ZWL,26,True,8
+2020-07-01,Maize,ZWL,6,False,8
+2020-07-01,Maize meal,ZWL,23,True,8
+2020-07-01,Oil (vegetable),ZWL,26,True,8
+2020-07-01,Rice,ZWL,26,True,8
+2020-07-01,Salt,ZWL,26,True,8
+2020-07-01,Sugar,ZWL,26,True,8
+2020-07-01,Toothpaste,ZWL,25,True,8
+2020-08-01,Beans (sugar),ZWL,27,True,8
+2020-08-01,Fish (kapenta),ZWL,25,True,8
+2020-08-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2020-08-01,Handwash soap,ZWL,26,True,8
+2020-08-01,Laundry soap,ZWL,27,True,8
+2020-08-01,Maize,ZWL,8,True,8
+2020-08-01,Maize meal,ZWL,26,True,8
+2020-08-01,Oil (vegetable),ZWL,28,True,8
+2020-08-01,Rice,ZWL,27,True,8
+2020-08-01,Salt,ZWL,27,True,8
+2020-08-01,Sugar,ZWL,28,True,8
+2020-08-01,Toothpaste,ZWL,26,True,8
+2020-09-01,Beans (sugar),ZWL,36,True,8
+2020-09-01,Fish (kapenta),ZWL,36,True,8
+2020-09-01,Fuel (diesel),ZWL,1,False,8
+2020-09-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2020-09-01,Handwash soap,ZWL,38,True,8
+2020-09-01,Laundry soap,ZWL,38,True,8
+2020-09-01,Maize,ZWL,11,True,8
+2020-09-01,Maize meal,ZWL,33,True,8
+2020-09-01,Oil (vegetable),ZWL,38,True,8
+2020-09-01,Rice,ZWL,35,True,8
+2020-09-01,Salt,ZWL,38,True,8
+2020-09-01,Sugar,ZWL,38,True,8
+2020-09-01,Toothpaste,ZWL,38,True,8
+2020-10-01,Beans (sugar),ZWL,25,True,8
+2020-10-01,Fish (kapenta),ZWL,29,True,8
+2020-10-01,Fuel (diesel),ZWL,1,False,8
+2020-10-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2020-10-01,Handwash soap,ZWL,29,True,8
+2020-10-01,Laundry soap,ZWL,29,True,8
+2020-10-01,Maize,ZWL,6,False,8
+2020-10-01,Maize meal,ZWL,25,True,8
+2020-10-01,Oil (vegetable),ZWL,29,True,8
+2020-10-01,Rice,ZWL,27,True,8
+2020-10-01,Salt,ZWL,29,True,8
+2020-10-01,Sugar,ZWL,29,True,8
+2020-10-01,Toothpaste,ZWL,29,True,8
+2020-11-01,Beans (sugar),ZWL,30,True,8
+2020-11-01,Fish (kapenta),ZWL,30,True,8
+2020-11-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2020-11-01,Handwash soap,ZWL,33,True,8
+2020-11-01,Laundry soap,ZWL,34,True,8
+2020-11-01,Maize,ZWL,11,True,8
+2020-11-01,Maize meal,ZWL,31,True,8
+2020-11-01,Oil (vegetable),ZWL,34,True,8
+2020-11-01,Rice,ZWL,33,True,8
+2020-11-01,Salt,ZWL,33,True,8
+2020-11-01,Sugar,ZWL,34,True,8
+2020-11-01,Toothpaste,ZWL,33,True,8
+2020-12-01,Beans (sugar),ZWL,31,True,8
+2020-12-01,Fish (kapenta),ZWL,30,True,8
+2020-12-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2020-12-01,Handwash soap,ZWL,32,True,8
+2020-12-01,Laundry soap,ZWL,32,True,8
+2020-12-01,Maize,ZWL,11,True,8
+2020-12-01,Maize meal,ZWL,31,True,8
+2020-12-01,Oil (vegetable),ZWL,32,True,8
+2020-12-01,Rice,ZWL,30,True,8
+2020-12-01,Salt,ZWL,32,True,8
+2020-12-01,Sugar,ZWL,32,True,8
+2020-12-01,Toothpaste,ZWL,31,True,8
+2021-01-01,Beans (sugar),ZWL,29,True,8
+2021-01-01,Fish (kapenta),USD,1,False,8
+2021-01-01,Fish (kapenta),ZWL,29,True,8
+2021-01-01,Fuel (diesel),ZWL,1,False,8
+2021-01-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2021-01-01,Handwash soap,ZWL,30,True,8
+2021-01-01,Laundry soap,USD,1,False,8
+2021-01-01,Laundry soap,ZWL,30,True,8
+2021-01-01,Maize,ZWL,8,True,8
+2021-01-01,Maize meal,USD,1,False,8
+2021-01-01,Maize meal,ZWL,29,True,8
+2021-01-01,Oil (vegetable),USD,1,False,8
+2021-01-01,Oil (vegetable),ZWL,30,True,8
+2021-01-01,Rice,USD,1,False,8
+2021-01-01,Rice,ZWL,29,True,8
+2021-01-01,Salt,ZWL,30,True,8
+2021-01-01,Sugar,USD,1,False,8
+2021-01-01,Sugar,ZWL,30,True,8
+2021-01-01,Toothpaste,USD,1,False,8
+2021-01-01,Toothpaste,ZWL,30,True,8
+2021-02-01,Beans (sugar),ZWL,30,True,8
+2021-02-01,Fish (kapenta),ZWL,27,True,8
+2021-02-01,Fuel (diesel),ZWL,1,False,8
+2021-02-01,Handwash soap,ZWL,31,True,8
+2021-02-01,Laundry soap,ZWL,31,True,8
+2021-02-01,Maize,ZWL,5,False,8
+2021-02-01,Maize meal,ZWL,29,True,8
+2021-02-01,Oil (vegetable),ZWL,31,True,8
+2021-02-01,Rice,ZWL,30,True,8
+2021-02-01,Salt,ZWL,31,True,8
+2021-02-01,Sugar,ZWL,31,True,8
+2021-02-01,Toothpaste,ZWL,31,True,8
+2021-03-01,Beans (sugar),ZWL,26,True,8
+2021-03-01,Fish (kapenta),ZWL,22,True,8
+2021-03-01,Fuel (diesel),ZWL,1,False,8
+2021-03-01,Handwash soap,ZWL,25,True,8
+2021-03-01,Laundry soap,ZWL,26,True,8
+2021-03-01,Maize,ZWL,8,True,8
+2021-03-01,Maize meal,ZWL,24,True,8
+2021-03-01,Oil (vegetable),ZWL,26,True,8
+2021-03-01,Rice,ZWL,25,True,8
+2021-03-01,Salt,ZWL,26,True,8
+2021-03-01,Sugar,ZWL,26,True,8
+2021-03-01,Toothpaste,ZWL,25,True,8
+2021-04-01,Beans (sugar),ZWL,16,True,8
+2021-04-01,Fish (kapenta),ZWL,13,True,8
+2021-04-01,Fuel (diesel),ZWL,1,False,8
+2021-04-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2021-04-01,Handwash soap,ZWL,16,True,8
+2021-04-01,Laundry soap,ZWL,15,True,8
+2021-04-01,Maize,ZWL,2,False,8
+2021-04-01,Maize meal,ZWL,13,True,8
+2021-04-01,Oil (vegetable),ZWL,16,True,8
+2021-04-01,Rice,ZWL,15,True,8
+2021-04-01,Salt,ZWL,16,True,8
+2021-04-01,Sugar,ZWL,15,True,8
+2021-04-01,Toothpaste,ZWL,16,True,8
+2021-05-01,Beans (sugar),ZWL,28,True,8
+2021-05-01,Fish (kapenta),ZWL,24,True,8
+2021-05-01,Fuel (diesel),ZWL,1,False,8
+2021-05-01,Handwash soap,ZWL,26,True,8
+2021-05-01,Laundry soap,ZWL,27,True,8
+2021-05-01,Maize,ZWL,14,True,8
+2021-05-01,Maize meal,ZWL,26,True,8
+2021-05-01,Oil (vegetable),ZWL,26,True,8
+2021-05-01,Rice,ZWL,27,True,8
+2021-05-01,Salt,ZWL,27,True,8
+2021-05-01,Sugar,ZWL,27,True,8
+2021-05-01,Toothpaste,ZWL,27,True,8
+2021-06-01,Beans (sugar),ZWL,30,True,8
+2021-06-01,Fish (kapenta),ZWL,26,True,8
+2021-06-01,Handwash soap,ZWL,27,True,8
+2021-06-01,Laundry soap,ZWL,28,True,8
+2021-06-01,Maize,ZWL,13,True,8
+2021-06-01,Maize meal,ZWL,27,True,8
+2021-06-01,Oil (vegetable),ZWL,29,True,8
+2021-06-01,Rice,ZWL,28,True,8
+2021-06-01,Salt,ZWL,27,True,8
+2021-06-01,Sugar,ZWL,29,True,8
+2021-06-01,Toothpaste,ZWL,28,True,8
+2021-07-01,Beans (sugar),ZWL,27,True,8
+2021-07-01,Fish (kapenta),ZWL,26,True,8
+2021-07-01,Fuel (diesel),ZWL,1,False,8
+2021-07-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2021-07-01,Handwash soap,ZWL,29,True,8
+2021-07-01,Laundry soap,ZWL,29,True,8
+2021-07-01,Maize,ZWL,9,True,8
+2021-07-01,Maize meal,ZWL,28,True,8
+2021-07-01,Oil (vegetable),ZWL,28,True,8
+2021-07-01,Rice,ZWL,28,True,8
+2021-07-01,Salt,ZWL,29,True,8
+2021-07-01,Sugar,ZWL,29,True,8
+2021-07-01,Toothpaste,ZWL,29,True,8
+2021-08-01,Beans (sugar),ZWL,26,True,8
+2021-08-01,Fish (kapenta),ZWL,24,True,8
+2021-08-01,Fuel (diesel),ZWL,1,False,8
+2021-08-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2021-08-01,Handwash soap,ZWL,26,True,8
+2021-08-01,Laundry soap,ZWL,26,True,8
+2021-08-01,Maize,ZWL,8,True,8
+2021-08-01,Maize meal,ZWL,25,True,8
+2021-08-01,Oil (vegetable),ZWL,25,True,8
+2021-08-01,Rice,ZWL,25,True,8
+2021-08-01,Salt,ZWL,26,True,8
+2021-08-01,Sugar,ZWL,26,True,8
+2021-08-01,Toothpaste,ZWL,25,True,8
+2021-09-01,Beans (sugar),ZWL,24,True,8
+2021-09-01,Fish (kapenta),ZWL,23,True,8
+2021-09-01,Fuel (diesel),ZWL,1,False,8
+2021-09-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2021-09-01,Handwash soap,ZWL,24,True,8
+2021-09-01,Laundry soap,ZWL,24,True,8
+2021-09-01,Maize,ZWL,6,False,8
+2021-09-01,Maize meal,ZWL,22,True,8
+2021-09-01,Oil (vegetable),ZWL,23,True,8
+2021-09-01,Rice,ZWL,21,True,8
+2021-09-01,Salt,ZWL,24,True,8
+2021-09-01,Sugar,ZWL,24,True,8
+2021-09-01,Toothpaste,ZWL,24,True,8
+2021-10-01,Beans (sugar),ZWL,23,True,8
+2021-10-01,Fish (kapenta),ZWL,21,True,8
+2021-10-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2021-10-01,Handwash soap,ZWL,24,True,8
+2021-10-01,Laundry soap,ZWL,24,True,8
+2021-10-01,Maize,ZWL,9,True,8
+2021-10-01,Maize meal,ZWL,21,True,8
+2021-10-01,Oil (vegetable),ZWL,23,True,8
+2021-10-01,Rice,ZWL,21,True,8
+2021-10-01,Salt,ZWL,25,True,8
+2021-10-01,Sugar,ZWL,25,True,8
+2021-10-01,Toothpaste,ZWL,23,True,8
+2021-11-01,Beans (sugar),ZWL,7,False,8
+2021-11-01,Fish (kapenta),ZWL,6,False,8
+2021-11-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2021-11-01,Handwash soap,ZWL,7,False,8
+2021-11-01,Laundry soap,ZWL,7,False,8
+2021-11-01,Maize,ZWL,2,False,8
+2021-11-01,Maize meal,ZWL,6,False,8
+2021-11-01,Oil (vegetable),ZWL,7,False,8
+2021-11-01,Rice,ZWL,7,False,8
+2021-11-01,Salt,ZWL,7,False,8
+2021-11-01,Sugar,ZWL,7,False,8
+2021-11-01,Toothpaste,ZWL,6,False,8
+2021-12-01,Beans (sugar),ZWL,16,True,8
+2021-12-01,Fish (kapenta),ZWL,14,True,8
+2021-12-01,Fuel (diesel),ZWL,1,False,8
+2021-12-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2021-12-01,Handwash soap,ZWL,16,True,8
+2021-12-01,Laundry soap,ZWL,16,True,8
+2021-12-01,Maize,ZWL,9,True,8
+2021-12-01,Maize meal,ZWL,13,True,8
+2021-12-01,Oil (vegetable),ZWL,15,True,8
+2021-12-01,Rice,ZWL,16,True,8
+2021-12-01,Salt,ZWL,15,True,8
+2021-12-01,Sugar,ZWL,16,True,8
+2021-12-01,Toothpaste,ZWL,16,True,8
+2022-01-01,Beans (sugar),ZWL,16,True,8
+2022-01-01,Fish (kapenta),ZWL,13,True,8
+2022-01-01,Fuel (diesel),ZWL,1,False,8
+2022-01-01,Handwash soap,ZWL,17,True,8
+2022-01-01,Laundry soap,ZWL,17,True,8
+2022-01-01,Maize,ZWL,7,False,8
+2022-01-01,Maize meal,ZWL,12,True,8
+2022-01-01,Oil (vegetable),ZWL,16,True,8
+2022-01-01,Rice,ZWL,17,True,8
+2022-01-01,Salt,ZWL,17,True,8
+2022-01-01,Sugar,ZWL,17,True,8
+2022-01-01,Toothpaste,ZWL,17,True,8
+2022-02-01,Beans (sugar),ZWL,11,True,8
+2022-02-01,Fish (kapenta),ZWL,11,True,8
+2022-02-01,Fuel (diesel),ZWL,1,False,8
+2022-02-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2022-02-01,Handwash soap,ZWL,11,True,8
+2022-02-01,Laundry soap,ZWL,11,True,8
+2022-02-01,Maize,ZWL,6,False,8
+2022-02-01,Maize meal,ZWL,10,True,8
+2022-02-01,Oil (vegetable),ZWL,10,True,8
+2022-02-01,Rice,ZWL,11,True,8
+2022-02-01,Salt,ZWL,11,True,8
+2022-02-01,Sugar,ZWL,11,True,8
+2022-02-01,Toothpaste,ZWL,11,True,8
+2022-03-01,Beans (sugar),ZWL,10,True,8
+2022-03-01,Fish (kapenta),ZWL,10,True,8
+2022-03-01,Fuel (diesel),ZWL,1,False,8
+2022-03-01,Handwash soap,ZWL,10,True,8
+2022-03-01,Laundry soap,ZWL,10,True,8
+2022-03-01,Maize,ZWL,7,False,8
+2022-03-01,Maize meal,ZWL,10,True,8
+2022-03-01,Oil (vegetable),ZWL,10,True,8
+2022-03-01,Rice,ZWL,10,True,8
+2022-03-01,Salt,ZWL,10,True,8
+2022-03-01,Sugar,ZWL,10,True,8
+2022-03-01,Toothpaste,ZWL,10,True,8
+2022-04-01,Beans (sugar),ZWL,2,False,8
+2022-04-01,Fish (kapenta),ZWL,1,False,8
+2022-04-01,Fuel (diesel),ZWL,1,False,8
+2022-04-01,Handwash soap,ZWL,2,False,8
+2022-04-01,Laundry soap,ZWL,2,False,8
+2022-04-01,Maize,ZWL,1,False,8
+2022-04-01,Maize meal,ZWL,2,False,8
+2022-04-01,Oil (vegetable),ZWL,2,False,8
+2022-04-01,Rice,ZWL,2,False,8
+2022-04-01,Salt,ZWL,2,False,8
+2022-04-01,Sugar,ZWL,2,False,8
+2022-04-01,Toothpaste,ZWL,2,False,8
+2022-05-01,Beans (sugar),ZWL,9,True,8
+2022-05-01,Fish (kapenta),ZWL,8,True,8
+2022-05-01,Fuel (diesel),ZWL,1,False,8
+2022-05-01,Handwash soap,ZWL,9,True,8
+2022-05-01,Laundry soap,ZWL,9,True,8
+2022-05-01,Maize,ZWL,3,False,8
+2022-05-01,Maize meal,ZWL,9,True,8
+2022-05-01,Oil (vegetable),ZWL,9,True,8
+2022-05-01,Rice,ZWL,9,True,8
+2022-05-01,Salt,ZWL,9,True,8
+2022-05-01,Sugar,ZWL,9,True,8
+2022-05-01,Toothpaste,ZWL,9,True,8
+2022-06-01,Beans (sugar),ZWL,15,True,8
+2022-06-01,Fish (kapenta),ZWL,14,True,8
+2022-06-01,Fuel (diesel),ZWL,1,False,8
+2022-06-01,Handwash soap,ZWL,15,True,8
+2022-06-01,Laundry soap,ZWL,15,True,8
+2022-06-01,Maize,ZWL,4,False,8
+2022-06-01,Maize meal,ZWL,13,True,8
+2022-06-01,Oil (vegetable),ZWL,15,True,8
+2022-06-01,Rice,ZWL,14,True,8
+2022-06-01,Salt,ZWL,15,True,8
+2022-06-01,Sugar,ZWL,15,True,8
+2022-06-01,Toothpaste,ZWL,12,True,8
+2022-07-01,Beans (sugar),ZWL,16,True,8
+2022-07-01,Fish (kapenta),ZWL,15,True,8
+2022-07-01,Fuel (diesel),ZWL,1,False,8
+2022-07-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2022-07-01,Handwash soap,ZWL,16,True,8
+2022-07-01,Laundry soap,ZWL,16,True,8
+2022-07-01,Maize,ZWL,5,False,8
+2022-07-01,Maize meal,ZWL,14,True,8
+2022-07-01,Oil (vegetable),ZWL,16,True,8
+2022-07-01,Rice,ZWL,14,True,8
+2022-07-01,Salt,ZWL,16,True,8
+2022-07-01,Sugar,ZWL,16,True,8
+2022-07-01,Toothpaste,ZWL,13,True,8
+2022-08-01,Beans (sugar),ZWL,6,False,8
+2022-08-01,Fish (kapenta),ZWL,7,False,8
+2022-08-01,Fuel (diesel),ZWL,1,False,8
+2022-08-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2022-08-01,Handwash soap,ZWL,7,False,8
+2022-08-01,Laundry soap,ZWL,7,False,8
+2022-08-01,Maize,ZWL,3,False,8
+2022-08-01,Maize meal,ZWL,6,False,8
+2022-08-01,Oil (vegetable),ZWL,7,False,8
+2022-08-01,Rice,ZWL,7,False,8
+2022-08-01,Salt,ZWL,7,False,8
+2022-08-01,Sugar,ZWL,7,False,8
+2022-08-01,Toothpaste,ZWL,6,False,8
+2022-09-01,Beans (sugar),ZWL,4,False,8
+2022-09-01,Fish (kapenta),ZWL,3,False,8
+2022-09-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2022-09-01,Handwash soap,ZWL,4,False,8
+2022-09-01,Laundry soap,ZWL,4,False,8
+2022-09-01,Maize,ZWL,1,False,8
+2022-09-01,Maize meal,ZWL,4,False,8
+2022-09-01,Oil (vegetable),ZWL,4,False,8
+2022-09-01,Rice,ZWL,4,False,8
+2022-09-01,Salt,ZWL,4,False,8
+2022-09-01,Sugar,ZWL,4,False,8
+2022-09-01,Toothpaste,ZWL,4,False,8
+2022-10-01,Beans (sugar),ZWL,14,True,8
+2022-10-01,Fish (kapenta),ZWL,14,True,8
+2022-10-01,Fuel (diesel),ZWL,1,False,8
+2022-10-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2022-10-01,Handwash soap,ZWL,14,True,8
+2022-10-01,Laundry soap,ZWL,14,True,8
+2022-10-01,Maize,ZWL,5,False,8
+2022-10-01,Maize meal,ZWL,11,True,8
+2022-10-01,Oil (vegetable),ZWL,14,True,8
+2022-10-01,Rice,ZWL,14,True,8
+2022-10-01,Salt,ZWL,14,True,8
+2022-10-01,Sugar,ZWL,13,True,8
+2022-10-01,Toothpaste,ZWL,14,True,8
+2022-11-01,Beans (sugar),ZWL,20,True,8
+2022-11-01,Fish (kapenta),ZWL,20,True,8
+2022-11-01,Fuel (diesel),ZWL,1,False,8
+2022-11-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2022-11-01,Handwash soap,ZWL,20,True,8
+2022-11-01,Laundry soap,ZWL,20,True,8
+2022-11-01,Maize,ZWL,7,False,8
+2022-11-01,Maize meal,ZWL,19,True,8
+2022-11-01,Oil (vegetable),ZWL,20,True,8
+2022-11-01,Rice,ZWL,20,True,8
+2022-11-01,Salt,ZWL,20,True,8
+2022-11-01,Sugar,ZWL,19,True,8
+2022-11-01,Toothpaste,ZWL,20,True,8
+2022-12-01,Beans (sugar),ZWL,19,True,8
+2022-12-01,Fish (kapenta),ZWL,19,True,8
+2022-12-01,Fuel (diesel),ZWL,1,False,8
+2022-12-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2022-12-01,Handwash soap,ZWL,19,True,8
+2022-12-01,Laundry soap,ZWL,20,True,8
+2022-12-01,Maize,ZWL,7,False,8
+2022-12-01,Maize meal,ZWL,19,True,8
+2022-12-01,Oil (vegetable),ZWL,20,True,8
+2022-12-01,Rice,ZWL,20,True,8
+2022-12-01,Salt,ZWL,19,True,8
+2022-12-01,Sugar,ZWL,19,True,8
+2022-12-01,Toothpaste,ZWL,20,True,8
+2023-01-01,Beans (sugar),ZWL,8,True,8
+2023-01-01,Fish (kapenta),ZWL,6,False,8
+2023-01-01,Fuel (diesel),ZWL,1,False,8
+2023-01-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2023-01-01,Handwash soap,ZWL,8,True,8
+2023-01-01,Laundry soap,ZWL,8,True,8
+2023-01-01,Maize,ZWL,2,False,8
+2023-01-01,Maize meal,ZWL,8,True,8
+2023-01-01,Oil (vegetable),ZWL,8,True,8
+2023-01-01,Rice,ZWL,8,True,8
+2023-01-01,Salt,ZWL,8,True,8
+2023-01-01,Sugar,ZWL,8,True,8
+2023-01-01,Toothpaste,ZWL,8,True,8
+2023-02-01,Beans (sugar),ZWL,11,True,8
+2023-02-01,Fish (kapenta),ZWL,10,True,8
+2023-02-01,Fuel (diesel),ZWL,1,False,8
+2023-02-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2023-02-01,Handwash soap,ZWL,11,True,8
+2023-02-01,Laundry soap,ZWL,11,True,8
+2023-02-01,Maize,ZWL,5,False,8
+2023-02-01,Maize meal,ZWL,11,True,8
+2023-02-01,Oil (vegetable),ZWL,11,True,8
+2023-02-01,Rice,ZWL,11,True,8
+2023-02-01,Salt,ZWL,11,True,8
+2023-02-01,Sugar,ZWL,11,True,8
+2023-02-01,Toothpaste,ZWL,11,True,8
+2023-03-01,Beans (sugar),ZWL,8,True,8
+2023-03-01,Fish (kapenta),ZWL,8,True,8
+2023-03-01,Fuel (diesel),ZWL,1,False,8
+2023-03-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2023-03-01,Handwash soap,ZWL,8,True,8
+2023-03-01,Laundry soap,ZWL,8,True,8
+2023-03-01,Maize,ZWL,1,False,8
+2023-03-01,Maize meal,ZWL,8,True,8
+2023-03-01,Oil (vegetable),ZWL,8,True,8
+2023-03-01,Rice,ZWL,8,True,8
+2023-03-01,Salt,ZWL,8,True,8
+2023-03-01,Sugar,ZWL,8,True,8
+2023-03-01,Toothpaste,ZWL,8,True,8
+2023-04-01,Beans (sugar),ZWL,32,True,8
+2023-04-01,Fish (kapenta),ZWL,29,True,8
+2023-04-01,Fuel (diesel),ZWL,1,False,8
+2023-04-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2023-04-01,Handwash soap,ZWL,30,True,8
+2023-04-01,Laundry soap,ZWL,32,True,8
+2023-04-01,Maize,ZWL,13,True,8
+2023-04-01,Maize meal,ZWL,28,True,8
+2023-04-01,Oil (vegetable),ZWL,32,True,8
+2023-04-01,Rice,ZWL,31,True,8
+2023-04-01,Salt,ZWL,30,True,8
+2023-04-01,Sugar,ZWL,29,True,8
+2023-04-01,Toothpaste,ZWL,28,True,8
+2023-05-01,Beans (sugar),ZWL,45,True,8
+2023-05-01,Fish (kapenta),ZWL,47,True,8
+2023-05-01,Fuel (diesel),ZWL,1,False,8
+2023-05-01,Handwash soap,ZWL,47,True,8
+2023-05-01,Laundry soap,ZWL,48,True,8
+2023-05-01,Maize,ZWL,23,True,8
+2023-05-01,Maize meal,ZWL,44,True,8
+2023-05-01,Oil (vegetable),ZWL,49,True,8
+2023-05-01,Rice,ZWL,49,True,8
+2023-05-01,Salt,ZWL,48,True,8
+2023-05-01,Sugar,ZWL,50,True,8
+2023-05-01,Toothpaste,ZWL,49,True,8
+2023-06-01,Beans (sugar),ZWL,46,True,8
+2023-06-01,Fish (kapenta),USD,1,False,8
+2023-06-01,Fish (kapenta),ZWL,48,True,8
+2023-06-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2023-06-01,Handwash soap,ZWL,48,True,8
+2023-06-01,Laundry soap,ZWL,49,True,8
+2023-06-01,Maize,ZWL,23,True,8
+2023-06-01,Maize meal,USD,1,False,8
+2023-06-01,Maize meal,ZWL,41,True,8
+2023-06-01,Oil (vegetable),USD,1,False,8
+2023-06-01,Oil (vegetable),ZWL,50,True,8
+2023-06-01,Rice,USD,1,False,8
+2023-06-01,Rice,ZWL,51,True,8
+2023-06-01,Salt,ZWL,50,True,8
+2023-06-01,Sugar,USD,1,False,8
+2023-06-01,Sugar,ZWL,48,True,8
+2023-06-01,Toothpaste,ZWL,50,True,8
+2023-07-01,Beans (sugar),ZWL,41,True,8
+2023-07-01,Fish (kapenta),USD,1,False,8
+2023-07-01,Fish (kapenta),ZWL,41,True,8
+2023-07-01,Fuel (diesel),ZWL,1,False,8
+2023-07-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2023-07-01,Handwash soap,ZWL,41,True,8
+2023-07-01,Laundry soap,USD,1,False,8
+2023-07-01,Laundry soap,ZWL,44,True,8
+2023-07-01,Maize,ZWL,15,True,8
+2023-07-01,Maize meal,USD,1,False,8
+2023-07-01,Maize meal,ZWL,36,True,8
+2023-07-01,Oil (vegetable),USD,1,False,8
+2023-07-01,Oil (vegetable),ZWL,43,True,8
+2023-07-01,Rice,USD,1,False,8
+2023-07-01,Rice,ZWL,44,True,8
+2023-07-01,Salt,ZWL,44,True,8
+2023-07-01,Sugar,USD,1,False,8
+2023-07-01,Sugar,ZWL,44,True,8
+2023-07-01,Toothpaste,USD,1,False,8
+2023-07-01,Toothpaste,ZWL,43,True,8
+2023-08-01,Beans (sugar),ZWL,13,True,8
+2023-08-01,Fish (kapenta),ZWL,14,True,8
+2023-08-01,Fuel (diesel),ZWL,1,False,8
+2023-08-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2023-08-01,Handwash soap,ZWL,15,True,8
+2023-08-01,Laundry soap,ZWL,16,True,8
+2023-08-01,Maize,ZWL,4,False,8
+2023-08-01,Maize meal,ZWL,12,True,8
+2023-08-01,Oil (vegetable),ZWL,18,True,8
+2023-08-01,Rice,ZWL,18,True,8
+2023-08-01,Salt,ZWL,17,True,8
+2023-08-01,Sugar,ZWL,16,True,8
+2023-08-01,Toothpaste,ZWL,16,True,8
+2023-09-01,Beans (sugar),ZWL,14,True,8
+2023-09-01,Fish (kapenta),USD,1,False,8
+2023-09-01,Fish (kapenta),ZWL,17,True,8
+2023-09-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2023-09-01,Handwash soap,ZWL,17,True,8
+2023-09-01,Laundry soap,USD,2,False,8
+2023-09-01,Laundry soap,ZWL,18,True,8
+2023-09-01,Maize,ZWL,3,False,8
+2023-09-01,Maize meal,USD,1,False,8
+2023-09-01,Maize meal,ZWL,14,True,8
+2023-09-01,Oil (vegetable),USD,2,False,8
+2023-09-01,Oil (vegetable),ZWL,18,True,8
+2023-09-01,Rice,USD,2,False,8
+2023-09-01,Rice,ZWL,19,True,8
+2023-09-01,Salt,ZWL,17,True,8
+2023-09-01,Sugar,USD,2,False,8
+2023-09-01,Sugar,ZWL,16,True,8
+2023-09-01,Toothpaste,USD,2,False,8
+2023-09-01,Toothpaste,ZWL,17,True,8
+2023-10-01,Beans (sugar),ZWL,17,True,8
+2023-10-01,Fish (kapenta),ZWL,19,True,8
+2023-10-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2023-10-01,Handwash soap,ZWL,16,True,8
+2023-10-01,Laundry soap,ZWL,22,True,8
+2023-10-01,Maize,ZWL,6,False,8
+2023-10-01,Maize meal,ZWL,19,True,8
+2023-10-01,Oil (vegetable),ZWL,26,True,8
+2023-10-01,Rice,ZWL,23,True,8
+2023-10-01,Salt,ZWL,18,True,8
+2023-10-01,Sugar,ZWL,24,True,8
+2023-10-01,Toothpaste,ZWL,20,True,8
+2023-11-01,Beans (sugar),ZWL,12,True,8
+2023-11-01,Fish (kapenta),USD,2,False,8
+2023-11-01,Fish (kapenta),ZWL,17,True,8
+2023-11-01,Fuel (diesel),ZWL,1,False,8
+2023-11-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2023-11-01,Handwash soap,ZWL,15,True,8
+2023-11-01,Laundry soap,USD,2,False,8
+2023-11-01,Laundry soap,ZWL,18,True,8
+2023-11-01,Maize,ZWL,3,False,8
+2023-11-01,Maize meal,USD,2,False,8
+2023-11-01,Maize meal,ZWL,17,True,8
+2023-11-01,Oil (vegetable),USD,2,False,8
+2023-11-01,Oil (vegetable),ZWL,20,True,8
+2023-11-01,Rice,USD,2,False,8
+2023-11-01,Rice,ZWL,20,True,8
+2023-11-01,Salt,ZWL,14,True,8
+2023-11-01,Sugar,USD,2,False,8
+2023-11-01,Sugar,ZWL,18,True,8
+2023-11-01,Toothpaste,USD,2,False,8
+2023-11-01,Toothpaste,ZWL,19,True,8
+2023-12-01,Beans (sugar),ZWL,9,True,8
+2023-12-01,Fish (kapenta),USD,5,False,8
+2023-12-01,Fish (kapenta),ZWL,13,True,8
+2023-12-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2023-12-01,Handwash soap,ZWL,11,True,8
+2023-12-01,Laundry soap,USD,5,False,8
+2023-12-01,Laundry soap,ZWL,12,True,8
+2023-12-01,Maize,ZWL,5,False,8
+2023-12-01,Maize meal,USD,3,False,8
+2023-12-01,Maize meal,ZWL,17,True,8
+2023-12-01,Oil (vegetable),USD,5,False,8
+2023-12-01,Oil (vegetable),ZWL,18,True,8
+2023-12-01,Rice,USD,4,False,8
+2023-12-01,Rice,ZWL,13,True,8
+2023-12-01,Salt,ZWL,11,True,8
+2023-12-01,Sugar,USD,4,False,8
+2023-12-01,Sugar,ZWL,17,True,8
+2023-12-01,Toothpaste,USD,4,False,8
+2023-12-01,Toothpaste,ZWL,14,True,8
+2024-01-01,Beans (sugar),ZWL,7,False,8
+2024-01-01,Fish (kapenta),USD,23,True,8
+2024-01-01,Fish (kapenta),ZWL,8,True,8
+2024-01-01,Fuel (diesel),ZWL,1,False,8
+2024-01-01,Handwash soap,ZWL,14,True,8
+2024-01-01,Laundry soap,USD,22,True,8
+2024-01-01,Laundry soap,ZWL,10,True,8
+2024-01-01,Maize,USD,4,False,8
+2024-01-01,Maize,ZWL,1,False,8
+2024-01-01,Maize meal,USD,17,True,8
+2024-01-01,Maize meal,ZWL,11,True,8
+2024-01-01,Oil (vegetable),USD,22,True,8
+2024-01-01,Oil (vegetable),ZWL,12,True,8
+2024-01-01,Rice,USD,23,True,8
+2024-01-01,Rice,ZWL,10,True,8
+2024-01-01,Salt,ZWL,9,True,8
+2024-01-01,Sugar,USD,22,True,8
+2024-01-01,Sugar,ZWL,12,True,8
+2024-01-01,Toothpaste,USD,22,True,8
+2024-01-01,Toothpaste,ZWL,7,False,8
+2024-02-01,Beans (sugar),ZWL,11,True,8
+2024-02-01,Fish (kapenta),USD,21,True,8
+2024-02-01,Fish (kapenta),ZWL,10,True,8
+2024-02-01,Fuel (diesel),ZWL,1,False,8
+2024-02-01,Handwash soap,ZWL,15,True,8
+2024-02-01,Laundry soap,USD,21,True,8
+2024-02-01,Laundry soap,ZWL,11,True,8
+2024-02-01,Maize,USD,3,False,8
+2024-02-01,Maize meal,USD,21,True,8
+2024-02-01,Maize meal,ZWL,11,True,8
+2024-02-01,Oil (vegetable),USD,20,True,8
+2024-02-01,Oil (vegetable),ZWL,13,True,8
+2024-02-01,Rice,USD,21,True,8
+2024-02-01,Rice,ZWL,12,True,8
+2024-02-01,Salt,ZWL,7,False,8
+2024-02-01,Sugar,USD,21,True,8
+2024-02-01,Sugar,ZWL,14,True,8
+2024-02-01,Toothpaste,USD,20,True,8
+2024-02-01,Toothpaste,ZWL,10,True,8
+2024-03-01,Beans (sugar),ZWL,1,False,8
+2024-03-01,Fish (kapenta),USD,15,True,8
+2024-03-01,Fish (kapenta),ZWL,4,False,8
+2024-03-01,Fuel (diesel),ZWL,1,False,8
+2024-03-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2024-03-01,Handwash soap,ZWL,8,True,8
+2024-03-01,Laundry soap,USD,14,True,8
+2024-03-01,Laundry soap,ZWL,7,False,8
+2024-03-01,Maize,USD,5,False,8
+2024-03-01,Maize meal,USD,13,True,8
+2024-03-01,Maize meal,ZWL,6,False,8
+2024-03-01,Oil (vegetable),USD,16,True,8
+2024-03-01,Oil (vegetable),ZWL,6,False,8
+2024-03-01,Rice,USD,16,True,8
+2024-03-01,Rice,ZWL,8,True,8
+2024-03-01,Salt,ZWL,6,False,8
+2024-03-01,Sugar,USD,14,True,8
+2024-03-01,Sugar,ZWL,6,False,8
+2024-03-01,Toothpaste,USD,15,True,8
+2024-03-01,Toothpaste,ZWL,6,False,8
+2024-04-01,Fish (kapenta),USD,13,True,8
+2024-04-01,Laundry soap,USD,13,True,8
+2024-04-01,Maize,USD,2,False,8
+2024-04-01,Maize meal,USD,9,True,8
+2024-04-01,Oil (vegetable),USD,13,True,8
+2024-04-01,Rice,USD,13,True,8
+2024-04-01,Sugar,USD,13,True,8
+2024-04-01,Toothpaste,USD,12,True,8
+2024-05-01,Beans (sugar),ZWL,2,False,8
+2024-05-01,Fish (kapenta),USD,11,True,8
+2024-05-01,Fish (kapenta),ZWL,1,False,8
+2024-05-01,Fuel (diesel),ZWL,1,False,8
+2024-05-01,Handwash soap,ZWL,1,False,8
+2024-05-01,Laundry soap,USD,11,True,8
+2024-05-01,Laundry soap,ZWL,1,False,8
+2024-05-01,Maize,USD,2,False,8
+2024-05-01,Maize meal,USD,10,True,8
+2024-05-01,Maize meal,ZWL,2,False,8
+2024-05-01,Oil (vegetable),USD,10,True,8
+2024-05-01,Oil (vegetable),ZWL,1,False,8
+2024-05-01,Rice,USD,11,True,8
+2024-05-01,Rice,ZWL,2,False,8
+2024-05-01,Salt,ZWL,1,False,8
+2024-05-01,Sugar,USD,11,True,8
+2024-05-01,Sugar,ZWL,1,False,8
+2024-05-01,Toothpaste,USD,10,True,8
+2024-05-01,Toothpaste,ZWL,1,False,8
+2024-06-01,Beans (sugar),ZWL,2,False,8
+2024-06-01,Fish (kapenta),USD,5,False,8
+2024-06-01,Fish (kapenta),ZWL,1,False,8
+2024-06-01,Fuel (diesel),ZWL,1,False,8
+2024-06-01,Handwash soap,ZWL,2,False,8
+2024-06-01,Laundry soap,USD,7,False,8
+2024-06-01,Laundry soap,ZWL,2,False,8
+2024-06-01,Maize,USD,1,False,8
+2024-06-01,Maize meal,USD,7,False,8
+2024-06-01,Maize meal,ZWL,2,False,8
+2024-06-01,Oil (vegetable),USD,7,False,8
+2024-06-01,Oil (vegetable),ZWL,2,False,8
+2024-06-01,Rice,USD,7,False,8
+2024-06-01,Rice,ZWL,2,False,8
+2024-06-01,Salt,ZWL,2,False,8
+2024-06-01,Sugar,USD,6,False,8
+2024-06-01,Sugar,ZWL,2,False,8
+2024-06-01,Toothpaste,USD,7,False,8
+2024-06-01,Toothpaste,ZWL,2,False,8
+2024-07-01,Beans (sugar),ZWL,3,False,8
+2024-07-01,Fish (kapenta),USD,9,True,8
+2024-07-01,Fish (kapenta),ZWL,3,False,8
+2024-07-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2024-07-01,Handwash soap,ZWL,2,False,8
+2024-07-01,Laundry soap,USD,9,True,8
+2024-07-01,Laundry soap,ZWL,4,False,8
+2024-07-01,Maize,USD,1,False,8
+2024-07-01,Maize meal,USD,9,True,8
+2024-07-01,Maize meal,ZWL,4,False,8
+2024-07-01,Oil (vegetable),USD,10,True,8
+2024-07-01,Oil (vegetable),ZWL,4,False,8
+2024-07-01,Rice,USD,10,True,8
+2024-07-01,Rice,ZWL,3,False,8
+2024-07-01,Salt,ZWL,3,False,8
+2024-07-01,Sugar,USD,9,True,8
+2024-07-01,Sugar,ZWL,3,False,8
+2024-07-01,Toothpaste,USD,9,True,8
+2024-07-01,Toothpaste,ZWL,3,False,8
+2024-08-01,Beans (sugar),ZWL,1,False,8
+2024-08-01,Fish (kapenta),USD,7,False,8
+2024-08-01,Fish (kapenta),ZWL,2,False,8
+2024-08-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2024-08-01,Handwash soap,ZWL,3,False,8
+2024-08-01,Laundry soap,USD,8,True,8
+2024-08-01,Laundry soap,ZWL,2,False,8
+2024-08-01,Maize,USD,1,False,8
+2024-08-01,Maize meal,USD,8,True,8
+2024-08-01,Maize meal,ZWL,2,False,8
+2024-08-01,Oil (vegetable),USD,8,True,8
+2024-08-01,Oil (vegetable),ZWL,3,False,8
+2024-08-01,Rice,USD,8,True,8
+2024-08-01,Rice,ZWL,2,False,8
+2024-08-01,Salt,ZWL,2,False,8
+2024-08-01,Sugar,USD,7,False,8
+2024-08-01,Sugar,ZWL,3,False,8
+2024-08-01,Toothpaste,USD,7,False,8
+2024-08-01,Toothpaste,ZWL,2,False,8
+2024-09-01,Beans (sugar),ZWL,3,False,8
+2024-09-01,Fish (kapenta),USD,9,True,8
+2024-09-01,Fish (kapenta),ZWL,4,False,8
+2024-09-01,Fuel (diesel),ZWL,1,False,8
+2024-09-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2024-09-01,Handwash soap,ZWL,2,False,8
+2024-09-01,Laundry soap,USD,8,True,8
+2024-09-01,Laundry soap,ZWL,3,False,8
+2024-09-01,Maize,USD,1,False,8
+2024-09-01,Maize meal,USD,8,True,8
+2024-09-01,Maize meal,ZWL,3,False,8
+2024-09-01,Oil (vegetable),USD,10,True,8
+2024-09-01,Oil (vegetable),ZWL,3,False,8
+2024-09-01,Rice,USD,10,True,8
+2024-09-01,Rice,ZWL,3,False,8
+2024-09-01,Salt,ZWL,3,False,8
+2024-09-01,Sugar,USD,8,True,8
+2024-09-01,Sugar,ZWL,3,False,8
+2024-09-01,Toothpaste,USD,9,True,8
+2024-09-01,Toothpaste,ZWL,4,False,8
+2024-10-01,Beans (sugar),ZWL,5,False,8
+2024-10-01,Fish (kapenta),USD,11,True,8
+2024-10-01,Fish (kapenta),ZWL,6,False,8
+2024-10-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2024-10-01,Handwash soap,ZWL,3,False,8
+2024-10-01,Laundry soap,USD,10,True,8
+2024-10-01,Laundry soap,ZWL,4,False,8
+2024-10-01,Maize,USD,3,False,8
+2024-10-01,Maize meal,USD,12,True,8
+2024-10-01,Maize meal,ZWL,7,False,8
+2024-10-01,Oil (vegetable),USD,12,True,8
+2024-10-01,Oil (vegetable),ZWL,5,False,8
+2024-10-01,Rice,USD,12,True,8
+2024-10-01,Rice,ZWL,5,False,8
+2024-10-01,Salt,ZWL,3,False,8
+2024-10-01,Sugar,USD,10,True,8
+2024-10-01,Toothpaste,USD,8,True,8
+2024-10-01,Toothpaste,ZWL,5,False,8
+2024-11-01,Beans (sugar),ZWL,1,False,8
+2024-11-01,Fish (kapenta),USD,7,False,8
+2024-11-01,Fish (kapenta),ZWL,1,False,8
+2024-11-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2024-11-01,Handwash soap,ZWL,1,False,8
+2024-11-01,Laundry soap,USD,6,False,8
+2024-11-01,Laundry soap,ZWL,1,False,8
+2024-11-01,Maize meal,USD,7,False,8
+2024-11-01,Maize meal,ZWL,2,False,8
+2024-11-01,Oil (vegetable),USD,7,False,8
+2024-11-01,Oil (vegetable),ZWL,1,False,8
+2024-11-01,Rice,USD,7,False,8
+2024-11-01,Rice,ZWL,1,False,8
+2024-11-01,Salt,ZWL,1,False,8
+2024-11-01,Sugar,USD,6,False,8
+2024-11-01,Toothpaste,USD,6,False,8
+2024-11-01,Toothpaste,ZWL,2,False,8
+2024-12-01,Beans (sugar),ZWL,1,False,8
+2024-12-01,Fish (kapenta),USD,4,False,8
+2024-12-01,Fish (kapenta),ZWL,1,False,8
+2024-12-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2024-12-01,Handwash soap,ZWL,1,False,8
+2024-12-01,Laundry soap,USD,2,False,8
+2024-12-01,Laundry soap,ZWL,1,False,8
+2024-12-01,Maize meal,USD,3,False,8
+2024-12-01,Maize meal,ZWL,1,False,8
+2024-12-01,Oil (vegetable),USD,4,False,8
+2024-12-01,Oil (vegetable),ZWL,1,False,8
+2024-12-01,Rice,USD,4,False,8
+2024-12-01,Rice,ZWL,1,False,8
+2024-12-01,Salt,ZWL,1,False,8
+2024-12-01,Sugar,USD,4,False,8
+2024-12-01,Toothpaste,USD,3,False,8
+2024-12-01,Toothpaste,ZWL,1,False,8
+2025-01-01,Beans (sugar),ZWL,3,False,8
+2025-01-01,Fish (kapenta),USD,6,False,8
+2025-01-01,Fish (kapenta),ZWL,3,False,8
+2025-01-01,Fuel (diesel),ZWL,1,False,8
+2025-01-01,Handwash soap,ZWL,3,False,8
+2025-01-01,Laundry soap,USD,7,False,8
+2025-01-01,Laundry soap,ZWL,3,False,8
+2025-01-01,Maize meal,USD,6,False,8
+2025-01-01,Maize meal,ZWL,2,False,8
+2025-01-01,Oil (vegetable),USD,7,False,8
+2025-01-01,Oil (vegetable),ZWL,2,False,8
+2025-01-01,Rice,USD,7,False,8
+2025-01-01,Rice,ZWL,3,False,8
+2025-01-01,Salt,ZWL,1,False,8
+2025-01-01,Sugar,USD,7,False,8
+2025-01-01,Toothpaste,USD,6,False,8
+2025-01-01,Toothpaste,ZWL,2,False,8
+2025-02-01,Beans (sugar),ZWL,3,False,8
+2025-02-01,Fish (kapenta),USD,3,False,8
+2025-02-01,Fish (kapenta),ZWL,3,False,8
+2025-02-01,Fuel (diesel),ZWL,1,False,8
+2025-02-01,Handwash soap,ZWL,3,False,8
+2025-02-01,Laundry soap,USD,6,False,8
+2025-02-01,Laundry soap,ZWL,3,False,8
+2025-02-01,Maize meal,USD,5,False,8
+2025-02-01,Maize meal,ZWL,3,False,8
+2025-02-01,Oil (vegetable),USD,6,False,8
+2025-02-01,Oil (vegetable),ZWL,2,False,8
+2025-02-01,Rice,USD,6,False,8
+2025-02-01,Rice,ZWL,3,False,8
+2025-02-01,Salt,ZWL,2,False,8
+2025-02-01,Sugar,USD,6,False,8
+2025-02-01,Toothpaste,USD,5,False,8
+2025-02-01,Toothpaste,ZWL,2,False,8
+2025-03-01,Beans (sugar),ZWL,3,False,8
+2025-03-01,Fish (kapenta),USD,6,False,8
+2025-03-01,Fish (kapenta),ZWL,4,False,8
+2025-03-01,Fuel (diesel),ZWL,1,False,8
+2025-03-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2025-03-01,Handwash soap,ZWL,4,False,8
+2025-03-01,Laundry soap,USD,7,False,8
+2025-03-01,Laundry soap,ZWL,3,False,8
+2025-03-01,Maize meal,USD,5,False,8
+2025-03-01,Maize meal,ZWL,2,False,8
+2025-03-01,Oil (vegetable),USD,7,False,8
+2025-03-01,Oil (vegetable),ZWL,1,False,8
+2025-03-01,Rice,USD,7,False,8
+2025-03-01,Rice,ZWL,2,False,8
+2025-03-01,Salt,ZWL,1,False,8
+2025-03-01,Sugar,USD,7,False,8
+2025-03-01,Toothpaste,USD,6,False,8
+2025-03-01,Toothpaste,ZWL,3,False,8
+2025-04-01,Fish (kapenta),USD,1,False,8
+2025-04-01,Fuel (diesel),ZWL,1,False,8
+2025-04-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2025-04-01,Laundry soap,USD,3,False,8
+2025-04-01,Maize meal,USD,2,False,8
+2025-04-01,Oil (vegetable),USD,3,False,8
+2025-04-01,Rice,USD,3,False,8
+2025-04-01,Sugar,USD,3,False,8
+2025-04-01,Toothpaste,USD,1,False,8
+2025-05-01,Fish (kapenta),USD,1,False,8
+2025-05-01,Fuel (diesel),ZWL,1,False,8
+2025-05-01,Laundry soap,USD,1,False,8
+2025-05-01,Maize meal,USD,1,False,8
+2025-05-01,Oil (vegetable),USD,1,False,8
+2025-05-01,Rice,USD,1,False,8
+2025-05-01,Sugar,USD,1,False,8
+2025-06-01,Fish (kapenta),USD,1,False,8
+2025-06-01,Fuel (diesel),ZWL,1,False,8
+2025-06-01,Laundry soap,USD,2,False,8
+2025-06-01,Maize meal,USD,1,False,8
+2025-06-01,Oil (vegetable),USD,2,False,8
+2025-06-01,Rice,USD,2,False,8
+2025-06-01,Sugar,USD,2,False,8
+2025-06-01,Toothpaste,USD,1,False,8
+2025-07-01,Fish (kapenta),USD,2,False,8
+2025-07-01,Fuel (diesel),ZWL,1,False,8
+2025-07-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2025-07-01,Laundry soap,USD,3,False,8
+2025-07-01,Maize,USD,1,False,8
+2025-07-01,Maize meal,USD,3,False,8
+2025-07-01,Oil (vegetable),USD,3,False,8
+2025-07-01,Rice,USD,3,False,8
+2025-07-01,Sugar,USD,3,False,8
+2025-07-01,Toothpaste,USD,2,False,8
+2025-08-01,Fish (kapenta),USD,2,False,8
+2025-08-01,Fuel (diesel),ZWL,1,False,8
+2025-08-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2025-08-01,Laundry soap,USD,4,False,8
+2025-08-01,Maize,USD,1,False,8
+2025-08-01,Maize meal,USD,2,False,8
+2025-08-01,Oil (vegetable),USD,4,False,8
+2025-08-01,Rice,USD,4,False,8
+2025-08-01,Sugar,USD,4,False,8
+2025-08-01,Toothpaste,USD,3,False,8
+2025-09-01,Fish (kapenta),USD,2,False,8
+2025-09-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2025-09-01,Laundry soap,USD,4,False,8
+2025-09-01,Maize,USD,1,False,8
+2025-09-01,Maize meal,USD,2,False,8
+2025-09-01,Oil (vegetable),USD,4,False,8
+2025-09-01,Rice,USD,4,False,8
+2025-09-01,Sugar,USD,4,False,8
+2025-09-01,Toothpaste,USD,4,False,8
+2025-10-01,Fish (kapenta),USD,4,False,8
+2025-10-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2025-10-01,Laundry soap,USD,4,False,8
+2025-10-01,Maize meal,USD,2,False,8
+2025-10-01,Oil (vegetable),USD,4,False,8
+2025-10-01,Rice,USD,4,False,8
+2025-10-01,Sugar,USD,4,False,8
+2025-10-01,Toothpaste,USD,4,False,8
+2025-11-01,Fish (kapenta),USD,3,False,8
+2025-11-01,Fuel (diesel),ZWL,1,False,8
+2025-11-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2025-11-01,Laundry soap,USD,3,False,8
+2025-11-01,Maize,USD,1,False,8
+2025-11-01,Maize meal,USD,2,False,8
+2025-11-01,Oil (vegetable),USD,3,False,8
+2025-11-01,Rice,USD,3,False,8
+2025-11-01,Sugar,USD,3,False,8
+2025-11-01,Toothpaste,USD,2,False,8
+2025-12-01,Fish (kapenta),USD,2,False,8
+2025-12-01,Fuel (petrol-gasoline),ZWL,1,False,8
+2025-12-01,Laundry soap,USD,3,False,8
+2025-12-01,Maize meal,USD,3,False,8
+2025-12-01,Oil (vegetable),USD,3,False,8
+2025-12-01,Rice,USD,3,False,8
+2025-12-01,Sugar,USD,3,False,8
+2025-12-01,Toothpaste,USD,3,False,8
+2026-01-01,Fish (kapenta),USD,3,False,8
+2026-01-01,Laundry soap,USD,4,False,8
+2026-01-01,Maize meal,USD,3,False,8
+2026-01-01,Oil (vegetable),USD,3,False,8
+2026-01-01,Rice,USD,4,False,8
+2026-01-01,Sugar,USD,4,False,8
+2026-01-01,Toothpaste,USD,3,False,8
+2026-02-01,Fish (kapenta),USD,4,False,8
+2026-02-01,Laundry soap,USD,4,False,8
+2026-02-01,Maize meal,USD,3,False,8
+2026-02-01,Oil (vegetable),USD,4,False,8
+2026-02-01,Rice,USD,4,False,8
+2026-02-01,Sugar,USD,4,False,8
+2026-02-01,Toothpaste,USD,3,False,8
+2026-03-01,Fish (kapenta),USD,3,False,8
+2026-03-01,Laundry soap,USD,3,False,8
+2026-03-01,Maize meal,USD,3,False,8
+2026-03-01,Oil (vegetable),USD,3,False,8
+2026-03-01,Rice,USD,3,False,8
+2026-03-01,Sugar,USD,3,False,8
+2026-03-01,Toothpaste,USD,2,False,8
+2026-04-01,Fish (kapenta),USD,2,False,8
+2026-04-01,Laundry soap,USD,3,False,8
+2026-04-01,Maize meal,USD,2,False,8
+2026-04-01,Oil (vegetable),USD,3,False,8
+2026-04-01,Rice,USD,3,False,8
+2026-04-01,Sugar,USD,3,False,8
+2026-04-01,Toothpaste,USD,1,False,8
+2026-05-01,Fish (kapenta),USD,6,False,8
+2026-05-01,Laundry soap,USD,6,False,8
+2026-05-01,Maize meal,USD,5,False,8
+2026-05-01,Oil (vegetable),USD,6,False,8
+2026-05-01,Rice,USD,6,False,8
+2026-05-01,Sugar,USD,5,False,8
+2026-05-01,Toothpaste,USD,5,False,8

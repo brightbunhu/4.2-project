@@ -1,0 +1,59 @@
+
+================================================================================================
+  1  RAW DATA AUDIT
+================================================================================================
+
+overview
+  food_price   rows= 25,554  cols= 22  dupes=    0
+  poverty      rows=     33  cols= 14  dupes=    0
+  rainfall     rows=  5,100  cols= 20  dupes=    0
+  population   rows=  5,508  cols= 17  dupes=    0
+
+key columns
+  food_price: {'geo': ['provider_admin1_name', 'provider_admin2_name', 'admin1_code', 'admin1_name', 'admin2_code', 'admin2_name', 'admin_level'], 'time': ['reference_period_start', 'reference_period_end'], 'numeric': ['lat', 'lon', 'price'], 'categorical': ['market_name', 'commodity_category', 'commodity_name', 'unit', 'price_flag', 'currency_code'], 'constant': ['location_code', 'has_hrp', 'in_gho', 'price_type'], 'id_like': []}
+  poverty: {'geo': ['provider_admin1_name', 'admin1_code', 'admin1_name', 'admin_level'], 'time': ['reference_period_start', 'reference_period_end'], 'numeric': ['mpi', 'headcount_ratio', 'intensity_of_deprivation', 'vulnerable_to_poverty', 'in_severe_poverty'], 'categorical': [], 'constant': ['location_code', 'has_hrp', 'in_gho'], 'id_like': []}
+  rainfall: {'geo': ['provider_admin1_name', 'provider_admin2_name', 'admin1_code', 'admin1_name', 'admin2_code', 'admin2_name', 'admin_level', 'provider_admin1_code', 'provider_admin2_code'], 'time': ['reference_period_start', 'reference_period_end'], 'numeric': ['rainfall', 'rainfall_long_term_average', 'rainfall_anomaly_pct', 'number_pixels'], 'categorical': ['aggregation_period', 'version'], 'constant': ['location_code', 'has_hrp', 'in_gho'], 'id_like': []}
+  population: {'geo': ['provider_admin1_name', 'provider_admin2_name', 'admin1_code', 'admin1_name', 'admin2_code', 'admin2_name', 'admin_level'], 'time': ['reference_period_start', 'reference_period_end'], 'numeric': ['min_age', 'max_age', 'population'], 'categorical': ['gender', 'age_range'], 'constant': ['location_code', 'has_hrp', 'in_gho'], 'id_like': []}
+    [result ] outputs\results\step01_column_audit.csv  shape=(73, 7)
+
+  -- step01_missing_food_price: missing values in 8 columns (1,712 cells of 562,188 = 0.30%) --
+                      n_missing  pct_missing  n_unique    dtype
+provider_admin1_name        214         0.84        10      str
+provider_admin2_name        214         0.84        81      str
+admin1_code                 214         0.84        10      str
+admin1_name                 214         0.84        10      str
+admin2_code                 214         0.84        81      str
+admin2_name                 214         0.84        81      str
+lat                         214         0.84       235  float64
+lon                         214         0.84       237  float64
+
+  -- step01_missing_poverty: missing values in 3 columns (9 cells of 462 = 1.95%) --
+                      n_missing  pct_missing  n_unique dtype
+provider_admin1_name          3         9.09        10   str
+admin1_code                   3         9.09        10   str
+admin1_name                   3         9.09        10   str
+
+  -- step01_missing_rainfall: missing values in 4 columns (20,400 cells of 102,000 = 20.00%) --
+                      n_missing  pct_missing  n_unique    dtype
+provider_admin2_name       5100        100.0         0  float64
+admin2_code                5100        100.0         0  float64
+admin2_name                5100        100.0         0  float64
+provider_admin2_code       5100        100.0         0  float64
+
+  -- step01_missing_population: missing values in 8 columns (2,862 cells of 93,636 = 3.06%) --
+                      n_missing  pct_missing  n_unique    dtype
+max_age                     612        11.11        16  float64
+provider_admin2_name        594        10.78        91      str
+admin2_code                 594        10.78        91      str
+admin2_name                 594        10.78        91      str
+min_age                     306         5.56        17  float64
+admin1_name                  54         0.98        10      str
+provider_admin1_name         54         0.98        10      str
+admin1_code                  54         0.98        10      str
+  adm1: 10 features, CRS=EPSG:4326
+  adm2: 91 features, CRS=EPSG:4326
+    [report ] reports\step01_data_audit.md
+
+================================================================================================
+  1  AUDIT COMPLETE -> reports/step01_data_audit.md
+================================================================================================

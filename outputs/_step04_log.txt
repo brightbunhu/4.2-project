@@ -1,0 +1,190 @@
+==========================================================================================
+STEP 1 - LOADED FILES
+==========================================================================================
+
+d_price_district_month: shape=(13715, 21)
+  columns: ['district_key', 'province', 'month', 'commodity_name', 'commodity_category', 'unit', 'currency_code', 'price_flag', 'is_food', 'price', 'n_markets', 'n_price_obs', 'country_median_price', 'n_districts_reporting', 'price_spi_raw', 'spi', 'spi_winsorised', 'spi_pct_dev', 'province_key', 'year', 'month_num']
+  missing: {'country_median_price': 439, 'price_spi_raw': 439, 'spi': 439, 'spi_pct_dev': 439}
+
+d_rainfall_chirps_district_month: shape=(49868, 12)
+  columns: ['district_key', 'district', 'province', 'month', 'rainfall_mm', 'rain_lta', 'rain_anom_pct', 'rainfall_3m_total', 'rainfall_6m_total', 'rainfall_12m_total', 'rainfall_3m_anomaly', 'n_cells']
+  missing: {'rainfall_3m_total': 182, 'rainfall_6m_total': 455, 'rainfall_12m_total': 1001, 'rainfall_3m_anomaly': 182}
+
+d_population_district: shape=(91, 17)
+  columns: ['district_key', 'district', 'province', 'population', 'reference_period_start', 'district_geo', 'province_key', 'lon', 'lat', 'area_km2', 'log_population', 'log_area_km2', 'density', 'log_density', 'pop_share', 'is_urban', 'urban_flag_raw']
+  missing: none
+
+d_district_base: shape=(91, 14)
+  columns: ['district', 'district_key', 'province', 'lon', 'lat', 'area_km2', 'province_key', 'population', 'density', 'is_urban', 'pop_share', 'log_population', 'log_area_km2', 'log_density']
+  missing: none
+
+Shared keys: district_key (all), month (price & rain).
+
+Rows dropped for missing spatial_price_index: 439
+
+==========================================================================================
+STEP 2 - TARGET VARIABLE (price_stress)
+==========================================================================================
+overall counts:
+price_stress
+0    7003
+1    6273
+overall percent:
+price_stress
+0    52.75
+1    47.25
+
+by commodity (top 15 by row count):
+                            rows  stress  stress_pct
+commodity_name                                      
+Oil (vegetable)             1372     663        48.3
+Laundry soap                1330     646        48.6
+Rice                        1327     636        47.9
+Sugar                       1326     642        48.4
+Toothpaste                  1276     601        47.1
+Fish (kapenta)              1233     585        47.4
+Handwash soap               1125     545        48.4
+Salt                        1120     541        48.3
+Maize meal                  1057     498        47.1
+Beans (sugar)                931     441        47.4
+Maize                        473     198        41.9
+Maize meal (white, roller)   177      73        41.2
+Beans                        156      58        37.2
+Sorghum                       65      26        40.0
+Oil (vegetable, fortified)    62      27        43.5
+
+by province:
+                     rows  stress  stress_pct
+province_key                                 
+BULAWAYO              408     242        59.3
+HARARE                430      91        21.2
+MANICALAND           1532     515        33.6
+MASHONALAND CENTRAL  1073     396        36.9
+MASHONALAND EAST     1275     503        39.5
+MASHONALAND WEST     1367     417        30.5
+MASVINGO             2382    1333        56.0
+MATABELELAND NORTH   1434    1024        71.4
+MATABELELAND SOUTH   1167     771        66.1
+MIDLANDS             2208     981        44.4
+
+==========================================================================================
+STEP 3 - RAINFALL MERGE
+==========================================================================================
+rows after merge: 13276
+rows with missing rainfall_1m: 0 (0.0%)
+Coverage: CHIRPS district-month covers the full price window (2017-2026);
+rows are missing only where the price month falls outside CHIRPS coverage.
+
+==========================================================================================
+STEP 4 - POPULATION MERGE
+==========================================================================================
+rows after merge: 13276
+missing population: 0
+missing log_population: 0
+missing is_urban: 0
+
+==========================================================================================
+STEP 5 - COMMODITY-SPECIFIC FEATURES
+==========================================================================================
+spi_lag_1: missing=1015 (7.6%)
+spi_lag_2: missing=1972 (14.9%)
+spi_pct_change_3m: missing=2858 (21.5%)
+NOTE: lags use previous OBSERVED months in the series (price collection is
+      irregular, so a 'lag' may span more than one calendar month).
+
+==========================================================================================
+STEP 6 - TIME FEATURES
+==========================================================================================
+                 count         mean       std     min     25%     50%     75%     max
+month_of_year  13276.0     6.379783  3.447111     1.0     3.0     6.0     9.0    12.0
+year           13276.0  2021.421061  1.879141  2017.0  2020.0  2021.0  2023.0  2026.0
+
+==========================================================================================
+STEP 7 - COMMODITY ENCODING
+==========================================================================================
+top 10 commodities: ['Oil (vegetable)', 'Laundry soap', 'Rice', 'Sugar', 'Toothpaste', 'Fish (kapenta)', 'Handwash soap', 'Salt', 'Maize meal', 'Beans (sugar)']
+OTHER rows: 1179
+encoded columns (11): ['commodity_Beans (sugar)', 'commodity_Fish (kapenta)', 'commodity_Handwash soap', 'commodity_Laundry soap', 'commodity_Maize meal', 'commodity_OTHER', 'commodity_Oil (vegetable)', 'commodity_Rice', 'commodity_Salt', 'commodity_Sugar', 'commodity_Toothpaste']
+
+==========================================================================================
+STEP 8 - LEAKAGE-FREE FEATURE SET
+==========================================================================================
+excluded: spatial_price_index (target), identifiers
+dropped (>50% missing): []
+FINAL features (23): ['rainfall_1m', 'rainfall_3m_total', 'rainfall_6m_total', 'rainfall_12m_total', 'rainfall_3m_anomaly', 'spi_lag_1', 'spi_lag_2', 'spi_pct_change_3m', 'log_population', 'is_urban', 'month_of_year', 'year', 'commodity_Beans (sugar)', 'commodity_Fish (kapenta)', 'commodity_Handwash soap', 'commodity_Laundry soap', 'commodity_Maize meal', 'commodity_OTHER', 'commodity_Oil (vegetable)', 'commodity_Rice', 'commodity_Salt', 'commodity_Sugar', 'commodity_Toothpaste']
+X shape: (13276, 23), y shape: (13276,)
+saved feature list -> C:\Users\brigh\Downloads\another\data\processed\feature_columns.json
+
+==========================================================================================
+STEP 9 - CLASS BALANCE
+==========================================================================================
+counts:
+price_stress
+0    7003
+1    6273
+percent:
+price_stress
+0    52.75
+1    47.25
+imbalance ratio = 1.12
+classes are reasonably balanced.
+
+==========================================================================================
+STEP 10 - HANDLE MISSING LAG VALUES
+==========================================================================================
+rows before: 13276
+rows with a missing lag: 2858 (21.5%)
+rows after (dropped): 10418
+
+==========================================================================================
+STEP 11 - SAVED FINAL TABLE
+==========================================================================================
+saved to: C:\Users\brigh\Downloads\another\data\processed\commodity_training_table.csv
+final rows        : 10418
+districts         : 73
+months            : 90
+commodities       : 20
+features          : 23
+median rows/comm. : 508
+
+==========================================================================================
+STEP 12 - FINAL SUMMARY
+==========================================================================================
+Total rows          : 10418
+Unique districts    : 73
+Unique months       : 90
+Unique commodities  : 20
+Date range          : 2017-04-01 -> 2026-05-01
+Target counts       : {0: 5456, 1: 4962}
+Target percentages  : {0: 52.37, 1: 47.63}
+Number of features  : 23
+Median rows/comm.   : 508
+
+Missing values per feature:
+rainfall_1m                  0
+rainfall_3m_total            0
+rainfall_6m_total            0
+rainfall_12m_total           0
+rainfall_3m_anomaly          0
+spi_lag_1                    0
+spi_lag_2                    0
+spi_pct_change_3m            0
+log_population               0
+is_urban                     0
+month_of_year                0
+year                         0
+commodity_Beans (sugar)      0
+commodity_Fish (kapenta)     0
+commodity_Handwash soap      0
+commodity_Laundry soap       0
+commodity_Maize meal         0
+commodity_OTHER              0
+commodity_Oil (vegetable)    0
+commodity_Rice               0
+commodity_Salt               0
+commodity_Sugar              0
+commodity_Toothpaste         0
+
+==========================================================================================
+ENOUGH ROWS FOR ML (target >= 5000)? YES (10418 rows)
+==========================================================================================

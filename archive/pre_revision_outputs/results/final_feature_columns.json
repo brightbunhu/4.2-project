@@ -1,0 +1,20 @@
+[
+  "rainfall_1m",
+  "rainfall_6m_total",
+  "rainfall_3m_anomaly",
+  "rainfall_3m_total",
+  "rainfall_12m_total",
+  "spi_pct_change_3m",
+  "spi_lag_1",
+  "log_population",
+  "spi_lag_2",
+  "year",
+  "commodity_Oil (vegetable)",
+  "commodity_Sugar",
+  "commodity_Rice",
+  "commodity_OTHER",
+  "commodity_Salt",
+  "commodity_Laundry soap",
+  "commodity_Handwash soap",
+  "commodity_Fish (kapenta)"
+]

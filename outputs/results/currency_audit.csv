@@ -1,0 +1,1250 @@
+commodity_name,month,currency_code,count,median
+Beans,2017-01-01,USD,6,1.8050000000000002
+Beans,2017-02-01,USD,6,1.835
+Beans,2017-03-01,USD,6,1.835
+Beans,2017-04-01,USD,6,1.835
+Beans,2017-05-01,USD,6,1.835
+Beans,2017-06-01,USD,1,1.5
+Beans,2017-07-01,USD,2,1.365
+Beans,2017-08-01,USD,9,2.45
+Beans,2017-09-01,USD,10,2.85
+Beans,2017-10-01,USD,10,2.8
+Beans,2017-11-01,USD,13,2.6
+Beans,2017-12-01,USD,13,2.58
+Beans,2018-01-01,USD,7,2.4
+Beans,2018-02-01,USD,6,2.7
+Beans,2018-03-01,USD,8,2.55
+Beans,2018-04-01,USD,7,3.0
+Beans,2018-06-01,USD,7,3.0
+Beans,2018-07-01,USD,5,3.0
+Beans,2018-08-01,USD,7,3.0
+Beans,2018-09-01,USD,6,3.0
+Beans,2018-11-01,USD,9,3.0
+Beans,2018-12-01,USD,9,2.0
+Beans (sugar),2020-05-01,ZWL,22,93.5
+Beans (sugar),2020-06-01,ZWL,21,121.24
+Beans (sugar),2020-07-01,ZWL,23,183.66
+Beans (sugar),2020-08-01,ZWL,27,191.5
+Beans (sugar),2020-09-01,ZWL,36,193.14499999999998
+Beans (sugar),2020-10-01,ZWL,25,187.89
+Beans (sugar),2020-11-01,ZWL,30,197.38
+Beans (sugar),2020-12-01,ZWL,31,202.69
+Beans (sugar),2021-01-01,ZWL,29,214.47
+Beans (sugar),2021-02-01,ZWL,30,226.97
+Beans (sugar),2021-03-01,ZWL,26,252.18
+Beans (sugar),2021-04-01,ZWL,16,262.0
+Beans (sugar),2021-05-01,ZWL,28,258.2
+Beans (sugar),2021-06-01,ZWL,30,254.88
+Beans (sugar),2021-07-01,ZWL,27,256.665
+Beans (sugar),2021-08-01,ZWL,26,235.47500000000002
+Beans (sugar),2021-09-01,ZWL,24,280.1
+Beans (sugar),2021-10-01,ZWL,23,290.0
+Beans (sugar),2021-11-01,ZWL,7,313.71
+Beans (sugar),2021-12-01,ZWL,16,328.64
+Beans (sugar),2022-01-01,ZWL,16,371.995
+Beans (sugar),2022-02-01,ZWL,11,400.0
+Beans (sugar),2022-03-01,ZWL,10,440.5
+Beans (sugar),2022-04-01,ZWL,2,417.185
+Beans (sugar),2022-05-01,ZWL,9,690.9
+Beans (sugar),2022-06-01,ZWL,15,1062.69
+Beans (sugar),2022-07-01,ZWL,16,1390.79
+Beans (sugar),2022-08-01,ZWL,6,1304.825
+Beans (sugar),2022-09-01,ZWL,4,1314.755
+Beans (sugar),2022-10-01,ZWL,14,1600.0
+Beans (sugar),2022-11-01,ZWL,20,1600.0
+Beans (sugar),2022-12-01,ZWL,19,1650.0
+Beans (sugar),2023-01-01,ZWL,8,1934.5825
+Beans (sugar),2023-02-01,ZWL,11,2000.0
+Beans (sugar),2023-03-01,ZWL,8,1919.0
+Beans (sugar),2023-04-01,ZWL,32,3130.0
+Beans (sugar),2023-05-01,ZWL,45,4374.7
+Beans (sugar),2023-06-01,ZWL,46,11152.5225
+Beans (sugar),2023-07-01,ZWL,41,11400.0
+Beans (sugar),2023-08-01,ZWL,13,10500.0
+Beans (sugar),2023-09-01,ZWL,14,11537.085
+Beans (sugar),2023-10-01,ZWL,17,12000.0
+Beans (sugar),2023-11-01,ZWL,12,12882.1425
+Beans (sugar),2023-12-01,ZWL,9,13138.89
+Beans (sugar),2024-01-01,ZWL,7,11200.0
+Beans (sugar),2024-02-01,ZWL,11,13563.64
+Beans (sugar),2024-03-01,ZWL,1,15600.0
+Beans (sugar),2024-05-01,ZWL,2,34.415
+Beans (sugar),2024-06-01,ZWL,2,36.61
+Beans (sugar),2024-07-01,ZWL,3,34.3
+Beans (sugar),2024-08-01,ZWL,1,40.58
+Beans (sugar),2024-09-01,ZWL,3,44.49
+Beans (sugar),2024-10-01,ZWL,5,40.62
+Beans (sugar),2024-11-01,ZWL,1,45.375
+Beans (sugar),2024-12-01,ZWL,1,48.97
+Beans (sugar),2025-01-01,ZWL,3,50.0
+Beans (sugar),2025-02-01,ZWL,3,50.62
+Beans (sugar),2025-03-01,ZWL,3,55.78
+"Beans (sugar, biofortified)",2017-11-01,USD,3,3.0
+"Beans (sugar, biofortified)",2017-12-01,USD,3,3.0
+"Beans (sugar, biofortified)",2018-01-01,USD,2,2.85
+"Beans (sugar, biofortified)",2018-03-01,USD,5,3.0
+"Beans (sugar, biofortified)",2018-04-01,USD,1,2.5
+"Beans (sugar, biofortified)",2018-11-01,USD,1,4.0
+Cowpeas,2017-01-01,USD,2,0.95
+Cowpeas,2017-02-01,USD,2,1.35
+Cowpeas,2017-03-01,USD,2,1.35
+Cowpeas,2017-04-01,USD,2,1.35
+Cowpeas,2017-05-01,USD,2,1.35
+Cowpeas,2017-06-01,USD,1,0.45
+Cowpeas,2017-07-01,USD,1,0.45
+Cowpeas,2017-11-01,USD,5,0.725
+Cowpeas,2017-12-01,USD,5,0.725
+Cowpeas,2018-01-01,USD,2,1.0
+Cowpeas,2018-02-01,USD,3,1.0
+Cowpeas,2018-03-01,USD,2,1.1
+Cowpeas,2018-04-01,USD,1,2.0
+Cowpeas,2018-06-01,USD,1,2.0
+Cowpeas,2018-09-01,USD,1,2.0
+Fish (kapenta),2019-12-01,ZWL,10,134.64499999999998
+Fish (kapenta),2020-01-01,ZWL,37,142.65
+Fish (kapenta),2020-02-01,ZWL,32,152.51
+Fish (kapenta),2020-03-01,ZWL,33,200.2
+Fish (kapenta),2020-04-01,ZWL,31,311.17
+Fish (kapenta),2020-05-01,ZWL,29,363.625
+Fish (kapenta),2020-06-01,ZWL,21,540.0
+Fish (kapenta),2020-07-01,ZWL,22,923.7950000000001
+Fish (kapenta),2020-08-01,ZWL,25,985.34
+Fish (kapenta),2020-09-01,ZWL,36,924.14
+Fish (kapenta),2020-10-01,ZWL,29,937.38
+Fish (kapenta),2020-11-01,ZWL,30,1003.25
+Fish (kapenta),2020-12-01,ZWL,30,998.635
+Fish (kapenta),2021-01-01,USD,1,9.25
+Fish (kapenta),2021-01-01,ZWL,29,1077.1
+Fish (kapenta),2021-02-01,ZWL,27,1133.33
+Fish (kapenta),2021-03-01,ZWL,22,1161.98
+Fish (kapenta),2021-04-01,ZWL,13,1114.8
+Fish (kapenta),2021-05-01,ZWL,24,1099.1
+Fish (kapenta),2021-06-01,ZWL,26,1219.5349999999999
+Fish (kapenta),2021-07-01,ZWL,26,1146.045
+Fish (kapenta),2021-08-01,ZWL,24,1204.2525
+Fish (kapenta),2021-09-01,ZWL,23,1311.825
+Fish (kapenta),2021-10-01,ZWL,21,1343.97
+Fish (kapenta),2021-11-01,ZWL,6,2113.09
+Fish (kapenta),2021-12-01,ZWL,14,2179.04
+Fish (kapenta),2022-01-01,ZWL,13,2000.0
+Fish (kapenta),2022-02-01,ZWL,11,2115.0
+Fish (kapenta),2022-03-01,ZWL,10,2583.1800000000003
+Fish (kapenta),2022-04-01,ZWL,1,2277.83
+Fish (kapenta),2022-05-01,ZWL,8,3797.975
+Fish (kapenta),2022-06-01,ZWL,14,5306.835
+Fish (kapenta),2022-07-01,ZWL,15,6919.17
+Fish (kapenta),2022-08-01,ZWL,7,7500.0
+Fish (kapenta),2022-09-01,ZWL,3,7500.0
+Fish (kapenta),2022-10-01,ZWL,14,8530.0
+Fish (kapenta),2022-11-01,ZWL,20,8058.745
+Fish (kapenta),2022-12-01,ZWL,19,8366.67
+Fish (kapenta),2023-01-01,ZWL,6,9977.25
+Fish (kapenta),2023-02-01,ZWL,10,10000.0
+Fish (kapenta),2023-03-01,ZWL,8,11699.0
+Fish (kapenta),2023-04-01,ZWL,29,15600.0
+Fish (kapenta),2023-05-01,ZWL,47,20044.120000000003
+Fish (kapenta),2023-06-01,USD,1,10.0
+Fish (kapenta),2023-06-01,ZWL,48,53833.335
+Fish (kapenta),2023-07-01,USD,1,10.0
+Fish (kapenta),2023-07-01,ZWL,41,70000.0
+Fish (kapenta),2023-08-01,ZWL,14,52014.705
+Fish (kapenta),2023-09-01,USD,1,10.0
+Fish (kapenta),2023-09-01,ZWL,17,55625.0
+Fish (kapenta),2023-10-01,ZWL,19,61750.0
+Fish (kapenta),2023-11-01,USD,2,41.75
+Fish (kapenta),2023-11-01,ZWL,17,69946.43
+Fish (kapenta),2023-12-01,USD,5,98.4
+Fish (kapenta),2023-12-01,ZWL,13,60000.0
+Fish (kapenta),2024-01-01,USD,23,45.0
+Fish (kapenta),2024-01-01,ZWL,8,56500.0
+Fish (kapenta),2024-02-01,USD,21,10.0
+Fish (kapenta),2024-02-01,ZWL,10,52000.0
+Fish (kapenta),2024-03-01,USD,15,100.71
+Fish (kapenta),2024-03-01,ZWL,4,60000.0
+Fish (kapenta),2024-05-01,USD,11,64.21
+Fish (kapenta),2024-05-01,ZWL,1,194.7
+Fish (kapenta),2024-06-01,USD,5,105.0
+Fish (kapenta),2024-06-01,ZWL,1,299.37
+Fish (kapenta),2024-07-01,USD,9,92.86
+Fish (kapenta),2024-07-01,ZWL,3,193.9
+Fish (kapenta),2024-08-01,USD,7,85.2
+Fish (kapenta),2024-08-01,ZWL,2,223.65
+Fish (kapenta),2024-09-01,USD,9,78.735
+Fish (kapenta),2024-09-01,ZWL,4,198.215
+Fish (kapenta),2024-10-01,USD,11,90.99
+Fish (kapenta),2024-10-01,ZWL,6,342.5
+Fish (kapenta),2024-11-01,USD,7,95.2
+Fish (kapenta),2024-11-01,ZWL,1,455.0
+Fish (kapenta),2024-12-01,USD,4,56.025
+Fish (kapenta),2024-12-01,ZWL,1,442.2
+Fish (kapenta),2025-01-01,USD,6,9.967500000000001
+Fish (kapenta),2025-01-01,ZWL,3,400.0
+Fish (kapenta),2025-02-01,USD,3,9.7
+Fish (kapenta),2025-02-01,ZWL,3,400.0
+Fish (kapenta),2025-03-01,USD,6,10.0
+Fish (kapenta),2025-03-01,ZWL,4,400.0
+Fish (kapenta),2025-04-01,USD,1,9.65
+Fish (kapenta),2025-05-01,USD,1,11.575
+Fish (kapenta),2025-06-01,USD,1,9.55
+Fish (kapenta),2025-07-01,USD,2,14.0075
+Fish (kapenta),2025-08-01,USD,2,9.7925
+Fish (kapenta),2025-09-01,USD,2,11.7575
+Fish (kapenta),2025-10-01,USD,4,10.0
+Fish (kapenta),2025-11-01,USD,3,10.0
+Fish (kapenta),2025-12-01,USD,2,9.475
+Fish (kapenta),2026-01-01,USD,3,10.0
+Fish (kapenta),2026-02-01,USD,4,7.9725
+Fish (kapenta),2026-03-01,USD,3,9.235
+Fish (kapenta),2026-04-01,USD,2,7.8875
+Fish (kapenta),2026-05-01,USD,6,9.5
+Fuel (diesel),2019-03-01,ZWL,1,3.2
+Fuel (diesel),2019-04-01,ZWL,1,3.2
+Fuel (diesel),2019-05-01,ZWL,1,3.87
+Fuel (diesel),2019-06-01,ZWL,1,4.89
+Fuel (diesel),2019-07-01,ZWL,1,5.94
+Fuel (diesel),2019-12-01,ZWL,1,17.9
+Fuel (diesel),2020-01-01,ZWL,1,18.69
+Fuel (diesel),2020-02-01,ZWL,1,19.44
+Fuel (diesel),2020-03-01,ZWL,1,21.52
+Fuel (diesel),2020-04-01,ZWL,1,20.84
+Fuel (diesel),2020-05-01,ZWL,1,24.93
+Fuel (diesel),2020-09-01,ZWL,1,81.85
+Fuel (diesel),2020-10-01,ZWL,1,82.06
+Fuel (diesel),2021-01-01,ZWL,1,100.91
+Fuel (diesel),2021-02-01,ZWL,1,105.58
+Fuel (diesel),2021-03-01,ZWL,1,110.41
+Fuel (diesel),2021-04-01,ZWL,1,117.77
+Fuel (diesel),2021-05-01,ZWL,1,111.43
+Fuel (diesel),2021-07-01,ZWL,1,114.29
+Fuel (diesel),2021-08-01,ZWL,1,114.29
+Fuel (diesel),2021-09-01,ZWL,1,115.15
+Fuel (diesel),2021-12-01,ZWL,1,150.31
+Fuel (diesel),2022-01-01,ZWL,1,149.55
+Fuel (diesel),2022-02-01,ZWL,1,168.17
+Fuel (diesel),2022-03-01,ZWL,1,213.49
+Fuel (diesel),2022-04-01,ZWL,1,213.9
+Fuel (diesel),2022-05-01,ZWL,1,499.56
+Fuel (diesel),2022-06-01,ZWL,1,606.16
+Fuel (diesel),2022-07-01,ZWL,1,709.66
+Fuel (diesel),2022-08-01,ZWL,1,851.14
+Fuel (diesel),2022-10-01,ZWL,1,1094.77
+Fuel (diesel),2022-11-01,ZWL,1,1101.84
+Fuel (diesel),2022-12-01,ZWL,1,1119.82
+Fuel (diesel),2023-01-01,ZWL,1,1315.09
+Fuel (diesel),2023-02-01,ZWL,1,1418.98
+Fuel (diesel),2023-03-01,ZWL,1,1499.26
+Fuel (diesel),2023-04-01,ZWL,1,1546.59
+Fuel (diesel),2023-05-01,ZWL,1,1756.24
+Fuel (diesel),2023-07-01,ZWL,1,9200.03
+Fuel (diesel),2023-08-01,ZWL,1,7492.63
+Fuel (diesel),2023-11-01,ZWL,1,9971.19
+Fuel (diesel),2024-01-01,ZWL,1,10573.16
+Fuel (diesel),2024-02-01,ZWL,1,18265.37
+Fuel (diesel),2024-03-01,ZWL,1,26086.51
+Fuel (diesel),2024-05-01,ZWL,1,22.24
+Fuel (diesel),2024-06-01,ZWL,1,22.24
+Fuel (diesel),2024-09-01,ZWL,1,21.57
+Fuel (diesel),2025-01-01,ZWL,1,39.61
+Fuel (diesel),2025-02-01,ZWL,1,41.58
+Fuel (diesel),2025-03-01,ZWL,1,40.92
+Fuel (diesel),2025-04-01,ZWL,1,40.65
+Fuel (diesel),2025-05-01,ZWL,1,40.49
+Fuel (diesel),2025-06-01,ZWL,1,40.49
+Fuel (diesel),2025-07-01,ZWL,1,1.56
+Fuel (diesel),2025-08-01,ZWL,1,1.56
+Fuel (diesel),2025-11-01,ZWL,1,1.54
+Fuel (petrol-gasoline),2019-03-01,ZWL,1,3.39
+Fuel (petrol-gasoline),2019-04-01,ZWL,1,3.4
+Fuel (petrol-gasoline),2019-07-01,ZWL,1,6.14
+Fuel (petrol-gasoline),2019-08-01,ZWL,1,9.21
+Fuel (petrol-gasoline),2019-09-01,ZWL,1,10.51
+Fuel (petrol-gasoline),2019-10-01,ZWL,1,14.72
+Fuel (petrol-gasoline),2019-11-01,ZWL,1,16.96
+Fuel (petrol-gasoline),2019-12-01,ZWL,1,17.44
+Fuel (petrol-gasoline),2020-01-01,ZWL,1,17.84
+Fuel (petrol-gasoline),2020-02-01,ZWL,1,18.29
+Fuel (petrol-gasoline),2020-03-01,ZWL,1,21.77
+Fuel (petrol-gasoline),2020-04-01,ZWL,1,21.0
+Fuel (petrol-gasoline),2020-05-01,ZWL,1,28.96
+Fuel (petrol-gasoline),2020-07-01,ZWL,1,117.07
+Fuel (petrol-gasoline),2020-08-01,ZWL,1,97.93
+Fuel (petrol-gasoline),2020-09-01,ZWL,1,97.62
+Fuel (petrol-gasoline),2020-10-01,ZWL,1,97.11
+Fuel (petrol-gasoline),2020-11-01,ZWL,1,97.44
+Fuel (petrol-gasoline),2020-12-01,ZWL,1,99.35
+Fuel (petrol-gasoline),2021-01-01,ZWL,1,99.35
+Fuel (petrol-gasoline),2021-04-01,ZWL,1,112.96
+Fuel (petrol-gasoline),2021-07-01,ZWL,1,117.07
+Fuel (petrol-gasoline),2021-08-01,ZWL,1,117.07
+Fuel (petrol-gasoline),2021-09-01,ZWL,1,118.42
+Fuel (petrol-gasoline),2021-10-01,ZWL,1,123.71
+Fuel (petrol-gasoline),2021-11-01,ZWL,1,138.7
+Fuel (petrol-gasoline),2021-12-01,ZWL,1,154.56
+Fuel (petrol-gasoline),2022-02-01,ZWL,1,167.91
+Fuel (petrol-gasoline),2022-07-01,ZWL,1,670.82
+Fuel (petrol-gasoline),2022-08-01,ZWL,1,769.3
+Fuel (petrol-gasoline),2022-09-01,ZWL,1,938.94
+Fuel (petrol-gasoline),2022-10-01,ZWL,1,967.17
+Fuel (petrol-gasoline),2022-11-01,ZWL,1,1022.47
+Fuel (petrol-gasoline),2022-12-01,ZWL,1,1016.46
+Fuel (petrol-gasoline),2023-01-01,ZWL,1,1241.01
+Fuel (petrol-gasoline),2023-02-01,ZWL,1,1341.07
+Fuel (petrol-gasoline),2023-03-01,ZWL,1,1455.32
+Fuel (petrol-gasoline),2023-04-01,ZWL,1,1522.76
+Fuel (petrol-gasoline),2023-06-01,ZWL,1,4220.38
+Fuel (petrol-gasoline),2023-07-01,ZWL,1,9113.66
+Fuel (petrol-gasoline),2023-08-01,ZWL,1,7300.72
+Fuel (petrol-gasoline),2023-09-01,ZWL,1,7648.14
+Fuel (petrol-gasoline),2023-10-01,ZWL,1,9247.71
+Fuel (petrol-gasoline),2023-11-01,ZWL,1,8957.19
+Fuel (petrol-gasoline),2023-12-01,ZWL,1,8999.06
+Fuel (petrol-gasoline),2024-03-01,ZWL,1,25933.19
+Fuel (petrol-gasoline),2024-07-01,ZWL,1,21.19
+Fuel (petrol-gasoline),2024-08-01,ZWL,1,22.08
+Fuel (petrol-gasoline),2024-09-01,ZWL,1,21.36
+Fuel (petrol-gasoline),2024-10-01,ZWL,1,37.7
+Fuel (petrol-gasoline),2024-11-01,ZWL,1,40.62
+Fuel (petrol-gasoline),2024-12-01,ZWL,1,37.85
+Fuel (petrol-gasoline),2025-03-01,ZWL,1,40.92
+Fuel (petrol-gasoline),2025-04-01,ZWL,1,40.92
+Fuel (petrol-gasoline),2025-07-01,ZWL,1,42.04
+Fuel (petrol-gasoline),2025-08-01,ZWL,1,42.04
+Fuel (petrol-gasoline),2025-09-01,ZWL,1,41.57
+Fuel (petrol-gasoline),2025-10-01,ZWL,1,41.57
+Fuel (petrol-gasoline),2025-11-01,ZWL,1,40.56
+Fuel (petrol-gasoline),2025-12-01,ZWL,1,40.78
+Groundnuts (shelled),2017-01-01,USD,4,1.125
+Groundnuts (shelled),2017-02-01,USD,4,1.125
+Groundnuts (shelled),2017-03-01,USD,4,1.125
+Groundnuts (shelled),2017-04-01,USD,4,1.125
+Groundnuts (shelled),2017-05-01,USD,4,1.125
+Groundnuts (shelled),2017-06-01,USD,2,1.05
+Groundnuts (shelled),2017-07-01,USD,2,1.27
+Groundnuts (shelled),2017-08-01,USD,4,0.86
+Groundnuts (shelled),2017-09-01,USD,3,0.2
+Groundnuts (shelled),2017-10-01,USD,4,0.3299999999999999
+Groundnuts (shelled),2017-11-01,USD,10,0.8574999999999999
+Groundnuts (shelled),2017-12-01,USD,9,0.91
+Groundnuts (shelled),2018-01-01,USD,4,0.9450000000000001
+Groundnuts (shelled),2018-02-01,USD,3,1.4
+Groundnuts (shelled),2018-03-01,USD,2,1.7
+Groundnuts (shelled),2018-06-01,USD,1,2.57
+Groundnuts (shelled),2018-07-01,USD,3,1.25
+Groundnuts (shelled),2018-08-01,USD,1,2.57
+Groundnuts (shelled),2018-11-01,USD,2,3.215
+Handwash soap,2019-05-01,ZWL,1,33.0
+Handwash soap,2019-12-01,ZWL,9,11.25
+Handwash soap,2020-01-01,ZWL,37,11.13
+Handwash soap,2020-02-01,ZWL,35,12.34
+Handwash soap,2020-03-01,ZWL,34,14.1125
+Handwash soap,2020-04-01,ZWL,32,20.835
+Handwash soap,2020-05-01,ZWL,28,21.625
+Handwash soap,2020-06-01,ZWL,23,36.78
+Handwash soap,2020-07-01,ZWL,26,57.295
+Handwash soap,2020-08-01,ZWL,26,59.28
+Handwash soap,2020-09-01,ZWL,38,55.515
+Handwash soap,2020-10-01,ZWL,29,60.0
+Handwash soap,2020-11-01,ZWL,33,54.33
+Handwash soap,2020-12-01,ZWL,32,54.095
+Handwash soap,2021-01-01,ZWL,30,55.8
+Handwash soap,2021-02-01,ZWL,31,59.37
+Handwash soap,2021-03-01,ZWL,25,58.75
+Handwash soap,2021-04-01,ZWL,16,58.42
+Handwash soap,2021-05-01,ZWL,26,59.9875
+Handwash soap,2021-06-01,ZWL,27,66.37
+Handwash soap,2021-07-01,ZWL,29,70.81
+Handwash soap,2021-08-01,ZWL,26,70.845
+Handwash soap,2021-09-01,ZWL,24,80.35499999999999
+Handwash soap,2021-10-01,ZWL,24,83.46000000000001
+Handwash soap,2021-11-01,ZWL,7,103.0
+Handwash soap,2021-12-01,ZWL,16,102.6325
+Handwash soap,2022-01-01,ZWL,17,118.15
+Handwash soap,2022-02-01,ZWL,11,170.0
+Handwash soap,2022-03-01,ZWL,10,138.365
+Handwash soap,2022-04-01,ZWL,2,149.605
+Handwash soap,2022-05-01,ZWL,9,235.86
+Handwash soap,2022-06-01,ZWL,15,500.0
+Handwash soap,2022-07-01,ZWL,16,594.3
+Handwash soap,2022-08-01,ZWL,7,604.89
+Handwash soap,2022-09-01,ZWL,4,367.94
+Handwash soap,2022-10-01,ZWL,14,400.0
+Handwash soap,2022-11-01,ZWL,20,380.915
+Handwash soap,2022-12-01,ZWL,19,545.83
+Handwash soap,2023-01-01,ZWL,8,444.40250000000003
+Handwash soap,2023-02-01,ZWL,11,720.0
+Handwash soap,2023-03-01,ZWL,8,340.385
+Handwash soap,2023-04-01,ZWL,30,1108.6999999999998
+Handwash soap,2023-05-01,ZWL,47,1600.0
+Handwash soap,2023-06-01,ZWL,48,2772.0975
+Handwash soap,2023-07-01,ZWL,41,3709.99
+Handwash soap,2023-08-01,ZWL,15,4100.0
+Handwash soap,2023-09-01,ZWL,17,2781.25
+Handwash soap,2023-10-01,ZWL,16,2118.75
+Handwash soap,2023-11-01,ZWL,15,2250.0
+Handwash soap,2023-12-01,ZWL,11,2378.57
+Handwash soap,2024-01-01,ZWL,14,2159.83
+Handwash soap,2024-02-01,ZWL,15,2333.335
+Handwash soap,2024-03-01,ZWL,8,2317.2650000000003
+Handwash soap,2024-05-01,ZWL,1,5.08
+Handwash soap,2024-06-01,ZWL,2,4.765000000000001
+Handwash soap,2024-07-01,ZWL,2,4.7675
+Handwash soap,2024-08-01,ZWL,3,5.0
+Handwash soap,2024-09-01,ZWL,2,3.425
+Handwash soap,2024-10-01,ZWL,3,8.5
+Handwash soap,2024-11-01,ZWL,1,5.845000000000001
+Handwash soap,2024-12-01,ZWL,1,11.12
+Handwash soap,2025-01-01,ZWL,3,11.06
+Handwash soap,2025-02-01,ZWL,3,10.73
+Handwash soap,2025-03-01,ZWL,4,10.725
+Laundry soap,2019-05-01,ZWL,1,55.0
+Laundry soap,2019-12-01,ZWL,10,18.439999999999998
+Laundry soap,2020-01-01,ZWL,38,18.369999999999997
+Laundry soap,2020-02-01,ZWL,34,20.65
+Laundry soap,2020-03-01,ZWL,33,25.44
+Laundry soap,2020-04-01,ZWL,32,40.375
+Laundry soap,2020-05-01,ZWL,30,44.292500000000004
+Laundry soap,2020-06-01,ZWL,22,79.95500000000001
+Laundry soap,2020-07-01,ZWL,26,121.34
+Laundry soap,2020-08-01,ZWL,27,123.03
+Laundry soap,2020-09-01,ZWL,38,118.595
+Laundry soap,2020-10-01,ZWL,29,112.5
+Laundry soap,2020-11-01,ZWL,34,106.87
+Laundry soap,2020-12-01,ZWL,32,102.51499999999999
+Laundry soap,2021-01-01,USD,1,1.03
+Laundry soap,2021-01-01,ZWL,30,107.1
+Laundry soap,2021-02-01,ZWL,31,107.5
+Laundry soap,2021-03-01,ZWL,26,113.05000000000001
+Laundry soap,2021-04-01,ZWL,15,112.935
+Laundry soap,2021-05-01,ZWL,27,115.91
+Laundry soap,2021-06-01,ZWL,28,128.3425
+Laundry soap,2021-07-01,ZWL,29,137.5
+Laundry soap,2021-08-01,ZWL,26,149.75
+Laundry soap,2021-09-01,ZWL,24,171.85
+Laundry soap,2021-10-01,ZWL,24,184.9125
+Laundry soap,2021-11-01,ZWL,7,221.0
+Laundry soap,2021-12-01,ZWL,16,218.5
+Laundry soap,2022-01-01,ZWL,17,235.5
+Laundry soap,2022-02-01,ZWL,11,260.0
+Laundry soap,2022-03-01,ZWL,10,273.435
+Laundry soap,2022-04-01,ZWL,2,278.895
+Laundry soap,2022-05-01,ZWL,9,647.0
+Laundry soap,2022-06-01,ZWL,15,850.0
+Laundry soap,2022-07-01,ZWL,16,1085.0
+Laundry soap,2022-08-01,ZWL,7,1440.0
+Laundry soap,2022-09-01,ZWL,4,1245.05
+Laundry soap,2022-10-01,ZWL,14,1452.9775
+Laundry soap,2022-11-01,ZWL,20,1366.57
+Laundry soap,2022-12-01,ZWL,20,1392.405
+Laundry soap,2023-01-01,ZWL,8,1404.7
+Laundry soap,2023-02-01,ZWL,11,1500.0
+Laundry soap,2023-03-01,ZWL,8,1392.855
+Laundry soap,2023-04-01,ZWL,32,2500.835
+Laundry soap,2023-05-01,ZWL,48,3440.295
+Laundry soap,2023-06-01,ZWL,49,8037.5
+Laundry soap,2023-07-01,USD,1,1.0
+Laundry soap,2023-07-01,ZWL,44,9677.7775
+Laundry soap,2023-08-01,ZWL,16,6086.415
+Laundry soap,2023-09-01,USD,2,1.25
+Laundry soap,2023-09-01,ZWL,18,5960.0
+Laundry soap,2023-10-01,ZWL,22,6354.1675
+Laundry soap,2023-11-01,USD,2,1.5150000000000001
+Laundry soap,2023-11-01,ZWL,18,6854.705
+Laundry soap,2023-12-01,USD,5,2.27
+Laundry soap,2023-12-01,ZWL,12,6600.0
+Laundry soap,2024-01-01,USD,22,1.185
+Laundry soap,2024-01-01,ZWL,10,6933.335
+Laundry soap,2024-02-01,USD,21,1.36
+Laundry soap,2024-02-01,ZWL,11,6125.71
+Laundry soap,2024-03-01,USD,14,2.685
+Laundry soap,2024-03-01,ZWL,7,7125.0
+Laundry soap,2024-05-01,USD,11,1.65
+Laundry soap,2024-05-01,ZWL,1,17.48
+Laundry soap,2024-06-01,USD,7,3.46
+Laundry soap,2024-06-01,ZWL,2,17.89
+Laundry soap,2024-07-01,USD,9,10.57
+Laundry soap,2024-07-01,ZWL,4,18.740000000000002
+Laundry soap,2024-08-01,USD,8,5.515000000000001
+Laundry soap,2024-08-01,ZWL,2,18.705
+Laundry soap,2024-09-01,USD,8,1.375
+Laundry soap,2024-09-01,ZWL,3,21.96
+Laundry soap,2024-10-01,USD,10,3.56
+Laundry soap,2024-10-01,ZWL,4,40.25
+Laundry soap,2024-11-01,USD,6,4.5600000000000005
+Laundry soap,2024-11-01,ZWL,1,48.63
+Laundry soap,2024-12-01,USD,2,7.495
+Laundry soap,2024-12-01,ZWL,1,40.38
+Laundry soap,2025-01-01,USD,7,1.3
+Laundry soap,2025-01-01,ZWL,3,41.4
+Laundry soap,2025-02-01,USD,6,1.28
+Laundry soap,2025-02-01,ZWL,3,42.0
+Laundry soap,2025-03-01,USD,7,1.33
+Laundry soap,2025-03-01,ZWL,3,43.26
+Laundry soap,2025-04-01,USD,3,1.5
+Laundry soap,2025-05-01,USD,1,1.59
+Laundry soap,2025-06-01,USD,2,1.3975
+Laundry soap,2025-07-01,USD,3,1.41
+Laundry soap,2025-08-01,USD,4,1.3599999999999999
+Laundry soap,2025-09-01,USD,4,1.165
+Laundry soap,2025-10-01,USD,4,1.32
+Laundry soap,2025-11-01,USD,3,1.43
+Laundry soap,2025-12-01,USD,3,1.265
+Laundry soap,2026-01-01,USD,4,1.35
+Laundry soap,2026-02-01,USD,4,1.7925
+Laundry soap,2026-03-01,USD,3,1.61
+Laundry soap,2026-04-01,USD,3,1.71
+Laundry soap,2026-05-01,USD,6,1.435
+Maize,2017-01-01,USD,9,0.46
+Maize,2017-02-01,USD,9,0.4
+Maize,2017-03-01,USD,9,0.38
+Maize,2017-04-01,USD,9,0.4
+Maize,2017-05-01,USD,10,0.34
+Maize,2017-06-01,USD,4,0.315
+Maize,2017-07-01,USD,4,0.28
+Maize,2017-08-01,USD,9,0.29
+Maize,2017-09-01,USD,8,0.29
+Maize,2017-10-01,USD,8,0.315
+Maize,2017-11-01,USD,13,0.29
+Maize,2017-12-01,USD,12,0.3075
+Maize,2018-01-01,USD,4,0.25
+Maize,2018-02-01,USD,6,0.34
+Maize,2018-03-01,USD,8,0.34
+Maize,2018-04-01,USD,4,0.34
+Maize,2018-06-01,USD,6,0.3025
+Maize,2018-07-01,USD,5,0.34
+Maize,2018-08-01,USD,7,0.3
+Maize,2018-09-01,USD,5,0.29
+Maize,2018-11-01,USD,8,0.315
+Maize,2018-12-01,USD,2,0.27249999999999996
+Maize,2020-05-01,ZWL,2,9.465
+Maize,2020-06-01,ZWL,5,13.44
+Maize,2020-07-01,ZWL,6,23.545
+Maize,2020-08-01,ZWL,8,26.39
+Maize,2020-09-01,ZWL,11,27.36
+Maize,2020-10-01,ZWL,6,27.85
+Maize,2020-11-01,ZWL,11,27.615
+Maize,2020-12-01,ZWL,11,27.78
+Maize,2021-01-01,ZWL,8,30.465
+Maize,2021-02-01,ZWL,5,40.28
+Maize,2021-03-01,ZWL,8,36.115
+Maize,2021-04-01,ZWL,2,38.27
+Maize,2021-05-01,ZWL,14,30.03
+Maize,2021-06-01,ZWL,13,28.89
+Maize,2021-07-01,ZWL,9,29.74
+Maize,2021-08-01,ZWL,8,32.6625
+Maize,2021-09-01,ZWL,6,33.21
+Maize,2021-10-01,ZWL,9,36.2
+Maize,2021-11-01,ZWL,2,47.165
+Maize,2021-12-01,ZWL,9,44.0
+Maize,2022-01-01,ZWL,7,53.125
+Maize,2022-02-01,ZWL,6,55.625
+Maize,2022-03-01,ZWL,7,56.0
+Maize,2022-04-01,ZWL,1,80.0
+Maize,2022-05-01,ZWL,3,110.33
+Maize,2022-06-01,ZWL,4,139.79500000000002
+Maize,2022-07-01,ZWL,5,166.68
+Maize,2022-08-01,ZWL,3,155.57
+Maize,2022-09-01,ZWL,1,227.8
+Maize,2022-10-01,ZWL,5,305.58000000000004
+Maize,2022-11-01,ZWL,7,283.36
+Maize,2022-12-01,ZWL,7,277.8
+Maize,2023-01-01,ZWL,2,297.245
+Maize,2023-02-01,ZWL,5,383.36
+Maize,2023-03-01,ZWL,1,459.3
+Maize,2023-04-01,ZWL,13,500.04
+Maize,2023-05-01,ZWL,23,555.6
+Maize,2023-06-01,ZWL,23,1333.33
+Maize,2023-07-01,ZWL,15,1541.79
+Maize,2023-08-01,ZWL,4,1389.0
+Maize,2023-09-01,ZWL,3,1222.22
+Maize,2023-10-01,ZWL,6,1736.115
+Maize,2023-11-01,ZWL,3,1805.555
+Maize,2023-12-01,ZWL,5,1933.33
+Maize,2024-01-01,USD,4,0.475
+Maize,2024-01-01,ZWL,1,1777.78
+Maize,2024-02-01,USD,3,0.46
+Maize,2024-03-01,USD,5,0.46
+Maize,2024-05-01,USD,2,0.45
+Maize,2024-06-01,USD,1,0.46
+Maize,2024-07-01,USD,1,0.46
+Maize,2024-08-01,USD,1,0.46
+Maize,2024-09-01,USD,1,0.46
+Maize,2024-10-01,USD,3,0.46
+Maize,2025-07-01,USD,1,0.44
+Maize,2025-08-01,USD,1,0.44
+Maize,2025-09-01,USD,1,0.44
+Maize,2025-11-01,USD,1,0.44
+"Maize (yellow, biofortified)",2017-11-01,USD,1,0.17
+"Maize (yellow, biofortified)",2017-12-01,USD,1,0.17
+"Maize (yellow, biofortified)",2018-03-01,USD,2,0.385
+Maize meal,2020-03-01,ZWL,1,19.0
+Maize meal,2020-05-01,ZWL,21,21.0
+Maize meal,2020-06-01,ZWL,23,28.835
+Maize meal,2020-07-01,ZWL,23,41.71
+Maize meal,2020-08-01,ZWL,26,42.47
+Maize meal,2020-09-01,ZWL,33,43.48
+Maize meal,2020-10-01,ZWL,25,44.71
+Maize meal,2020-11-01,ZWL,31,45.58
+Maize meal,2020-12-01,ZWL,31,50.0
+Maize meal,2021-01-01,USD,1,0.66
+Maize meal,2021-01-01,ZWL,29,55.835
+Maize meal,2021-02-01,ZWL,29,59.0
+Maize meal,2021-03-01,ZWL,24,58.225
+Maize meal,2021-04-01,ZWL,13,59.825
+Maize meal,2021-05-01,ZWL,26,56.775000000000006
+Maize meal,2021-06-01,ZWL,27,52.53
+Maize meal,2021-07-01,ZWL,28,53.195
+Maize meal,2021-08-01,ZWL,25,53.26
+Maize meal,2021-09-01,ZWL,22,55.625
+Maize meal,2021-10-01,ZWL,21,58.14
+Maize meal,2021-11-01,ZWL,6,60.835
+Maize meal,2021-12-01,ZWL,13,60.67
+Maize meal,2022-01-01,ZWL,12,67.58500000000001
+Maize meal,2022-02-01,ZWL,10,81.225
+Maize meal,2022-03-01,ZWL,10,93.00999999999999
+Maize meal,2022-04-01,ZWL,2,95.925
+Maize meal,2022-05-01,ZWL,9,204.75
+Maize meal,2022-06-01,ZWL,13,290.55
+Maize meal,2022-07-01,ZWL,14,365.375
+Maize meal,2022-08-01,ZWL,6,386.08500000000004
+Maize meal,2022-09-01,ZWL,4,366.415
+Maize meal,2022-10-01,ZWL,11,467.6
+Maize meal,2022-11-01,ZWL,19,394.75
+Maize meal,2022-12-01,ZWL,19,427.89
+Maize meal,2023-01-01,ZWL,8,507.4925
+Maize meal,2023-02-01,ZWL,11,571.84
+Maize meal,2023-03-01,ZWL,8,605.2375
+Maize meal,2023-04-01,ZWL,28,889.9775
+Maize meal,2023-05-01,ZWL,44,1299.08
+Maize meal,2023-06-01,USD,1,0.53
+Maize meal,2023-06-01,ZWL,41,3029.165
+Maize meal,2023-07-01,USD,1,0.59
+Maize meal,2023-07-01,ZWL,36,3420.0
+Maize meal,2023-08-01,ZWL,12,2502.6400000000003
+Maize meal,2023-09-01,USD,1,0.6
+Maize meal,2023-09-01,ZWL,14,2839.4
+Maize meal,2023-10-01,ZWL,19,2625.0
+Maize meal,2023-11-01,USD,2,0.485
+Maize meal,2023-11-01,ZWL,17,3247.5
+Maize meal,2023-12-01,USD,3,0.67
+Maize meal,2023-12-01,ZWL,17,3200.0
+Maize meal,2024-01-01,USD,17,0.65
+Maize meal,2024-01-01,ZWL,11,5323.0
+Maize meal,2024-02-01,USD,21,0.64
+Maize meal,2024-02-01,ZWL,11,3187.5
+Maize meal,2024-03-01,USD,13,0.63
+Maize meal,2024-03-01,ZWL,6,3908.0
+Maize meal,2024-05-01,USD,10,0.705
+Maize meal,2024-05-01,ZWL,2,8.995000000000001
+Maize meal,2024-06-01,USD,7,0.65
+Maize meal,2024-06-01,ZWL,2,8.725
+Maize meal,2024-07-01,USD,9,0.67
+Maize meal,2024-07-01,ZWL,4,9.254999999999999
+Maize meal,2024-08-01,USD,8,0.655
+Maize meal,2024-08-01,ZWL,2,9.965
+Maize meal,2024-09-01,USD,8,0.6925000000000001
+Maize meal,2024-09-01,ZWL,3,18.0
+Maize meal,2024-10-01,USD,12,0.7
+Maize meal,2024-10-01,ZWL,7,20.48
+Maize meal,2024-11-01,USD,7,0.69
+Maize meal,2024-11-01,ZWL,2,26.69
+Maize meal,2024-12-01,USD,3,0.71
+Maize meal,2024-12-01,ZWL,1,24.68
+Maize meal,2025-01-01,USD,6,0.695
+Maize meal,2025-01-01,ZWL,2,27.585
+Maize meal,2025-02-01,USD,5,0.65
+Maize meal,2025-02-01,ZWL,3,28.11
+Maize meal,2025-03-01,USD,5,0.65
+Maize meal,2025-03-01,ZWL,2,27.365000000000002
+Maize meal,2025-04-01,USD,2,0.62
+Maize meal,2025-05-01,USD,1,0.7
+Maize meal,2025-06-01,USD,1,0.6599999999999999
+Maize meal,2025-07-01,USD,3,0.6
+Maize meal,2025-08-01,USD,2,0.655
+Maize meal,2025-09-01,USD,2,0.62
+Maize meal,2025-10-01,USD,2,0.615
+Maize meal,2025-11-01,USD,2,0.625
+Maize meal,2025-12-01,USD,3,0.61
+Maize meal,2026-01-01,USD,3,0.655
+Maize meal,2026-02-01,USD,3,0.685
+Maize meal,2026-03-01,USD,3,0.7
+Maize meal,2026-04-01,USD,2,0.6525000000000001
+Maize meal,2026-05-01,USD,5,0.685
+"Maize meal (white, fortified)",2017-08-01,USD,2,0.7
+"Maize meal (white, fortified)",2017-09-01,USD,3,0.3
+"Maize meal (white, fortified)",2017-10-01,USD,2,0.55
+"Maize meal (white, fortified)",2017-11-01,USD,4,0.525
+"Maize meal (white, fortified)",2017-12-01,USD,4,0.525
+"Maize meal (white, fortified)",2018-01-01,USD,1,0.49
+"Maize meal (white, fortified)",2018-02-01,USD,3,0.75
+"Maize meal (white, fortified)",2018-03-01,USD,6,0.5
+"Maize meal (white, fortified)",2018-04-01,USD,3,0.5
+"Maize meal (white, fortified)",2018-06-01,USD,1,0.6
+"Maize meal (white, fortified)",2018-07-01,USD,2,0.5
+"Maize meal (white, fortified)",2018-08-01,USD,1,0.49
+"Maize meal (white, fortified)",2018-09-01,USD,3,0.495
+"Maize meal (white, fortified)",2018-11-01,USD,1,0.47
+"Maize meal (white, fortified)",2018-12-01,USD,1,0.3
+"Maize meal (white, roller)",2017-01-01,USD,10,0.575
+"Maize meal (white, roller)",2017-02-01,USD,10,0.6
+"Maize meal (white, roller)",2017-03-01,USD,10,0.6
+"Maize meal (white, roller)",2017-04-01,USD,10,0.6
+"Maize meal (white, roller)",2017-05-01,USD,10,0.6
+"Maize meal (white, roller)",2017-06-01,USD,4,0.625
+"Maize meal (white, roller)",2017-07-01,USD,4,0.59
+"Maize meal (white, roller)",2017-08-01,USD,9,0.625
+"Maize meal (white, roller)",2017-09-01,USD,9,0.6
+"Maize meal (white, roller)",2017-10-01,USD,11,0.7
+"Maize meal (white, roller)",2017-11-01,USD,13,0.6
+"Maize meal (white, roller)",2017-12-01,USD,12,0.5625
+"Maize meal (white, roller)",2018-01-01,USD,6,0.525
+"Maize meal (white, roller)",2018-02-01,USD,9,0.6
+"Maize meal (white, roller)",2018-03-01,USD,8,0.56
+"Maize meal (white, roller)",2018-04-01,USD,7,0.6
+"Maize meal (white, roller)",2018-06-01,USD,6,0.5575
+"Maize meal (white, roller)",2018-07-01,USD,3,0.6
+"Maize meal (white, roller)",2018-08-01,USD,6,0.575
+"Maize meal (white, roller)",2018-09-01,USD,4,0.51
+"Maize meal (white, roller)",2018-11-01,USD,9,0.7
+"Maize meal (white, roller)",2018-12-01,USD,7,0.52
+Millet,2017-01-01,USD,2,1.0
+Millet,2017-08-01,USD,8,0.345
+Millet,2017-09-01,USD,5,0.23
+Millet,2017-10-01,USD,4,0.3999999999999999
+Millet,2017-11-01,USD,6,0.39999999999999997
+Millet,2017-12-01,USD,6,0.42999999999999994
+Millet,2018-01-01,USD,4,0.515
+Millet,2018-02-01,USD,4,0.37
+Millet,2018-03-01,USD,2,0.37
+Millet,2018-04-01,USD,1,0.4
+Millet,2018-06-01,USD,5,0.46
+Millet,2018-07-01,USD,3,0.46
+Millet,2018-08-01,USD,4,0.46
+Millet,2018-09-01,USD,3,0.46
+Millet,2018-11-01,USD,2,0.545
+Millet (biofortified),2017-11-01,USD,1,2.1
+Millet (biofortified),2017-12-01,USD,1,2.1
+Millet (biofortified),2018-11-01,USD,1,0.29
+Oil (vegetable),2017-01-01,USD,10,1.84
+Oil (vegetable),2017-02-01,USD,10,1.8650000000000002
+Oil (vegetable),2017-03-01,USD,10,1.8650000000000002
+Oil (vegetable),2017-04-01,USD,10,1.8650000000000002
+Oil (vegetable),2017-05-01,USD,10,1.8650000000000002
+Oil (vegetable),2017-06-01,USD,3,1.85
+Oil (vegetable),2017-07-01,USD,2,1.8900000000000001
+Oil (vegetable),2017-08-01,USD,9,1.865
+Oil (vegetable),2017-09-01,USD,10,2.04
+Oil (vegetable),2017-10-01,USD,10,2.1624999999999996
+Oil (vegetable),2017-11-01,USD,14,2.2
+Oil (vegetable),2017-12-01,USD,13,2.2
+Oil (vegetable),2018-01-01,USD,7,2.15
+Oil (vegetable),2018-02-01,USD,6,2.3075
+Oil (vegetable),2018-03-01,USD,9,2.25
+Oil (vegetable),2018-04-01,USD,6,2.275
+Oil (vegetable),2018-06-01,USD,6,2.225
+Oil (vegetable),2018-07-01,USD,4,2.1
+Oil (vegetable),2018-08-01,USD,6,2.1
+Oil (vegetable),2018-09-01,USD,6,2.225
+Oil (vegetable),2018-11-01,USD,8,3.5
+Oil (vegetable),2018-12-01,USD,11,2.475
+Oil (vegetable),2020-03-01,ZWL,1,65.0
+Oil (vegetable),2020-05-01,ZWL,23,82.0
+Oil (vegetable),2020-06-01,ZWL,23,109.5
+Oil (vegetable),2020-07-01,ZWL,26,149.905
+Oil (vegetable),2020-08-01,ZWL,28,151.88
+Oil (vegetable),2020-09-01,ZWL,38,144.2525
+Oil (vegetable),2020-10-01,ZWL,29,143.255
+Oil (vegetable),2020-11-01,ZWL,34,140.445
+Oil (vegetable),2020-12-01,ZWL,32,143.635
+Oil (vegetable),2021-01-01,USD,1,0.54
+Oil (vegetable),2021-01-01,ZWL,30,161.2575
+Oil (vegetable),2021-02-01,ZWL,31,172.3
+Oil (vegetable),2021-03-01,ZWL,26,184.04000000000002
+Oil (vegetable),2021-04-01,ZWL,16,189.835
+Oil (vegetable),2021-05-01,ZWL,26,194.01
+Oil (vegetable),2021-06-01,ZWL,29,211.08
+Oil (vegetable),2021-07-01,ZWL,28,216.29
+Oil (vegetable),2021-08-01,ZWL,25,225.49
+Oil (vegetable),2021-09-01,ZWL,23,246.0
+Oil (vegetable),2021-10-01,ZWL,23,264.23
+Oil (vegetable),2021-11-01,ZWL,7,334.33
+Oil (vegetable),2021-12-01,ZWL,15,334.33
+Oil (vegetable),2022-01-01,ZWL,16,370.0125
+Oil (vegetable),2022-02-01,ZWL,10,415.135
+Oil (vegetable),2022-03-01,ZWL,10,439.37
+Oil (vegetable),2022-04-01,ZWL,2,442.73
+Oil (vegetable),2022-05-01,ZWL,9,1033.4
+Oil (vegetable),2022-06-01,ZWL,15,1508.64
+Oil (vegetable),2022-07-01,ZWL,16,1870.5749999999998
+Oil (vegetable),2022-08-01,ZWL,7,1942.75
+Oil (vegetable),2022-09-01,ZWL,4,1719.165
+Oil (vegetable),2022-10-01,ZWL,14,2005.0
+Oil (vegetable),2022-11-01,ZWL,20,1930.8175
+Oil (vegetable),2022-12-01,ZWL,20,2173.5
+Oil (vegetable),2023-01-01,ZWL,8,2052.085
+Oil (vegetable),2023-02-01,ZWL,11,2028.125
+Oil (vegetable),2023-03-01,ZWL,8,2087.875
+Oil (vegetable),2023-04-01,ZWL,32,3550.9049999999997
+Oil (vegetable),2023-05-01,ZWL,49,4650.5
+Oil (vegetable),2023-06-01,USD,1,1.75
+Oil (vegetable),2023-06-01,ZWL,50,11860.415
+Oil (vegetable),2023-07-01,USD,1,1.71
+Oil (vegetable),2023-07-01,ZWL,43,14062.5
+Oil (vegetable),2023-08-01,ZWL,18,9108.0
+Oil (vegetable),2023-09-01,USD,2,0.7350000000000001
+Oil (vegetable),2023-09-01,ZWL,18,9355.335
+Oil (vegetable),2023-10-01,ZWL,26,10158.8525
+Oil (vegetable),2023-11-01,USD,2,15.65
+Oil (vegetable),2023-11-01,ZWL,20,10513.89
+Oil (vegetable),2023-12-01,USD,5,23.98
+Oil (vegetable),2023-12-01,ZWL,18,10912.5
+Oil (vegetable),2024-01-01,USD,22,14.875
+Oil (vegetable),2024-01-01,ZWL,12,12070.5
+Oil (vegetable),2024-02-01,USD,20,5.25
+Oil (vegetable),2024-02-01,ZWL,13,12124.44
+Oil (vegetable),2024-03-01,USD,16,17.91
+Oil (vegetable),2024-03-01,ZWL,6,12958.3325
+Oil (vegetable),2024-05-01,USD,10,14.405000000000001
+Oil (vegetable),2024-05-01,ZWL,1,22.88
+Oil (vegetable),2024-06-01,USD,7,30.74
+Oil (vegetable),2024-06-01,ZWL,2,23.48
+Oil (vegetable),2024-07-01,USD,10,17.91
+Oil (vegetable),2024-07-01,ZWL,4,25.61
+Oil (vegetable),2024-08-01,USD,8,23.009999999999998
+Oil (vegetable),2024-08-01,ZWL,3,28.125
+Oil (vegetable),2024-09-01,USD,10,17.23
+Oil (vegetable),2024-09-01,ZWL,3,49.5
+Oil (vegetable),2024-10-01,USD,12,17.115
+Oil (vegetable),2024-10-01,ZWL,5,56.4
+Oil (vegetable),2024-11-01,USD,7,20.11
+Oil (vegetable),2024-11-01,ZWL,1,61.25
+Oil (vegetable),2024-12-01,USD,4,16.305
+Oil (vegetable),2024-12-01,ZWL,1,57.43
+Oil (vegetable),2025-01-01,USD,7,1.88
+Oil (vegetable),2025-01-01,ZWL,2,75.0
+Oil (vegetable),2025-02-01,USD,6,2.135
+Oil (vegetable),2025-02-01,ZWL,2,74.06
+Oil (vegetable),2025-03-01,USD,7,1.75
+Oil (vegetable),2025-03-01,ZWL,1,70.0
+Oil (vegetable),2025-04-01,USD,3,1.7
+Oil (vegetable),2025-05-01,USD,1,2.54
+Oil (vegetable),2025-06-01,USD,2,2.1825
+Oil (vegetable),2025-07-01,USD,3,1.63
+Oil (vegetable),2025-08-01,USD,4,1.5899999999999999
+Oil (vegetable),2025-09-01,USD,4,1.605
+Oil (vegetable),2025-10-01,USD,4,1.6349999999999998
+Oil (vegetable),2025-11-01,USD,3,1.68
+Oil (vegetable),2025-12-01,USD,3,1.6549999999999998
+Oil (vegetable),2026-01-01,USD,3,1.92
+Oil (vegetable),2026-02-01,USD,4,2.1325
+Oil (vegetable),2026-03-01,USD,3,2.18
+Oil (vegetable),2026-04-01,USD,3,2.4
+Oil (vegetable),2026-05-01,USD,6,2.225
+"Oil (vegetable, fortified)",2017-08-01,USD,2,1.7
+"Oil (vegetable, fortified)",2017-09-01,USD,3,1.595
+"Oil (vegetable, fortified)",2017-10-01,USD,4,2.1375
+"Oil (vegetable, fortified)",2017-11-01,USD,6,2.1
+"Oil (vegetable, fortified)",2017-12-01,USD,6,2.1
+"Oil (vegetable, fortified)",2018-01-01,USD,3,2.1
+"Oil (vegetable, fortified)",2018-02-01,USD,7,2.325
+"Oil (vegetable, fortified)",2018-03-01,USD,8,2.25
+"Oil (vegetable, fortified)",2018-04-01,USD,5,2.25
+"Oil (vegetable, fortified)",2018-06-01,USD,5,2.2
+"Oil (vegetable, fortified)",2018-07-01,USD,4,2.225
+"Oil (vegetable, fortified)",2018-08-01,USD,6,2.27
+"Oil (vegetable, fortified)",2018-09-01,USD,5,2.2
+Rice,2019-05-01,ZWL,1,55.0
+Rice,2019-12-01,ZWL,10,17.09
+Rice,2020-01-01,ZWL,38,17.9175
+Rice,2020-02-01,ZWL,35,20.02
+Rice,2020-03-01,ZWL,34,22.69
+Rice,2020-04-01,ZWL,31,40.83
+Rice,2020-05-01,ZWL,27,39.56
+Rice,2020-06-01,ZWL,23,65.73
+Rice,2020-07-01,ZWL,26,105.315
+Rice,2020-08-01,ZWL,27,100.0
+Rice,2020-09-01,ZWL,35,102.28
+Rice,2020-10-01,ZWL,27,97.71
+Rice,2020-11-01,ZWL,33,98.16
+Rice,2020-12-01,ZWL,30,99.06
+Rice,2021-01-01,USD,1,1.34
+Rice,2021-01-01,ZWL,29,100.0
+Rice,2021-02-01,ZWL,30,103.955
+Rice,2021-03-01,ZWL,25,107.75
+Rice,2021-04-01,ZWL,15,108.75
+Rice,2021-05-01,ZWL,27,106.985
+Rice,2021-06-01,ZWL,28,107.58500000000001
+Rice,2021-07-01,ZWL,28,111.16499999999999
+Rice,2021-08-01,ZWL,25,115.5
+Rice,2021-09-01,ZWL,21,123.74
+Rice,2021-10-01,ZWL,21,131.5
+Rice,2021-11-01,ZWL,7,163.33
+Rice,2021-12-01,ZWL,16,162.72500000000002
+Rice,2022-01-01,ZWL,17,180.0
+Rice,2022-02-01,ZWL,11,193.03
+Rice,2022-03-01,ZWL,10,199.135
+Rice,2022-04-01,ZWL,2,206.235
+Rice,2022-05-01,ZWL,9,349.36
+Rice,2022-06-01,ZWL,14,467.9
+Rice,2022-07-01,ZWL,14,644.085
+Rice,2022-08-01,ZWL,7,717.5
+Rice,2022-09-01,ZWL,4,654.35
+Rice,2022-10-01,ZWL,14,822.855
+Rice,2022-11-01,ZWL,20,768.575
+Rice,2022-12-01,ZWL,20,852.2925
+Rice,2023-01-01,ZWL,8,872.4275
+Rice,2023-02-01,ZWL,11,919.11
+Rice,2023-03-01,ZWL,8,938.75
+Rice,2023-04-01,ZWL,31,1616.92
+Rice,2023-05-01,ZWL,49,2190.0
+Rice,2023-06-01,USD,1,1.98
+Rice,2023-06-01,ZWL,51,5291.67
+Rice,2023-07-01,USD,1,2.54
+Rice,2023-07-01,ZWL,44,6358.335
+Rice,2023-08-01,ZWL,18,4785.665
+Rice,2023-09-01,USD,2,1.73
+Rice,2023-09-01,ZWL,19,4830.94
+Rice,2023-10-01,ZWL,23,5828.57
+Rice,2023-11-01,USD,2,1.71
+Rice,2023-11-01,ZWL,20,5750.0
+Rice,2023-12-01,USD,4,1.2149999999999999
+Rice,2023-12-01,ZWL,13,6500.0
+Rice,2024-01-01,USD,23,1.455
+Rice,2024-01-01,ZWL,10,5500.0
+Rice,2024-02-01,USD,21,2.18
+Rice,2024-02-01,ZWL,12,5687.5
+Rice,2024-03-01,USD,16,2.435
+Rice,2024-03-01,ZWL,8,7139.285
+Rice,2024-05-01,USD,11,2.62
+Rice,2024-05-01,ZWL,2,15.99
+Rice,2024-06-01,USD,7,2.65
+Rice,2024-06-01,ZWL,2,17.064999999999998
+Rice,2024-07-01,USD,10,2.325
+Rice,2024-07-01,ZWL,3,17.25
+Rice,2024-08-01,USD,8,2.35
+Rice,2024-08-01,ZWL,2,20.18
+Rice,2024-09-01,USD,10,1.92
+Rice,2024-09-01,ZWL,3,23.22
+Rice,2024-10-01,USD,12,2.0549999999999997
+Rice,2024-10-01,ZWL,5,35.0
+Rice,2024-11-01,USD,7,2.05
+Rice,2024-11-01,ZWL,1,37.59
+Rice,2024-12-01,USD,4,2.4850000000000003
+Rice,2024-12-01,ZWL,1,40.63
+Rice,2025-01-01,USD,7,1.22
+Rice,2025-01-01,ZWL,3,40.33
+Rice,2025-02-01,USD,6,1.17
+Rice,2025-02-01,ZWL,3,40.98
+Rice,2025-03-01,USD,7,1.1
+Rice,2025-03-01,ZWL,2,40.995
+Rice,2025-04-01,USD,3,1.1
+Rice,2025-05-01,USD,1,1.23
+Rice,2025-06-01,USD,2,1.2225
+Rice,2025-07-01,USD,3,1.08
+Rice,2025-08-01,USD,4,1.04
+Rice,2025-09-01,USD,4,1.03
+Rice,2025-10-01,USD,4,1.0
+Rice,2025-11-01,USD,3,0.98
+Rice,2025-12-01,USD,3,1.0
+Rice,2026-01-01,USD,4,1.03
+Rice,2026-02-01,USD,4,1.0675
+Rice,2026-03-01,USD,3,1.2
+Rice,2026-04-01,USD,3,1.34
+Rice,2026-05-01,USD,6,1.165
+Salt,2019-05-01,ZWL,1,50.0
+Salt,2019-12-01,ZWL,10,10.44
+Salt,2020-01-01,ZWL,38,10.3
+Salt,2020-02-01,ZWL,35,10.5
+Salt,2020-03-01,ZWL,34,13.2525
+Salt,2020-04-01,ZWL,32,22.835
+Salt,2020-05-01,ZWL,31,21.33
+Salt,2020-06-01,ZWL,23,31.665
+Salt,2020-07-01,ZWL,26,53.709999999999994
+Salt,2020-08-01,ZWL,27,57.74
+Salt,2020-09-01,ZWL,38,53.5775
+Salt,2020-10-01,ZWL,29,51.8
+Salt,2020-11-01,ZWL,33,52.365
+Salt,2020-12-01,ZWL,32,50.0
+Salt,2021-01-01,ZWL,30,50.13
+Salt,2021-02-01,ZWL,31,52.0
+Salt,2021-03-01,ZWL,26,56.075
+Salt,2021-04-01,ZWL,16,53.095
+Salt,2021-05-01,ZWL,27,52.35
+Salt,2021-06-01,ZWL,27,53.26
+Salt,2021-07-01,ZWL,29,58.61
+Salt,2021-08-01,ZWL,26,58.3575
+Salt,2021-09-01,ZWL,24,59.07
+Salt,2021-10-01,ZWL,25,61.335
+Salt,2021-11-01,ZWL,7,69.0
+Salt,2021-12-01,ZWL,15,80.0
+Salt,2022-01-01,ZWL,17,92.35
+Salt,2022-02-01,ZWL,11,102.0
+Salt,2022-03-01,ZWL,10,104.56
+Salt,2022-04-01,ZWL,2,106.58500000000001
+Salt,2022-05-01,ZWL,9,193.65
+Salt,2022-06-01,ZWL,15,300.0
+Salt,2022-07-01,ZWL,16,378.12
+Salt,2022-08-01,ZWL,7,400.0
+Salt,2022-09-01,ZWL,4,408.0
+Salt,2022-10-01,ZWL,14,489.905
+Salt,2022-11-01,ZWL,20,443.61
+Salt,2022-12-01,ZWL,19,500.0
+Salt,2023-01-01,ZWL,8,529.3125
+Salt,2023-02-01,ZWL,11,500.0
+Salt,2023-03-01,ZWL,8,561.11
+Salt,2023-04-01,ZWL,30,1033.3325
+Salt,2023-05-01,ZWL,48,1413.2075
+Salt,2023-06-01,ZWL,50,3589.14
+Salt,2023-07-01,ZWL,44,4350.695
+Salt,2023-08-01,ZWL,17,2690.3
+Salt,2023-09-01,ZWL,17,3219.83
+Salt,2023-10-01,ZWL,18,3461.665
+Salt,2023-11-01,ZWL,14,3744.565
+Salt,2023-12-01,ZWL,11,3808.335
+Salt,2024-01-01,ZWL,9,4000.0
+Salt,2024-02-01,ZWL,7,5000.0
+Salt,2024-03-01,ZWL,6,6175.0
+Salt,2024-05-01,ZWL,1,6.64
+Salt,2024-06-01,ZWL,2,6.78
+Salt,2024-07-01,ZWL,3,7.5
+Salt,2024-08-01,ZWL,2,7.654999999999999
+Salt,2024-09-01,ZWL,3,8.14
+Salt,2024-10-01,ZWL,3,18.0
+Salt,2024-11-01,ZWL,1,25.92
+Salt,2024-12-01,ZWL,1,16.45
+Salt,2025-01-01,ZWL,1,30.0
+Salt,2025-02-01,ZWL,2,26.5
+Salt,2025-03-01,ZWL,1,31.5
+Sorghum,2017-01-01,USD,4,0.32499999999999996
+Sorghum,2017-02-01,USD,5,0.34
+Sorghum,2017-03-01,USD,5,0.34
+Sorghum,2017-04-01,USD,5,0.34
+Sorghum,2017-05-01,USD,4,0.37
+Sorghum,2017-06-01,USD,3,0.34
+Sorghum,2017-07-01,USD,2,0.455
+Sorghum,2017-08-01,USD,5,0.29
+Sorghum,2017-09-01,USD,6,0.315
+Sorghum,2017-10-01,USD,4,0.23
+Sorghum,2017-11-01,USD,7,0.315
+Sorghum,2017-12-01,USD,7,0.34
+Sorghum,2018-01-01,USD,2,0.34500000000000003
+Sorghum,2018-02-01,USD,4,0.4
+Sorghum,2018-03-01,USD,1,0.23
+Sorghum,2018-04-01,USD,2,0.345
+Sorghum,2018-06-01,USD,3,0.23
+Sorghum,2018-07-01,USD,2,0.49
+Sorghum,2018-08-01,USD,2,0.49
+Sorghum,2018-09-01,USD,2,0.375
+Sorghum,2018-11-01,USD,3,0.46
+Sorghum (biofortified),2018-02-01,USD,1,1.0
+Sugar,2019-05-01,ZWL,1,45.0
+Sugar,2019-12-01,ZWL,10,17.064999999999998
+Sugar,2020-01-01,ZWL,38,18.445
+Sugar,2020-02-01,ZWL,35,19.91
+Sugar,2020-03-01,ZWL,34,23.942500000000003
+Sugar,2020-04-01,ZWL,31,42.67
+Sugar,2020-05-01,ZWL,28,42.5275
+Sugar,2020-06-01,ZWL,23,78.47
+Sugar,2020-07-01,ZWL,26,121.9875
+Sugar,2020-08-01,ZWL,28,119.0025
+Sugar,2020-09-01,ZWL,38,113.15
+Sugar,2020-10-01,ZWL,29,109.17
+Sugar,2020-11-01,ZWL,34,109.745
+Sugar,2020-12-01,ZWL,32,111.38749999999999
+Sugar,2021-01-01,USD,1,1.24
+Sugar,2021-01-01,ZWL,30,112.375
+Sugar,2021-02-01,ZWL,31,110.0
+Sugar,2021-03-01,ZWL,26,114.9825
+Sugar,2021-04-01,ZWL,15,117.37
+Sugar,2021-05-01,ZWL,27,120.24
+Sugar,2021-06-01,ZWL,29,126.42
+Sugar,2021-07-01,ZWL,29,126.73
+Sugar,2021-08-01,ZWL,26,137.7475
+Sugar,2021-09-01,ZWL,24,146.4625
+Sugar,2021-10-01,ZWL,25,159.12
+Sugar,2021-11-01,ZWL,7,192.67
+Sugar,2021-12-01,ZWL,16,191.33499999999998
+Sugar,2022-01-01,ZWL,17,214.715
+Sugar,2022-02-01,ZWL,11,238.5
+Sugar,2022-03-01,ZWL,10,248.375
+Sugar,2022-04-01,ZWL,2,243.45
+Sugar,2022-05-01,ZWL,9,503.85
+Sugar,2022-06-01,ZWL,15,641.665
+Sugar,2022-07-01,ZWL,16,744.75
+Sugar,2022-08-01,ZWL,7,843.89
+Sugar,2022-09-01,ZWL,4,844.75
+Sugar,2022-10-01,ZWL,13,942.0
+Sugar,2022-11-01,ZWL,19,910.0
+Sugar,2022-12-01,ZWL,19,925.26
+Sugar,2023-01-01,ZWL,8,1066.93
+Sugar,2023-02-01,ZWL,11,1158.33
+Sugar,2023-03-01,ZWL,8,1247.825
+Sugar,2023-04-01,ZWL,29,2170.0
+Sugar,2023-05-01,ZWL,50,2938.1400000000003
+Sugar,2023-06-01,USD,1,1.25
+Sugar,2023-06-01,ZWL,48,7686.395
+Sugar,2023-07-01,USD,1,1.5
+Sugar,2023-07-01,ZWL,44,10137.5
+Sugar,2023-08-01,ZWL,16,7487.5
+Sugar,2023-09-01,USD,2,1.4
+Sugar,2023-09-01,ZWL,16,7558.34
+Sugar,2023-10-01,ZWL,24,7220.5199999999995
+Sugar,2023-11-01,USD,2,5.27
+Sugar,2023-11-01,ZWL,18,6395.6849999999995
+Sugar,2023-12-01,USD,4,7.345
+Sugar,2023-12-01,ZWL,17,7500.0
+Sugar,2024-01-01,USD,22,6.21
+Sugar,2024-01-01,ZWL,12,7391.82
+Sugar,2024-02-01,USD,21,1.5
+Sugar,2024-02-01,ZWL,14,6641.67
+Sugar,2024-03-01,USD,14,6.82
+Sugar,2024-03-01,ZWL,6,8150.0
+Sugar,2024-05-01,USD,11,1.75
+Sugar,2024-05-01,ZWL,1,21.25
+Sugar,2024-06-01,USD,6,7.945
+Sugar,2024-06-01,ZWL,2,21.215
+Sugar,2024-07-01,USD,9,12.09
+Sugar,2024-07-01,ZWL,3,20.815
+Sugar,2024-08-01,USD,7,8.7
+Sugar,2024-08-01,ZWL,3,22.5
+Sugar,2024-09-01,USD,8,7.85
+Sugar,2024-09-01,ZWL,3,26.5
+Sugar,2024-10-01,USD,10,5.77
+Sugar,2024-11-01,USD,6,7.58
+Sugar,2024-12-01,USD,4,8.75
+Sugar,2025-01-01,USD,7,1.43
+Sugar,2025-02-01,USD,6,1.3624999999999998
+Sugar,2025-03-01,USD,7,1.38
+Sugar,2025-04-01,USD,3,1.465
+Sugar,2025-05-01,USD,1,1.46
+Sugar,2025-06-01,USD,2,1.3900000000000001
+Sugar,2025-07-01,USD,3,1.38
+Sugar,2025-08-01,USD,4,1.27
+Sugar,2025-09-01,USD,4,1.28
+Sugar,2025-10-01,USD,4,1.29
+Sugar,2025-11-01,USD,3,1.3
+Sugar,2025-12-01,USD,3,1.31
+Sugar,2026-01-01,USD,4,1.375
+Sugar,2026-02-01,USD,4,1.4300000000000002
+Sugar,2026-03-01,USD,3,1.51
+Sugar,2026-04-01,USD,3,1.65
+Sugar,2026-05-01,USD,5,1.52
+"Sugar (white, fortified)",2017-08-01,USD,2,0.95
+"Sugar (white, fortified)",2017-09-01,USD,3,1.5
+"Sugar (white, fortified)",2017-10-01,USD,4,1.0750000000000002
+"Sugar (white, fortified)",2017-11-01,USD,4,1.0750000000000002
+"Sugar (white, fortified)",2018-01-01,USD,5,1.0
+"Sugar (white, fortified)",2018-02-01,USD,7,1.15
+"Sugar (white, fortified)",2018-07-01,USD,4,1.0825
+"Sugar (white, fortified)",2018-08-01,USD,5,1.1
+"Sugar (white, fortified)",2018-09-01,USD,3,1.1
+"Sugar (white, fortified)",2018-11-01,USD,9,1.85
+Toothpaste,2019-05-01,ZWL,1,50.0
+Toothpaste,2019-12-01,ZWL,9,18.5
+Toothpaste,2020-01-01,ZWL,37,19.25
+Toothpaste,2020-02-01,ZWL,34,20.200000000000003
+Toothpaste,2020-03-01,ZWL,33,24.33
+Toothpaste,2020-04-01,ZWL,31,37.48
+Toothpaste,2020-05-01,ZWL,29,39.0
+Toothpaste,2020-06-01,ZWL,22,61.0125
+Toothpaste,2020-07-01,ZWL,25,103.33
+Toothpaste,2020-08-01,ZWL,26,103.105
+Toothpaste,2020-09-01,ZWL,38,102.395
+Toothpaste,2020-10-01,ZWL,29,100.0
+Toothpaste,2020-11-01,ZWL,33,100.0
+Toothpaste,2020-12-01,ZWL,31,99.89
+Toothpaste,2021-01-01,USD,1,1.06
+Toothpaste,2021-01-01,ZWL,30,99.375
+Toothpaste,2021-02-01,ZWL,31,100.0
+Toothpaste,2021-03-01,ZWL,25,104.99
+Toothpaste,2021-04-01,ZWL,16,112.3
+Toothpaste,2021-05-01,ZWL,27,107.785
+Toothpaste,2021-06-01,ZWL,28,112.5
+Toothpaste,2021-07-01,ZWL,29,115.335
+Toothpaste,2021-08-01,ZWL,25,123.51
+Toothpaste,2021-09-01,ZWL,24,131.57
+Toothpaste,2021-10-01,ZWL,23,144.0
+Toothpaste,2021-11-01,ZWL,6,175.785
+Toothpaste,2021-12-01,ZWL,16,175.32
+Toothpaste,2022-01-01,ZWL,17,195.7
+Toothpaste,2022-02-01,ZWL,11,208.97
+Toothpaste,2022-03-01,ZWL,10,225.0
+Toothpaste,2022-04-01,ZWL,2,233.0
+Toothpaste,2022-05-01,ZWL,9,401.8
+Toothpaste,2022-06-01,ZWL,12,501.8275
+Toothpaste,2022-07-01,ZWL,13,725.86
+Toothpaste,2022-08-01,ZWL,6,800.0
+Toothpaste,2022-09-01,ZWL,4,866.0
+Toothpaste,2022-10-01,ZWL,14,925.0
+Toothpaste,2022-11-01,ZWL,20,822.665
+Toothpaste,2022-12-01,ZWL,20,834.845
+Toothpaste,2023-01-01,ZWL,8,952.5625
+Toothpaste,2023-02-01,ZWL,11,1000.0
+Toothpaste,2023-03-01,ZWL,8,1104.0700000000002
+Toothpaste,2023-04-01,ZWL,28,1543.755
+Toothpaste,2023-05-01,ZWL,49,2225.0
+Toothpaste,2023-06-01,ZWL,50,6512.5
+Toothpaste,2023-07-01,USD,1,1.0
+Toothpaste,2023-07-01,ZWL,43,7377.78
+Toothpaste,2023-08-01,ZWL,16,5200.0
+Toothpaste,2023-09-01,USD,2,1.0
+Toothpaste,2023-09-01,ZWL,17,5400.0
+Toothpaste,2023-10-01,ZWL,20,6000.0
+Toothpaste,2023-11-01,USD,2,1.25
+Toothpaste,2023-11-01,ZWL,19,6666.67
+Toothpaste,2023-12-01,USD,4,5.82
+Toothpaste,2023-12-01,ZWL,14,6346.785
+Toothpaste,2024-01-01,USD,22,5.640000000000001
+Toothpaste,2024-01-01,ZWL,7,5528.0
+Toothpaste,2024-02-01,USD,20,1.0
+Toothpaste,2024-02-01,ZWL,10,5250.0
+Toothpaste,2024-03-01,USD,15,9.44
+Toothpaste,2024-03-01,ZWL,6,6050.0
+Toothpaste,2024-05-01,USD,10,6.13
+Toothpaste,2024-05-01,ZWL,1,16.14
+Toothpaste,2024-06-01,USD,7,9.47
+Toothpaste,2024-06-01,ZWL,2,14.695
+Toothpaste,2024-07-01,USD,9,9.44
+Toothpaste,2024-07-01,ZWL,3,15.57
+Toothpaste,2024-08-01,USD,7,9.82
+Toothpaste,2024-08-01,ZWL,2,16.335
+Toothpaste,2024-09-01,USD,9,5.75
+Toothpaste,2024-09-01,ZWL,4,22.439999999999998
+Toothpaste,2024-10-01,USD,8,6.95
+Toothpaste,2024-10-01,ZWL,5,32.0
+Toothpaste,2024-11-01,USD,6,10.11
+Toothpaste,2024-11-01,ZWL,2,37.795
+Toothpaste,2024-12-01,USD,3,10.5
+Toothpaste,2024-12-01,ZWL,1,36.43
+Toothpaste,2025-01-01,USD,6,1.0
+Toothpaste,2025-01-01,ZWL,2,40.0
+Toothpaste,2025-02-01,USD,5,1.0
+Toothpaste,2025-02-01,ZWL,2,40.0
+Toothpaste,2025-03-01,USD,6,1.0
+Toothpaste,2025-03-01,ZWL,3,40.0
+Toothpaste,2025-04-01,USD,1,1.0
+Toothpaste,2025-06-01,USD,1,1.0
+Toothpaste,2025-07-01,USD,2,1.0550000000000002
+Toothpaste,2025-08-01,USD,3,1.0
+Toothpaste,2025-09-01,USD,4,1.0
+Toothpaste,2025-10-01,USD,4,1.01
+Toothpaste,2025-11-01,USD,2,1.0
+Toothpaste,2025-12-01,USD,3,1.0
+Toothpaste,2026-01-01,USD,3,1.0
+Toothpaste,2026-02-01,USD,3,1.0
+Toothpaste,2026-03-01,USD,2,1.065
+Toothpaste,2026-04-01,USD,1,1.1949999999999998
+Toothpaste,2026-05-01,USD,5,1.1
+Wheat,2017-01-01,USD,1,0.5
+Wheat flour (fortified),2017-08-01,USD,2,0.95
+Wheat flour (fortified),2017-09-01,USD,3,1.5
+Wheat flour (fortified),2017-11-01,USD,3,1.0
+Wheat flour (fortified),2017-12-01,USD,3,1.0
+Wheat flour (fortified),2018-01-01,USD,2,1.22
+Wheat flour (fortified),2018-02-01,USD,6,1.665
+Wheat flour (fortified),2018-03-01,USD,6,1.1125
+Wheat flour (fortified),2018-04-01,USD,4,1.0
+Wheat flour (fortified),2018-06-01,USD,5,1.25
+Wheat flour (fortified),2018-07-01,USD,3,1.1
+Wheat flour (fortified),2018-08-01,USD,4,1.2125
+Wheat flour (fortified),2018-09-01,USD,3,1.25
+Wheat flour (fortified),2018-11-01,USD,2,3.4375

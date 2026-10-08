@@ -1,0 +1,3 @@
+model,best_inner_score,parameters
+logreg,0.7511,"{""classifier__solver"": ""lbfgs"", ""classifier__penalty"": ""l2"", ""classifier__class_weight"": ""balanced"", ""classifier__C"": 10}"
+xgboost,0.7851,"{""classifier__subsample"": 0.8, ""classifier__scale_pos_weight"": 1.0995566303909714, ""classifier__reg_lambda"": 1.0, ""classifier__reg_alpha"": 10.0, ""classifier__n_estimators"": 200, ""classifier__max_depth"": 3, ""classifier__learning_rate"": 0.05, ""classifier__colsample_bytree"": 0.7}"
