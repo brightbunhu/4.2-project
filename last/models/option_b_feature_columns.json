@@ -1,0 +1,29 @@
+{
+  "features": [
+    "spi_lag_1",
+    "spi_lag_2",
+    "spi_pct_change_3m",
+    "months_since_last_reported_price",
+    "rainfall_1m",
+    "rainfall_3m_total",
+    "rainfall_6m_total",
+    "rainfall_12m_total",
+    "rainfall_3m_anomaly",
+    "log_population",
+    "is_urban",
+    "month_of_year",
+    "year",
+    "commodity_laundry_soap",
+    "commodity_sugar",
+    "commodity_oil_(vegetable)",
+    "commodity_rice",
+    "commodity_toothpaste",
+    "commodity_handwash_soap",
+    "commodity_salt",
+    "commodity_fish_(kapenta)",
+    "commodity_maize_meal",
+    "commodity_beans_(sugar)"
+  ],
+  "target": "target_next_month",
+  "horizon": "T+1"
+}

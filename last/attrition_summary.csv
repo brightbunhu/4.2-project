@@ -1,0 +1,11 @@
+stage_or_check,count,definition
+raw_market_quotes,25554,source CSV rows
+quotes_after_april_2024_zwl_exclusion,25550,excluded 4 raw quotes
+aggregated_market_to_district_cells,13924,pipeline group keys; median price
+valid_spi_cells,11879,same commodity/month/currency peer group >=8 districts
+exact_t_plus_1_pairs,8289,next valid observation exactly one calendar month later
+excluded_after_exact_pairs,1381,source continuity rule >2.0 months since previous candidate pair
+final_model_rows_by_source_rule,6908,exact pairs retained by source continuity rule
+existing_final_table_rows,6908,outputs/option_b/data/option_b_modelling_table.csv
+exact_pair_positive_labels,1136,"SPI(T+1)>1.25, denominator exact pairs"
+existing_final_table_positive_labels,904,"target_next_month sum, denominator existing final table"

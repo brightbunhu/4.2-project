@@ -1,0 +1,26 @@
+{
+  "target": "target_next_month",
+  "horizon": "prediction_month T to exact next calendar month T+1",
+  "target_definition": "1 if SPI at T+1 > 1.25, otherwise 0",
+  "class_mapping": {
+    "0": "No relative price stress",
+    "1": "Relative price stress"
+  },
+  "features_file": "option_b_feature_columns.json",
+  "feature_order_is_significant": true,
+  "prediction_input_contract": "One row per district_key + commodity_name + prediction_month + currency_code. Provide all listed numeric predictors using information available by T. Rainfall features end at T; price lag/history features end at T; one-hot commodity columns use the saved vocabulary. Never pass target_month price/SPI/stress. Population baseline in the saved feature data has reference period 2023 and historical availability before 2023 is not established.",
+  "models": {
+    "dummy_baseline.joblib": "DummyClassifier(strategy=most_frequent), fitted on all 6,908 final rows",
+    "logreg_pipeline.joblib": "SimpleImputer(median) + StandardScaler + LogisticRegression(class_weight=balanced,max_iter=1000,random_state=42), fitted on all 6,908 final rows",
+    "xgboost_pipeline.joblib": "SimpleImputer(median) + XGBClassifier(n_estimators=150,max_depth=4,learning_rate=0.05,subsample=0.8,colsample_bytree=0.8,scale_pos_weight=2.5,random_state=42,eval_metric=logloss), fitted on all 6,908 final rows"
+  },
+  "recorded_environment_not_reverified": {
+    "python": "3.14.3",
+    "pandas": "3.0.2",
+    "numpy": "2.4.4",
+    "scikit-learn": "1.8.0",
+    "xgboost": "3.4.1",
+    "joblib": "1.5.3"
+  },
+  "provenance": "Source: outputs/option_b/results/model_configuration_audit.csv and reports/option_b_reproducibility_report.md. These production artifacts are not outer-fold models and their own full-table predictions are in-sample."
+}

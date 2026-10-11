@@ -1,0 +1,7 @@
+population_stage,spi_threshold,positive_count,denominator,prevalence,interpretation
+exact_t_plus_1_pairs,1.20,1416,8289,0.17082881,label prevalence only; no model retrained under this threshold
+exact_t_plus_1_pairs,1.25,1136,8289,0.13704910,label prevalence only; no model retrained under this threshold
+exact_t_plus_1_pairs,1.30,963,8289,0.11617807,label prevalence only; no model retrained under this threshold
+final_model_rows,1.20,1132,6908,0.16386798,label prevalence only; no model retrained under this threshold
+final_model_rows,1.25,904,6908,0.13086277,label prevalence only; no model retrained under this threshold
+final_model_rows,1.30,758,6908,0.10972785,label prevalence only; no model retrained under this threshold

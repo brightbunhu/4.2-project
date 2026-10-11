@@ -1,0 +1,5 @@
+model,TN,FP,FN,TP,n_test,confusion_total,total_matches_test_rows
+Dummy,881,0,322,0,1203,1203,1
+LogisticRegression,711,170,172,150,1203,1203,1
+XGBoost,855,26,288,34,1203,1203,1
+Persistence,781,100,142,180,1203,1203,1

@@ -1,0 +1,5 @@
+method,status,source_or_reason,row_count
+Dummy,RECONSTRUCTED,Most-frequent class fit from each saved training window,3481
+Persistence,RECONSTRUCTED,Observed price_stress_current at T; no T+1 predictor use,3481
+LogisticRegression,UNAVAILABLE,Original fold score/prediction vectors were not persisted; sklearn unavailable in execution runtime,0
+XGBoost,UNAVAILABLE,Original fold score/prediction vectors were not persisted; xgboost/sklearn unavailable in execution runtime,0

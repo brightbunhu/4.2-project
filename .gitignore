@@ -29,3 +29,7 @@ Desktop.ini
 .coverage
 coverage.xml
 htmlcov/
+
+# Large climate datasets
+data/raw/chirps_v3_monthly_global.nc
+*.nc

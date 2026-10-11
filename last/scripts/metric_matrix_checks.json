@@ -1,0 +1,677 @@
+{
+  "matrix_recomputations": [
+    {
+      "fold": "Fold_1",
+      "model": "Dummy",
+      "metric": "accuracy",
+      "source_value": "0.9503",
+      "recomputed_from_confusion_matrix": "0.950311",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_1",
+      "model": "Dummy",
+      "metric": "balanced_accuracy",
+      "source_value": "0.5",
+      "recomputed_from_confusion_matrix": "0.500000",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_1",
+      "model": "Dummy",
+      "metric": "macro_f1",
+      "source_value": "0.4873",
+      "recomputed_from_confusion_matrix": "0.487261",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_1",
+      "model": "Dummy",
+      "metric": "stress_f1",
+      "source_value": "0.0",
+      "recomputed_from_confusion_matrix": "0.000000",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_1",
+      "model": "Dummy",
+      "metric": "precision",
+      "source_value": "0.0",
+      "recomputed_from_confusion_matrix": "0.000000",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_1",
+      "model": "Dummy",
+      "metric": "recall",
+      "source_value": "0.0",
+      "recomputed_from_confusion_matrix": "0.000000",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_1",
+      "model": "Dummy",
+      "metric": "specificity",
+      "source_value": "1.0",
+      "recomputed_from_confusion_matrix": "1.000000",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_1",
+      "model": "LogisticRegression",
+      "metric": "accuracy",
+      "source_value": "0.8737",
+      "recomputed_from_confusion_matrix": "0.873706",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_1",
+      "model": "LogisticRegression",
+      "metric": "balanced_accuracy",
+      "source_value": "0.7493",
+      "recomputed_from_confusion_matrix": "0.749274",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_1",
+      "model": "LogisticRegression",
+      "metric": "macro_f1",
+      "source_value": "0.6275",
+      "recomputed_from_confusion_matrix": "0.627531",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_1",
+      "model": "LogisticRegression",
+      "metric": "stress_f1",
+      "source_value": "0.3247",
+      "recomputed_from_confusion_matrix": "0.324723",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_1",
+      "model": "LogisticRegression",
+      "metric": "precision",
+      "source_value": "0.2211",
+      "recomputed_from_confusion_matrix": "0.221106",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_1",
+      "model": "LogisticRegression",
+      "metric": "recall",
+      "source_value": "0.6111",
+      "recomputed_from_confusion_matrix": "0.611111",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_1",
+      "model": "LogisticRegression",
+      "metric": "specificity",
+      "source_value": "0.8874",
+      "recomputed_from_confusion_matrix": "0.887436",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_1",
+      "model": "XGBoost",
+      "metric": "accuracy",
+      "source_value": "0.9517",
+      "recomputed_from_confusion_matrix": "0.951691",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_1",
+      "model": "XGBoost",
+      "metric": "balanced_accuracy",
+      "source_value": "0.6653",
+      "recomputed_from_confusion_matrix": "0.665260",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_1",
+      "model": "XGBoost",
+      "metric": "macro_f1",
+      "source_value": "0.6957",
+      "recomputed_from_confusion_matrix": "0.695734",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_1",
+      "model": "XGBoost",
+      "metric": "stress_f1",
+      "source_value": "0.4167",
+      "recomputed_from_confusion_matrix": "0.416667",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_1",
+      "model": "XGBoost",
+      "metric": "precision",
+      "source_value": "0.5208",
+      "recomputed_from_confusion_matrix": "0.520833",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_1",
+      "model": "XGBoost",
+      "metric": "recall",
+      "source_value": "0.3472",
+      "recomputed_from_confusion_matrix": "0.347222",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_1",
+      "model": "XGBoost",
+      "metric": "specificity",
+      "source_value": "0.9833",
+      "recomputed_from_confusion_matrix": "0.983297",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_2",
+      "model": "Dummy",
+      "metric": "accuracy",
+      "source_value": "0.7323",
+      "recomputed_from_confusion_matrix": "0.732336",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_2",
+      "model": "Dummy",
+      "metric": "balanced_accuracy",
+      "source_value": "0.5",
+      "recomputed_from_confusion_matrix": "0.500000",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_2",
+      "model": "Dummy",
+      "metric": "macro_f1",
+      "source_value": "0.4227",
+      "recomputed_from_confusion_matrix": "0.422745",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_2",
+      "model": "Dummy",
+      "metric": "stress_f1",
+      "source_value": "0.0",
+      "recomputed_from_confusion_matrix": "0.000000",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_2",
+      "model": "Dummy",
+      "metric": "precision",
+      "source_value": "0.0",
+      "recomputed_from_confusion_matrix": "0.000000",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_2",
+      "model": "Dummy",
+      "metric": "recall",
+      "source_value": "0.0",
+      "recomputed_from_confusion_matrix": "0.000000",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_2",
+      "model": "Dummy",
+      "metric": "specificity",
+      "source_value": "1.0",
+      "recomputed_from_confusion_matrix": "1.000000",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_2",
+      "model": "LogisticRegression",
+      "metric": "accuracy",
+      "source_value": "0.7157",
+      "recomputed_from_confusion_matrix": "0.715711",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_2",
+      "model": "LogisticRegression",
+      "metric": "balanced_accuracy",
+      "source_value": "0.6364",
+      "recomputed_from_confusion_matrix": "0.636438",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_2",
+      "model": "LogisticRegression",
+      "metric": "macro_f1",
+      "source_value": "0.6367",
+      "recomputed_from_confusion_matrix": "0.636706",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_2",
+      "model": "LogisticRegression",
+      "metric": "stress_f1",
+      "source_value": "0.4673",
+      "recomputed_from_confusion_matrix": "0.467290",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_2",
+      "model": "LogisticRegression",
+      "metric": "precision",
+      "source_value": "0.4688",
+      "recomputed_from_confusion_matrix": "0.468750",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_2",
+      "model": "LogisticRegression",
+      "metric": "recall",
+      "source_value": "0.4658",
+      "recomputed_from_confusion_matrix": "0.465839",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_2",
+      "model": "LogisticRegression",
+      "metric": "specificity",
+      "source_value": "0.807",
+      "recomputed_from_confusion_matrix": "0.807037",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_2",
+      "model": "XGBoost",
+      "metric": "accuracy",
+      "source_value": "0.739",
+      "recomputed_from_confusion_matrix": "0.738986",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_2",
+      "model": "XGBoost",
+      "metric": "balanced_accuracy",
+      "source_value": "0.538",
+      "recomputed_from_confusion_matrix": "0.538039",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_2",
+      "model": "XGBoost",
+      "metric": "macro_f1",
+      "source_value": "0.5114",
+      "recomputed_from_confusion_matrix": "0.511436",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_2",
+      "model": "XGBoost",
+      "metric": "stress_f1",
+      "source_value": "0.178",
+      "recomputed_from_confusion_matrix": "0.178010",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_2",
+      "model": "XGBoost",
+      "metric": "precision",
+      "source_value": "0.5667",
+      "recomputed_from_confusion_matrix": "0.566667",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_2",
+      "model": "XGBoost",
+      "metric": "recall",
+      "source_value": "0.1056",
+      "recomputed_from_confusion_matrix": "0.105590",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_2",
+      "model": "XGBoost",
+      "metric": "specificity",
+      "source_value": "0.9705",
+      "recomputed_from_confusion_matrix": "0.970488",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_3",
+      "model": "Dummy",
+      "metric": "accuracy",
+      "source_value": "0.766",
+      "recomputed_from_confusion_matrix": "0.765983",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_3",
+      "model": "Dummy",
+      "metric": "balanced_accuracy",
+      "source_value": "0.5",
+      "recomputed_from_confusion_matrix": "0.500000",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_3",
+      "model": "Dummy",
+      "metric": "macro_f1",
+      "source_value": "0.4337",
+      "recomputed_from_confusion_matrix": "0.433743",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_3",
+      "model": "Dummy",
+      "metric": "stress_f1",
+      "source_value": "0.0",
+      "recomputed_from_confusion_matrix": "0.000000",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_3",
+      "model": "Dummy",
+      "metric": "precision",
+      "source_value": "0.0",
+      "recomputed_from_confusion_matrix": "0.000000",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_3",
+      "model": "Dummy",
+      "metric": "recall",
+      "source_value": "0.0",
+      "recomputed_from_confusion_matrix": "0.000000",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_3",
+      "model": "Dummy",
+      "metric": "specificity",
+      "source_value": "1.0",
+      "recomputed_from_confusion_matrix": "1.000000",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_3",
+      "model": "LogisticRegression",
+      "metric": "accuracy",
+      "source_value": "0.5151",
+      "recomputed_from_confusion_matrix": "0.515078",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_3",
+      "model": "LogisticRegression",
+      "metric": "balanced_accuracy",
+      "source_value": "0.6602",
+      "recomputed_from_confusion_matrix": "0.660196",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_3",
+      "model": "LogisticRegression",
+      "metric": "macro_f1",
+      "source_value": "0.5121",
+      "recomputed_from_confusion_matrix": "0.512079",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_3",
+      "model": "LogisticRegression",
+      "metric": "stress_f1",
+      "source_value": "0.4738",
+      "recomputed_from_confusion_matrix": "0.473822",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_3",
+      "model": "LogisticRegression",
+      "metric": "precision",
+      "source_value": "0.3175",
+      "recomputed_from_confusion_matrix": "0.317544",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_3",
+      "model": "LogisticRegression",
+      "metric": "recall",
+      "source_value": "0.933",
+      "recomputed_from_confusion_matrix": "0.932990",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_3",
+      "model": "LogisticRegression",
+      "metric": "specificity",
+      "source_value": "0.3874",
+      "recomputed_from_confusion_matrix": "0.387402",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_3",
+      "model": "XGBoost",
+      "metric": "accuracy",
+      "source_value": "0.7539",
+      "recomputed_from_confusion_matrix": "0.753920",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_3",
+      "model": "XGBoost",
+      "metric": "balanced_accuracy",
+      "source_value": "0.6514",
+      "recomputed_from_confusion_matrix": "0.651429",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_3",
+      "model": "XGBoost",
+      "metric": "macro_f1",
+      "source_value": "0.653",
+      "recomputed_from_confusion_matrix": "0.653047",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_3",
+      "model": "XGBoost",
+      "metric": "stress_f1",
+      "source_value": "0.466",
+      "recomputed_from_confusion_matrix": "0.465969",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_3",
+      "model": "XGBoost",
+      "metric": "precision",
+      "source_value": "0.4734",
+      "recomputed_from_confusion_matrix": "0.473404",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_3",
+      "model": "XGBoost",
+      "metric": "recall",
+      "source_value": "0.4588",
+      "recomputed_from_confusion_matrix": "0.458763",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_3",
+      "model": "XGBoost",
+      "metric": "specificity",
+      "source_value": "0.8441",
+      "recomputed_from_confusion_matrix": "0.844094",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_1",
+      "model": "Dummy",
+      "metric": "independent_prediction_crosscheck:accuracy",
+      "source_value": "0.9503",
+      "recomputed_from_confusion_matrix": "0.950311",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_1",
+      "model": "Dummy",
+      "metric": "independent_prediction_crosscheck:balanced_accuracy",
+      "source_value": "0.5",
+      "recomputed_from_confusion_matrix": "0.500000",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_1",
+      "model": "Dummy",
+      "metric": "independent_prediction_crosscheck:macro_f1",
+      "source_value": "0.4873",
+      "recomputed_from_confusion_matrix": "0.487261",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_1",
+      "model": "Dummy",
+      "metric": "independent_prediction_crosscheck:stress_f1",
+      "source_value": "0.0",
+      "recomputed_from_confusion_matrix": "0.000000",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_1",
+      "model": "Dummy",
+      "metric": "independent_prediction_crosscheck:roc_auc",
+      "source_value": "0.5",
+      "recomputed_from_confusion_matrix": "0.500000",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_1",
+      "model": "Dummy",
+      "metric": "independent_prediction_crosscheck:pr_auc_average_precision",
+      "source_value": "0.0497",
+      "recomputed_from_confusion_matrix": "0.049689",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_1",
+      "model": "Dummy",
+      "metric": "independent_prediction_crosscheck:brier_score",
+      "source_value": "0.0497",
+      "recomputed_from_confusion_matrix": "0.049689",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_2",
+      "model": "Dummy",
+      "metric": "independent_prediction_crosscheck:accuracy",
+      "source_value": "0.7323",
+      "recomputed_from_confusion_matrix": "0.732336",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_2",
+      "model": "Dummy",
+      "metric": "independent_prediction_crosscheck:balanced_accuracy",
+      "source_value": "0.5",
+      "recomputed_from_confusion_matrix": "0.500000",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_2",
+      "model": "Dummy",
+      "metric": "independent_prediction_crosscheck:macro_f1",
+      "source_value": "0.4227",
+      "recomputed_from_confusion_matrix": "0.422745",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_2",
+      "model": "Dummy",
+      "metric": "independent_prediction_crosscheck:stress_f1",
+      "source_value": "0.0",
+      "recomputed_from_confusion_matrix": "0.000000",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_2",
+      "model": "Dummy",
+      "metric": "independent_prediction_crosscheck:roc_auc",
+      "source_value": "0.5",
+      "recomputed_from_confusion_matrix": "0.500000",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_2",
+      "model": "Dummy",
+      "metric": "independent_prediction_crosscheck:pr_auc_average_precision",
+      "source_value": "0.2677",
+      "recomputed_from_confusion_matrix": "0.267664",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_2",
+      "model": "Dummy",
+      "metric": "independent_prediction_crosscheck:brier_score",
+      "source_value": "0.2677",
+      "recomputed_from_confusion_matrix": "0.267664",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_3",
+      "model": "Dummy",
+      "metric": "independent_prediction_crosscheck:accuracy",
+      "source_value": "0.766",
+      "recomputed_from_confusion_matrix": "0.765983",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_3",
+      "model": "Dummy",
+      "metric": "independent_prediction_crosscheck:balanced_accuracy",
+      "source_value": "0.5",
+      "recomputed_from_confusion_matrix": "0.500000",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_3",
+      "model": "Dummy",
+      "metric": "independent_prediction_crosscheck:macro_f1",
+      "source_value": "0.4337",
+      "recomputed_from_confusion_matrix": "0.433743",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_3",
+      "model": "Dummy",
+      "metric": "independent_prediction_crosscheck:stress_f1",
+      "source_value": "0.0",
+      "recomputed_from_confusion_matrix": "0.000000",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_3",
+      "model": "Dummy",
+      "metric": "independent_prediction_crosscheck:roc_auc",
+      "source_value": "0.5",
+      "recomputed_from_confusion_matrix": "0.500000",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_3",
+      "model": "Dummy",
+      "metric": "independent_prediction_crosscheck:pr_auc_average_precision",
+      "source_value": "0.234",
+      "recomputed_from_confusion_matrix": "0.234017",
+      "status": "PASS"
+    },
+    {
+      "fold": "Fold_3",
+      "model": "Dummy",
+      "metric": "independent_prediction_crosscheck:brier_score",
+      "source_value": "0.234",
+      "recomputed_from_confusion_matrix": "0.234017",
+      "status": "PASS"
+    }
+  ],
+  "all_classification_metrics_match_rounded_source": true
+}

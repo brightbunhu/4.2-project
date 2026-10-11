@@ -1,0 +1,24 @@
+Evidence package validation checks
+
+Status reflects checks executed by scripts in last/scripts.
+
+PASS: Candidate natural-key uniqueness — 8,289 candidates; duplicate keys=0
+FAIL: Candidate natural-key null/blank audit — null-key rows=0; blank district_key rows=32; blank strings are not counted as null by the original audit
+PASS: Exact T-to-T+1 lag — bad rows=0 of 8289
+PASS: No target/future-named predictors — predictor count=23; forbidden names=[]
+PASS: Stage count reconciliation — {"aggregated_market_to_district_cells": 13924, "exact_pair_positive_labels": 1136, "exact_t_plus_1_pairs": 8289, "excluded_after_exact_pairs": 1381, "existing_final_table_positive_labels": 904, "existing_final_table_rows": 6908, "final_model_rows_by_source_rule": 6908, "quotes_after_april_2024_zwl_exclusion": 25550, "raw_market_quotes": 25554, "valid_spi_cells": 11879}
+PASS: Threshold prevalence denominators — Recomputed labels kept separate for 8,289 exact-pair and 6,908 final-row stages; no retraining at alternate thresholds
+PASS: Train/test temporal order — checked 3 saved fold windows; strict train end < test start
+PASS: Confusion totals equal held-out fold row counts — checked 12 fold/method matrices
+PASS: Classification metric recomputation — Accuracy, balanced accuracy, macro-F1, per-class/stress scores recomputed from the confusion matrices; rounded source values matched
+NOT RUN: ROC/PR/Brier metric recomputation — Original fold probability vectors were not saved; structured values retained as reported, not independently recomputed
+PASS: LogisticRegression full-table prediction comparison to disputed figure — saved full-table predictions: TP=682, ROC-AUC=0.849233, AP=0.488867; cited figure claim TP=682, AUC=0.849; source code constructs ROC/PR/confusion plots from full-table final-model predictions, not outer-fold predictions
+PASS: XGBoost full-table prediction comparison to disputed figure — saved full-table predictions: TP=626, ROC-AUC=0.941730, AP=0.756747; cited figure claim TP=626, AUC=0.942; source code constructs ROC/PR/confusion plots from full-table final-model predictions, not outer-fold predictions
+PASS: Persistence fold prediction and metric reconstruction — reconstructed macro-F1=0.7259,0.7319,0.7594; unweighted mean=0.7391; predictor=price_stress_current at T
+NOT RUN: Logistic Regression/XGBoost test-fold predictions — Their stored outputs are full-table predictions from final models fitted on all 6,908 rows; the source's fold prediction list was not persisted and sklearn/xgboost are missing from the available Python runtime
+NOT RUN: Fold-level ROC/PR figures from held-out scores — No held-out per-row probability vectors are available; last/figures is intentionally empty
+UNRESOLVED: Raw CHIRPS NetCDF availability — Current file is a 134-byte LFS pointer (object SHA256 205f4f41011c94f47442f60e54c89af46bca8c23f865d310c53b6d2392282e60; expected size 353,488,971). It was 8,943,423,563 bytes with SHA256 26052751cc1077329798b2e79d34606473a242fcd03f4912acd8d07f91835bf3 when first inventoried; cause of replacement is unknown. The audit scripts did not write to it.
+FAIL: Quantile transformation fit scope — SPI 1st/99th percentiles are calculated across all valid months before folds
+FAIL: Commodity feature vocabulary fit scope — top 10 commodity categories are chosen from the full exact-pair table before temporal folds
+
+Full authoritative model rerun: NOT PERFORMED. The bundled Python 3.12.14 runtime does not have scikit-learn; this is an environment limitation, and the documented source run wrote into project output directories. No project files were overwritten.

@@ -1,0 +1,743 @@
+{
+  "manifest_version": 1,
+  "manifest_generated_date": "2026-10-11",
+  "project_root": ".",
+  "project_git_commit": "af7c134f2dafdce59e3f7d1d94ae553943799b39",
+  "project_name_from_sources": "Option B Zimbabwe district-level next-month relative commodity-price stress",
+  "requested_Bunhu_folder_found": false,
+  "script_entry_point": "src/run_option_b_pipeline.py",
+  "reference_run_command": "python src/run_option_b_pipeline.py",
+  "current_session_authoritative_pipeline_rerun": {
+    "status": "NOT PERFORMED",
+    "reason": "Available bundled Python 3.12.14 runtime lacks scikit-learn, XGBoost, SHAP, joblib and pytest; source entry point also writes to existing outputs/option_b and reports directories.",
+    "prior_project_record": {
+      "status": "SUCCESS according to existing log; not independently rerun",
+      "started": "2026-10-08 12:34:03 local log time",
+      "ended": "2026-10-08 12:34:10 local log time",
+      "source_log": "outputs/option_b/logs/pipeline_run.log"
+    }
+  },
+  "audit_commands_executed": [
+    {
+      "command": "python last/scripts/reconcile_counts.py",
+      "status": "PASS",
+      "description": "Standard-library reconstruction of price aggregation, SPI, exact T+1 pairs, reporting-gap attrition, price comparison, and name-based spatial key audit.",
+      "runtime": "Python 3.12.14; standard library only",
+      "exact_start_end_time": "UNKNOWN (not captured by execution wrapper)"
+    },
+    {
+      "command": "python last/scripts/rebuild_available_predictions.py",
+      "status": "PASS for Dummy and persistence only",
+      "description": "Test-window rows only; Dummy trained by majority count in training rows; persistence uses observed price_stress_current at T.",
+      "exact_start_end_time": "UNKNOWN (not captured by execution wrapper)"
+    },
+    {
+      "command": "python last/scripts/export_metrics.py",
+      "status": "PASS for confusion and classification metric recomputation",
+      "description": "Exports structured fold metrics, arithmetic means, confusion CSVs, and independent persistence fold scores. Probability metrics remain source-reported.",
+      "exact_start_end_time": "UNKNOWN (not captured by execution wrapper)"
+    },
+    {
+      "command": "python last/scripts/run_validation_checks.py",
+      "status": "COMPLETED WITH FAILURES AND NOT-RUN CHECKS",
+      "description": "Validation outcomes are in validation_checks.txt.",
+      "exact_start_end_time": "UNKNOWN (not captured by execution wrapper)"
+    }
+  ],
+  "runtime": {
+    "audit_python": "3.12.14",
+    "audit_python_path": "C:/Users/brigh/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+    "audit_importable_versions": {
+      "pandas": "3.0.1 (available but not used by audit scripts)",
+      "numpy": "2.3.5 (available but not used by audit scripts)"
+    },
+    "unavailable_in_audit_runtime": [
+      "scikit-learn",
+      "xgboost",
+      "shap",
+      "matplotlib",
+      "seaborn",
+      "joblib",
+      "geopandas",
+      "xarray",
+      "pytest"
+    ],
+    "recorded_source_run_environment_not_reverified": {
+      "python": "3.14.3",
+      "pandas": "3.0.2",
+      "numpy": "2.4.4",
+      "scikit-learn": "1.8.0",
+      "xgboost": "3.4.1",
+      "shap": "0.52.0",
+      "joblib": "1.5.3",
+      "streamlit": "1.65.0",
+      "pytest": "9.1.1"
+    }
+  },
+  "primary_data_inputs_and_source_artifacts": [
+    {
+      "path": "data/raw/hdx_hapi_food_price_zwe.csv",
+      "size_bytes": 4613370,
+      "sha256": "92a7def85f683a2fdabaa7edb48cbbbebb02633a9e51e5c0e0488275a543913f",
+      "role": "direct raw input",
+      "source_or_identifier": "WFP Food Prices & Market Monitor via HDX HAPI",
+      "reference_period_or_version": "2017-01-15..2026-05-15 in reference_period_start",
+      "source_url": "UNKNOWN",
+      "retrieval_date": "UNKNOWN",
+      "license": "UNKNOWN",
+      "on_disk_size_matches_record": true,
+      "on_disk_sha256_matches_record": true
+    },
+    {
+      "path": "data/raw/hdx_hapi_population_zwe.csv",
+      "size_bytes": 650678,
+      "sha256": "8d74a4f4eb86977494b3c2c15418f56c2a4d944af14566e6d1f6afc8049ac399",
+      "role": "upstream source input",
+      "source_or_identifier": "UNFPA population baseline via HDX HAPI",
+      "reference_period_or_version": "2023-01-01..2023-12-31 in raw rows; reports also call it 2020",
+      "source_url": "UNKNOWN",
+      "retrieval_date": "UNKNOWN",
+      "license": "UNKNOWN",
+      "on_disk_size_matches_record": true,
+      "on_disk_sha256_matches_record": true
+    },
+    {
+      "path": "data/processed/d_rainfall_chirps_district_month.csv",
+      "size_bytes": 8888072,
+      "sha256": "e8537658ef07d9d71ef1079209cb48f46ecbd338cef56e6debfb766888046d8a",
+      "role": "direct pipeline input",
+      "source_or_identifier": "CHIRPS v3 processed district-month data",
+      "reference_period_or_version": "1981-01..2026-08",
+      "source_url": "UNKNOWN",
+      "retrieval_date": "UNKNOWN",
+      "license": "UNKNOWN; release and retrieval date not recorded",
+      "on_disk_size_matches_record": true,
+      "on_disk_sha256_matches_record": true
+    },
+    {
+      "path": "data/processed/d_population_district.csv",
+      "size_bytes": 15879,
+      "sha256": "02ad6652f215cacf358358eb4f7ac9398ea74ffbf8a78e72b672cfbbeff9046f",
+      "role": "direct pipeline input",
+      "source_or_identifier": "Processed UNFPA district population joined to ADM2",
+      "reference_period_or_version": "reference period starts 2023-01-01",
+      "source_url": "UNKNOWN",
+      "retrieval_date": "UNKNOWN",
+      "license": "UNKNOWN",
+      "on_disk_size_matches_record": true,
+      "on_disk_sha256_matches_record": true
+    },
+    {
+      "path": "data/raw/chirps_v3_monthly_global.nc",
+      "size_bytes": 134,
+      "sha256": "9205bede991610bd986a1ec9f4b32c04326db022b42f7fa854c0396eeeecccaa",
+      "role": "upstream rainfall input; current workspace file is an LFS pointer",
+      "source_or_identifier": "CHIRPS v3 monthly global NetCDF pointer; expected object sha256 205f4f41011c94f47442f60e54c89af46bca8c23f865d310c53b6d2392282e60",
+      "reference_period_or_version": "pointer expects a 353488971-byte object; actual file release/vintage UNKNOWN",
+      "source_url": "UNKNOWN",
+      "retrieval_date": "UNKNOWN",
+      "license": "UNKNOWN",
+      "on_disk_size_matches_record": true,
+      "on_disk_sha256_matches_record": true
+    },
+    {
+      "path": "data/raw/geo/zwe_adm2_geoboundaries.geojson",
+      "size_bytes": 17379177,
+      "sha256": "074a3632634b9448bb4043580fe7199e0b2f64ec68bd2f98932a2c68b3795b88",
+      "role": "upstream spatial reference",
+      "source_or_identifier": "geoBoundaries ZWE ADM2, boundaryID ZWE-ADM2-62879985",
+      "reference_period_or_version": "represented 2020; source update 2023-01-19; build 2023-12-12",
+      "source_url": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/ZWE/ADM2/geoBoundaries-ZWE-ADM2.geojson",
+      "retrieval_date": "UNKNOWN retrieval date",
+      "license": "metadata: CC BY 3.0 IGO; config.py and Chapter 3 narrative say CC BY 4.0 IGO",
+      "on_disk_size_matches_record": true,
+      "on_disk_sha256_matches_record": true
+    },
+    {
+      "path": "data/raw/geo/zwe_adm2_metadata.json",
+      "size_bytes": 1978,
+      "sha256": "7431de39f885696df85c8f5f207158a32470135e34fed155f5d558c2e0961a97",
+      "role": "spatial metadata",
+      "source_or_identifier": "geoBoundaries ADM2 metadata",
+      "reference_period_or_version": "represented 2020; update 2023-01-19; build 2023-12-12",
+      "source_url": "https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/ZWE/ADM2/geoBoundaries-ZWE-ADM2.geojson",
+      "retrieval_date": "UNKNOWN",
+      "license": "CC BY 3.0 IGO in metadata; config.py conflicts",
+      "on_disk_size_matches_record": true,
+      "on_disk_sha256_matches_record": true
+    },
+    {
+      "path": "data/processed/d_district_base.csv",
+      "size_bytes": 14053,
+      "sha256": "1a804b69ca633754ec088b2dc7f9d47f86a2adeeafa8f496794bc6606bfa5a09",
+      "role": "upstream spatial join input",
+      "source_or_identifier": "District lookup constructed from local administrative boundaries",
+      "reference_period_or_version": "boundary represented 2020",
+      "source_url": "see ADM2 metadata",
+      "retrieval_date": "UNKNOWN",
+      "license": "UNKNOWN",
+      "on_disk_size_matches_record": true,
+      "on_disk_sha256_matches_record": true
+    },
+    {
+      "path": "src/run_option_b_pipeline.py",
+      "size_bytes": 38075,
+      "sha256": "92072b34d09e22e6cc06c3742d7482c0757a88c77e95013445a448642f36720d",
+      "role": "authoritative source code",
+      "source_or_identifier": "Option B T+1 modelling pipeline",
+      "reference_period_or_version": "Git commit af7c134f2dafdce59e3f7d1d94ae553943799b39",
+      "source_url": "not applicable",
+      "retrieval_date": "not applicable",
+      "license": "project source",
+      "on_disk_size_matches_record": true,
+      "on_disk_sha256_matches_record": true
+    },
+    {
+      "path": "src/utils.py",
+      "size_bytes": 23421,
+      "sha256": "d156355a102108e4c465eb89939685f183636ac1949fed8a38725141c6b7c1f6",
+      "role": "source helper",
+      "source_or_identifier": "canon() key normalization and shared utilities",
+      "reference_period_or_version": "Git commit af7c134f2dafdce59e3f7d1d94ae553943799b39",
+      "source_url": "not applicable",
+      "retrieval_date": "not applicable",
+      "license": "project source",
+      "on_disk_size_matches_record": true,
+      "on_disk_sha256_matches_record": true
+    },
+    {
+      "path": "src/step03_ingest_rainfall.py",
+      "size_bytes": 7903,
+      "sha256": "c37fad9f06d0a40b29db6133c1bcdd3804dff2eae918709b270630331fd2a5de",
+      "role": "rainfall processing source",
+      "source_or_identifier": "CHIRPS v3 grid-to-district processing",
+      "reference_period_or_version": "Git commit af7c134f2dafdce59e3f7d1d94ae553943799b39",
+      "source_url": "not applicable",
+      "retrieval_date": "not applicable",
+      "license": "project source",
+      "on_disk_size_matches_record": true,
+      "on_disk_sha256_matches_record": true
+    },
+    {
+      "path": "config.py",
+      "size_bytes": 22815,
+      "sha256": "56984a778e8b4b8ad4b2d73a4fe3accc691305300c5d3a6d11a4e88893105212",
+      "role": "project configuration",
+      "source_or_identifier": "Option B paths and configuration",
+      "reference_period_or_version": "Git commit af7c134f2dafdce59e3f7d1d94ae553943799b39",
+      "source_url": "not applicable",
+      "retrieval_date": "not applicable",
+      "license": "project source",
+      "on_disk_size_matches_record": true,
+      "on_disk_sha256_matches_record": true
+    },
+    {
+      "path": "outputs/option_b/data/option_b_modelling_table.csv",
+      "size_bytes": 2691861,
+      "sha256": "546e07d71c0204e95eaf341a51e207d1776ecc08941350605dc431cfacb83f25",
+      "role": "saved final modelling table",
+      "source_or_identifier": "6,908-row Option B table",
+      "reference_period_or_version": "T 2017-01..2024-09; target through 2024-10",
+      "source_url": "not applicable",
+      "retrieval_date": "not applicable",
+      "license": "existing project output",
+      "on_disk_size_matches_record": true,
+      "on_disk_sha256_matches_record": true
+    },
+    {
+      "path": "outputs/option_b/data/option_b_feature_columns.json",
+      "size_bytes": 675,
+      "sha256": "2d7fd47452c2596a78c90cd04345d8e8a41b7847de816e0bcadd4051464da5d7",
+      "role": "feature contract",
+      "source_or_identifier": "23 ordered model feature names, target and horizon",
+      "reference_period_or_version": "Option B run",
+      "source_url": "not applicable",
+      "retrieval_date": "not applicable",
+      "license": "existing project output",
+      "on_disk_size_matches_record": true,
+      "on_disk_sha256_matches_record": true
+    },
+    {
+      "path": "outputs/option_b/results/option_b_model_metrics.csv",
+      "size_bytes": 1033,
+      "sha256": "b5bf62a324c38eb61634728bbb839aa77ca44699605db9f333ddfa8dfe18903c",
+      "role": "structured fold metrics",
+      "source_or_identifier": "Three saved expanding-window folds",
+      "reference_period_or_version": "run log timestamp 2026-10-08",
+      "source_url": "not applicable",
+      "retrieval_date": "not applicable",
+      "license": "existing project output",
+      "on_disk_size_matches_record": true,
+      "on_disk_sha256_matches_record": true
+    },
+    {
+      "path": "outputs/option_b/results/validation_audit.csv",
+      "size_bytes": 398,
+      "sha256": "a732353cd00c2ea41c4aa492ca351cbc45da432e19f53293777a8bc47c6107e4",
+      "role": "fold windows",
+      "source_or_identifier": "Saved train/test windows and row totals",
+      "reference_period_or_version": "run log timestamp 2026-10-08",
+      "source_url": "not applicable",
+      "retrieval_date": "not applicable",
+      "license": "existing project output",
+      "on_disk_size_matches_record": true,
+      "on_disk_sha256_matches_record": true
+    },
+    {
+      "path": "outputs/option_b/results/target_shift_audit.csv",
+      "size_bytes": 336,
+      "sha256": "ff5cf7af7a84a014c9ba54a95726621726d472f5cf8927413a5b10df888c2284",
+      "role": "target stage audit",
+      "source_or_identifier": "11,879 SPI cells; 8,289 exact pairs; 1,136 positives",
+      "reference_period_or_version": "run log timestamp 2026-10-08",
+      "source_url": "not applicable",
+      "retrieval_date": "not applicable",
+      "license": "existing project output",
+      "on_disk_size_matches_record": true,
+      "on_disk_sha256_matches_record": true
+    },
+    {
+      "path": "outputs/option_b/results/sensitivity_analysis.csv",
+      "size_bytes": 263,
+      "sha256": "c8294611a226cc9850f7344a49e799820a3d64695e91352f3661f408cabc0108",
+      "role": "existing label sensitivity output",
+      "source_or_identifier": "Thresholds 1.20, 1.25, 1.30 on exact-pair population",
+      "reference_period_or_version": "run log timestamp 2026-10-08",
+      "source_url": "not applicable",
+      "retrieval_date": "not applicable",
+      "license": "existing project output",
+      "on_disk_size_matches_record": true,
+      "on_disk_sha256_matches_record": true
+    },
+    {
+      "path": "outputs/option_b/results/option_b_predictions.csv",
+      "size_bytes": 738187,
+      "sha256": "2ee64d5e8b2ec07e6f15ca39775774e1ba51c8cb0fa3f43f7eab5174708e33d3",
+      "role": "saved full-data predictions",
+      "source_or_identifier": "Final models predicted on same full 6,908 rows used to fit",
+      "reference_period_or_version": "run log timestamp 2026-10-08",
+      "source_url": "not applicable",
+      "retrieval_date": "not applicable",
+      "license": "in-sample production predictions; not fold predictions",
+      "on_disk_size_matches_record": true,
+      "on_disk_sha256_matches_record": true
+    },
+    {
+      "path": "outputs/option_b/models/dummy_baseline.joblib",
+      "size_bytes": 1287,
+      "sha256": "8b69744c45303621348045e25b579f0629a62b4616fdfe33f71390898d4c943c",
+      "role": "saved final model",
+      "source_or_identifier": "DummyClassifier most_frequent",
+      "reference_period_or_version": "full 6,908-row fit; seed not applicable",
+      "source_url": "not applicable",
+      "retrieval_date": "not applicable",
+      "license": "existing project output",
+      "on_disk_size_matches_record": true,
+      "on_disk_sha256_matches_record": true
+    },
+    {
+      "path": "outputs/option_b/models/logreg_pipeline.joblib",
+      "size_bytes": 3249,
+      "sha256": "48ceebbf74d2dbf360690cb2c91db2c499c59427aacba3c073fa0a157160bd42",
+      "role": "saved final model",
+      "source_or_identifier": "median imputer + scaler + balanced LogisticRegression, max_iter=1000, random_state=42",
+      "reference_period_or_version": "full 6,908-row fit",
+      "source_url": "not applicable",
+      "retrieval_date": "not applicable",
+      "license": "existing project output",
+      "on_disk_size_matches_record": true,
+      "on_disk_sha256_matches_record": true
+    },
+    {
+      "path": "outputs/option_b/models/xgboost_pipeline.joblib",
+      "size_bytes": 254160,
+      "sha256": "775566985104eaa126795f6fa999e1b52017e80774b6ae741983c93fdacf5233",
+      "role": "saved final model",
+      "source_or_identifier": "median imputer + XGBoost (150 estimators, depth 4, learning rate .05, subsample/colsample .8, pos weight 2.5, seed 42)",
+      "reference_period_or_version": "full 6,908-row fit",
+      "source_url": "not applicable",
+      "retrieval_date": "not applicable",
+      "license": "existing project output",
+      "on_disk_size_matches_record": true,
+      "on_disk_sha256_matches_record": true
+    },
+    {
+      "path": "outputs/_step03_log.txt",
+      "size_bytes": 1597,
+      "sha256": "2b7e6a1e16fbd0f261836ab05f584d446ebe9ddefa837ea3bf2a59ea9425b3c8",
+      "role": "rainfall processing log",
+      "source_or_identifier": "28,800 grid centres; 13,411 matched; 90 districts; Mvurwi nearest-cell fallback; 91 output districts",
+      "reference_period_or_version": "log file timestamp not recorded",
+      "source_url": "not applicable",
+      "retrieval_date": "not applicable",
+      "license": "existing project output",
+      "on_disk_size_matches_record": true,
+      "on_disk_sha256_matches_record": true
+    }
+  ],
+  "observed_file_change_during_audit": {
+    "path": "data/raw/chirps_v3_monthly_global.nc",
+    "initial_observation": {
+      "size_bytes": 8943423563,
+      "sha256": "26052751cc1077329798b2e79d34606473a242fcd03f4912acd8d07f91835bf3",
+      "observed_before": "2026-10-11 07:34:56 UTC"
+    },
+    "current_observation": {
+      "size_bytes": 134,
+      "sha256": "9205bede991610bd986a1ec9f4b32c04326db022b42f7fa854c0396eeeeccaa",
+      "git_lfs_object_sha256": "205f4f41011c94f47442f60e54c89af46bca8c23f865d310c53b6d2392282e60",
+      "git_lfs_object_size_bytes": 353488971,
+      "last_write_time_utc": "2026-10-11 07:34:56"
+    },
+    "cause": "UNKNOWN",
+    "audit_scripts_wrote_to_this_existing_file": false,
+    "effect": "The Option B count reconstruction used the existing processed district rainfall CSV, not this NetCDF. A fresh CHIRPS ingest cannot be reproduced from the current pointer without retrieving the LFS object."
+  },
+  "target_definition": {
+    "unit_key": [
+      "district_key",
+      "commodity_name",
+      "prediction_month",
+      "currency_code"
+    ],
+    "forecast_horizon": "one exact calendar month T to T+1",
+    "label": "1 iff spatial_price_index at T+1 > 1.25",
+    "spi": "district aggregated price divided by same-month, same-commodity, same-currency peer median; peer groups require at least 8 distinct district strings",
+    "price_aggregation": "median of market quotes at district × month × commodity × currency",
+    "currency_handling": "USD and ZWL are separate peer groups; no conversion",
+    "stage_counts": {
+      "raw_quotes": 25554,
+      "after_April_2024_ZWL_exclusion": 25550,
+      "aggregated_cells": 13924,
+      "valid_SPI_cells": 11879,
+      "exact_T_plus_1_pairs": 8289,
+      "final_model_rows": 6908,
+      "exact_pair_positives": 1136,
+      "final_model_positives": 904,
+      "excluded_by_reporting_gap_rule": 1381
+    },
+    "competing_aggregation_count": {
+      "count": 13934,
+      "status": "not found in available source; unresolved origin"
+    }
+  },
+  "random_seed": 42,
+  "fold_boundaries": [
+    {
+      "fold": "Fold_1",
+      "train_months": "2017-01 to 2021-02",
+      "test_months": "2021-03 to 2022-10",
+      "train_rows": "3427",
+      "test_rows": "1449",
+      "train_pos_class": "316",
+      "train_pos_pct": "9.22",
+      "test_pos_class": "72",
+      "test_pos_pct": "4.97",
+      "district_overlap": "38",
+      "temporal_integrity": "PASSED"
+    },
+    {
+      "fold": "Fold_2",
+      "train_months": "2017-01 to 2022-10",
+      "test_months": "2022-11 to 2023-07",
+      "train_rows": "4876",
+      "test_rows": "1203",
+      "train_pos_class": "388",
+      "train_pos_pct": "7.96",
+      "test_pos_class": "322",
+      "test_pos_pct": "26.77",
+      "district_overlap": "29",
+      "temporal_integrity": "PASSED"
+    },
+    {
+      "fold": "Fold_3",
+      "train_months": "2017-01 to 2023-07",
+      "test_months": "2023-08 to 2024-09",
+      "train_rows": "6079",
+      "test_rows": "829",
+      "train_pos_class": "710",
+      "train_pos_pct": "11.68",
+      "test_pos_class": "194",
+      "test_pos_pct": "23.4",
+      "district_overlap": "30",
+      "temporal_integrity": "PASSED"
+    }
+  ],
+  "predictor_order": [
+    "spi_lag_1",
+    "spi_lag_2",
+    "spi_pct_change_3m",
+    "months_since_last_reported_price",
+    "rainfall_1m",
+    "rainfall_3m_total",
+    "rainfall_6m_total",
+    "rainfall_12m_total",
+    "rainfall_3m_anomaly",
+    "log_population",
+    "is_urban",
+    "month_of_year",
+    "year",
+    "commodity_laundry_soap",
+    "commodity_sugar",
+    "commodity_oil_(vegetable)",
+    "commodity_rice",
+    "commodity_toothpaste",
+    "commodity_handwash_soap",
+    "commodity_salt",
+    "commodity_fish_(kapenta)",
+    "commodity_maize_meal",
+    "commodity_beans_(sugar)"
+  ],
+  "preprocessing": {
+    "spi_winsorization": "global 1st/99th quantiles over all valid SPI values before folds; temporal leakage risk",
+    "commodity_encoding": "top-10 commodity vocabulary selected on full exact-pair dataset before folds; future distribution information risk",
+    "imputation": "median SimpleImputer inside fold model pipelines; code indicates fit on fold training rows",
+    "scaling": "StandardScaler inside Logistic Regression pipeline; code indicates fit on fold training rows; none for XGBoost",
+    "population": "processed reference-period 2023 baseline; used in earlier forecast folds; historical availability is unknown and is a look-ahead concern",
+    "rainfall": "CHIRPS v3 district-month, grid centres within ADM2; Mvurwi nearest-cell fallback recorded; cos(latitude) weights; 3/6/12-month totals and 1991-2020 climatology; data release availability at T unknown",
+    "blank_admin2": "214 raw quotes have blank admin2; 32 exact target pairs (26 final rows) have blank district_key, although original audit counts zero nulls"
+  },
+  "sensitivity_label_counts_only": [
+    {
+      "population_stage": "exact_t_plus_1_pairs",
+      "spi_threshold": "1.20",
+      "positive_count": "1416",
+      "denominator": "8289",
+      "prevalence": "0.17082881",
+      "interpretation": "label prevalence only; no model retrained under this threshold"
+    },
+    {
+      "population_stage": "exact_t_plus_1_pairs",
+      "spi_threshold": "1.25",
+      "positive_count": "1136",
+      "denominator": "8289",
+      "prevalence": "0.13704910",
+      "interpretation": "label prevalence only; no model retrained under this threshold"
+    },
+    {
+      "population_stage": "exact_t_plus_1_pairs",
+      "spi_threshold": "1.30",
+      "positive_count": "963",
+      "denominator": "8289",
+      "prevalence": "0.11617807",
+      "interpretation": "label prevalence only; no model retrained under this threshold"
+    },
+    {
+      "population_stage": "final_model_rows",
+      "spi_threshold": "1.20",
+      "positive_count": "1132",
+      "denominator": "6908",
+      "prevalence": "0.16386798",
+      "interpretation": "label prevalence only; no model retrained under this threshold"
+    },
+    {
+      "population_stage": "final_model_rows",
+      "spi_threshold": "1.25",
+      "positive_count": "904",
+      "denominator": "6908",
+      "prevalence": "0.13086277",
+      "interpretation": "label prevalence only; no model retrained under this threshold"
+    },
+    {
+      "population_stage": "final_model_rows",
+      "spi_threshold": "1.30",
+      "positive_count": "758",
+      "denominator": "6908",
+      "prevalence": "0.10972785",
+      "interpretation": "label prevalence only; no model retrained under this threshold"
+    }
+  ],
+  "metrics_provenance": {
+    "structured_metrics_source": "outputs/option_b/results/option_b_model_metrics.csv",
+    "metric_summary_rule": "unweighted arithmetic mean across folds; not pooled",
+    "classification_metrics": "recomputed from saved fold confusion counts and agree to four-decimal source values",
+    "roc_pr_brier": "structured values retained from source; raw fold probability vectors unavailable for independent recalculation",
+    "persistence_macro_f1": {
+      "fold_1": 0.7259,
+      "fold_2": 0.7319,
+      "fold_3": 0.7594,
+      "unweighted_mean": 0.7391
+    },
+    "figure_discrepancy": "saved full-table predictions reproduce disputed LR TP/AUC 682/0.849233 and XGB 626/0.941730; source figures are resubstitution outputs, while fold-held-out TP totals are 375 and 148"
+  },
+  "model_artifacts_copied_to_last_models": [
+    "dummy_baseline.joblib",
+    "logreg_pipeline.joblib",
+    "xgboost_pipeline.joblib",
+    "option_b_feature_columns.json",
+    "model_contract.json"
+  ],
+  "inference_contract_status": "Feature names/order, classes, model configurations, and script are included. Inference script not run because joblib/scikit-learn/XGBoost are unavailable. Saved estimators are full-data fits, not fold models.",
+  "validation_results_file": "last/validation_checks.txt",
+  "package_output_hash_scope": "All regular files under last/ except run_manifest.json itself (a self-hash would be recursive).",
+  "unresolved_limitations": [
+    "Bunhu project folder absent in available workspace.",
+    "Full source pipeline not rerun in the current session.",
+    "Logistic Regression and XGBoost row-level test predictions and fold probability scores were not persisted; not recreated.",
+    "No fold-level ROC/PR figures generated because held-out score vectors are unavailable.",
+    "Global SPI quantiles and full-data top-10 commodity selection precede folds.",
+    "2023 population baseline release timing relative to 2017-2024 forecast origins unknown.",
+    "HAPI and CHIRPS source URLs, retrieval dates and licences unknown in local files.",
+    "geoBoundaries metadata says CC BY 3.0 IGO; config.py and Chapter 3 narrative say CC BY 4.0 IGO.",
+    "The 13,934 aggregation claim was not found in the available project; 13,924 is supported locally.",
+    "Market rows include 32 blank-district exact pairs (26 final rows).",
+    "No alternate-threshold model retraining performed; sensitivity file contains prevalence counts only."
+  ],
+  "package_outputs": [
+    {
+      "path": "last/attrition_ledger.csv",
+      "size_bytes": 1322523,
+      "sha256": "1249da8ffaeca7c56bd7b73385e173d49330de136b4090d684a440c23c5bf8dc"
+    },
+    {
+      "path": "last/attrition_summary.csv",
+      "size_bytes": 819,
+      "sha256": "c3898881aa15d77a30b8b36d350043a754cb01a4fe9e3299b0f3f1cf9169d44e"
+    },
+    {
+      "path": "last/confusion_matrices/fold_1_confusion.csv",
+      "size_bytes": 218,
+      "sha256": "319f04397558690b6194ddeea097add77d4218325afcd5cdfb0955bd10118edf"
+    },
+    {
+      "path": "last/confusion_matrices/fold_2_confusion.csv",
+      "size_bytes": 221,
+      "sha256": "d87281f0d1e7aea5c099c0dd82c6af1b28f6a9835cbcc7d91e2a71c57efacf20"
+    },
+    {
+      "path": "last/confusion_matrices/fold_3_confusion.csv",
+      "size_bytes": 210,
+      "sha256": "19f2991992aff291056eef39de2b20ce420eb9252b747740e2badd9345353dd5"
+    },
+    {
+      "path": "last/count_reconciliation.md",
+      "size_bytes": 6029,
+      "sha256": "ab6374806170946f5fc48094436a1f6ec8a7c87c0eb0ff4bc2db379bd3f73190"
+    },
+    {
+      "path": "last/feature_vintage_audit.csv",
+      "size_bytes": 3363,
+      "sha256": "e261f6395de57c99d1d4579cf14472e05fdb570b038507151f871f2136b5c101"
+    },
+    {
+      "path": "last/fold_predictions.csv",
+      "size_bytes": 833727,
+      "sha256": "4bd1ccb4ffc08c1ea5746477c41a7648c7efbca91ff62ec76a2263883140b5de"
+    },
+    {
+      "path": "last/fold_predictions_index.csv",
+      "size_bytes": 478,
+      "sha256": "7b6807462e957e3b36489199e18075913a60a8b01d60362a89400fa1649705bf"
+    },
+    {
+      "path": "last/metrics_by_fold.csv",
+      "size_bytes": 3279,
+      "sha256": "326c878f76588b81835cd7a638876e04503e3dddb11dc21fdb424dbd3a1446a5"
+    },
+    {
+      "path": "last/metrics_summary.csv",
+      "size_bytes": 1408,
+      "sha256": "8aa471cd4db3141f577205245c2e867c7f9a3dbd53a56765f82844f5ba563e23"
+    },
+    {
+      "path": "last/models/dummy_baseline.joblib",
+      "size_bytes": 1287,
+      "sha256": "8b69744c45303621348045e25b579f0629a62b4616fdfe33f71390898d4c943c"
+    },
+    {
+      "path": "last/models/logreg_pipeline.joblib",
+      "size_bytes": 3249,
+      "sha256": "48ceebbf74d2dbf360690cb2c91db2c499c59427aacba3c073fa0a157160bd42"
+    },
+    {
+      "path": "last/models/model_contract.json",
+      "size_bytes": 1801,
+      "sha256": "2ed262ce7798c4f152c1436c18aef22f5c51b2986a38dceaef3781b5a3d68dc1"
+    },
+    {
+      "path": "last/models/option_b_feature_columns.json",
+      "size_bytes": 675,
+      "sha256": "2d7fd47452c2596a78c90cd04345d8e8a41b7847de816e0bcadd4051464da5d7"
+    },
+    {
+      "path": "last/models/xgboost_pipeline.joblib",
+      "size_bytes": 254160,
+      "sha256": "775566985104eaa126795f6fa999e1b52017e80774b6ae741983c93fdacf5233"
+    },
+    {
+      "path": "last/preprocessing_scope_audit.md",
+      "size_bytes": 4586,
+      "sha256": "918b8314f77a5aec6454c4e8873377081d2378787e04e44c6b64aed64af7a6b1"
+    },
+    {
+      "path": "last/price_comparability_audit.csv",
+      "size_bytes": 244101,
+      "sha256": "e5c8f93e63d9170d3e5f087bb69b9bb7975efb0588d82999857d36f63b3900b8"
+    },
+    {
+      "path": "last/README.md",
+      "size_bytes": 5999,
+      "sha256": "83d7c5a06ffbe8aa9ba716b9b95df726a1526de57d1f844dab3cbbe9706cb7be"
+    },
+    {
+      "path": "last/scripts/available_method_metrics.csv",
+      "size_bytes": 2209,
+      "sha256": "f502a36763cb53d241958a5954c25872d85c8ac560312cf67ed73d4d86bc6a98"
+    },
+    {
+      "path": "last/scripts/export_metrics.py",
+      "size_bytes": 9728,
+      "sha256": "66cddc17b3169e86758d94f7854af939543c9f303d3188c997a41f6eb112c48c"
+    },
+    {
+      "path": "last/scripts/infer_with_saved_model.py",
+      "size_bytes": 2119,
+      "sha256": "2bceba4a36c25000bc6e841aeb3f22f546b7c770bbbe16e596d0019e864b645c"
+    },
+    {
+      "path": "last/scripts/metric_matrix_checks.json",
+      "size_bytes": 18540,
+      "sha256": "1c9f18ba83e8af3b61a69daa0d40d41c573f166b72e13cd6e4bb515f3b907b3f"
+    },
+    {
+      "path": "last/scripts/rebuild_available_predictions.py",
+      "size_bytes": 5860,
+      "sha256": "d94f402b962704afbe133f1524ca2e3870538f408f8f44bd009f6a888047a5b1"
+    },
+    {
+      "path": "last/scripts/reconcile_counts.py",
+      "size_bytes": 21670,
+      "sha256": "eaaad15add2d9165fb1d6c0d2f9567a631628a34108d2e70543721875bbaa018"
+    },
+    {
+      "path": "last/scripts/run_validation_checks.py",
+      "size_bytes": 11221,
+      "sha256": "330c5945be6824583641057179097e2f8158df67c91d0e118d57ec114367ffe9"
+    },
+    {
+      "path": "last/scripts/write_run_manifest.py",
+      "size_bytes": 18793,
+      "sha256": "9023980d7768a4592333a0fba99ece1c6d5f6bc6d903476c5397d10af83c3e56"
+    },
+    {
+      "path": "last/spatial_join_audit.csv",
+      "size_bytes": 32431,
+      "sha256": "ad8d5c9724d8b870dad962ba72f3b965e2c17577fab0d01c0103e78f565a1d5f"
+    },
+    {
+      "path": "last/target_threshold_sensitivity.csv",
+      "size_bytes": 736,
+      "sha256": "ab2cf26871163d61685a7adaa9b205f74cbfd7c2413d0ba02fe5fde51da545ad"
+    },
+    {
+      "path": "last/validation_checks.txt",
+      "size_bytes": 3680,
+      "sha256": "fc6850cea75cb04755fb105f039a7631dacade783848ecbef8524e698a5becea"
+    },
+    {
+      "path": "last/validation_windows.csv",
+      "size_bytes": 398,
+      "sha256": "a732353cd00c2ea41c4aa492ca351cbc45da432e19f53293777a8bc47c6107e4"
+    }
+  ]
+}
