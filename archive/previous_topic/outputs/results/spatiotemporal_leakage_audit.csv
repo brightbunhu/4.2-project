@@ -1,0 +1,7 @@
+check_name,status,details
+Temporal Separation (train < test),PASS,All outer training dates precede outer test dates
+Spatial Separation (train_districts ∩ test_districts = ∅),PASS,Test districts held out completely from training split
+Pipeline Imputation (SimpleImputer inside Pipeline),PASS,Median imputer fit strictly on fold X_train
+Pipeline Scaling (StandardScaler inside Pipeline),PASS,StandardScaler fit strictly on fold X_train
+No Target Leakage,PASS,"Raw prices, current SPI, and target excluded from X"
+SHAP Preprocessing Alignment,PASS,TreeSHAP executed on transformed final feature matrix

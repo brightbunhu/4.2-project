@@ -1,0 +1,2 @@
+﻿# Methodology Implementation
+SPI calculated within commodity, month, currency. April 2024 excluded as redenomination period. Irregular reporting addressed via months_since_last_reported_price. Imputation/scaling placed inside pipelines with CV. Nested district-aware validation used; GroupKFold by district is primary. Balanced accuracy, macro-F1, PR-AUC, ROC-AUC, Brier score reported. SHAP computed offline for final XGBoost. Dashboard loads pre-computed artifacts.

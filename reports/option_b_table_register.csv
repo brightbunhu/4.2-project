@@ -1,0 +1,10 @@
+table_number,proposed_caption,filename,source,chapter,verified_status,insertion_location
+Table 3.1,Pre-Implementation Dataset Inventory and Dimensional Attributes,natural_key_audit.csv,outputs/option_b/results/natural_key_audit.csv,Chapter 3,VERIFIED,Section 3.3 Data Integration
+Table 3.2,Target Shifting Audit and Calendar Continuity Verification (T to T+1),target_shift_audit.csv,outputs/option_b/results/target_shift_audit.csv,Chapter 3,VERIFIED,Section 3.4 Target Formulation
+Table 3.3,Feature Availability Whitelist and Temporal Leakage Audit,feature_availability_audit.csv,outputs/option_b/results/feature_availability_audit.csv,Chapter 3,VERIFIED,Section 3.5 Feature Whitelist
+Table 3.4,Expanding Forward-Chaining Temporal Cross-Validation Parameters,validation_audit.csv,outputs/option_b/results/validation_audit.csv,Chapter 3,VERIFIED,Section 3.7 Validation Scheme
+Table 4.1,Descriptive Summary of Final Modelling Table Observations,natural_key_audit.csv,outputs/option_b/results/natural_key_audit.csv,Chapter 4,VERIFIED,Section 4.2 Dataset Statistics
+Table 4.2,Out-of-Sample Performance Metrics Across Forward-Chaining Folds,option_b_model_metrics.csv,outputs/option_b/results/option_b_model_metrics.csv,Chapter 4,VERIFIED,Section 4.4 Model Performance
+Table 4.3,Model Architecture and Hyperparameter Configuration Audit,model_configuration_audit.csv,outputs/option_b/results/model_configuration_audit.csv,Chapter 4,VERIFIED,Section 4.4 Hyperparameter Audit
+Table 4.4,Threshold Sensitivity Analysis Across SPI 1.20, 1.25, and 1.30,sensitivity_analysis.csv,outputs/option_b/results/sensitivity_analysis.csv,Chapter 4,VERIFIED,Section 4.10 Robustness Checks
+Table 4.5,Global TreeSHAP Feature Attribution Rankings,option_b_shap_importance.csv,outputs/option_b/explainability/option_b_shap_importance.csv,Chapter 4,VERIFIED,Section 4.8 Attribution Ranking

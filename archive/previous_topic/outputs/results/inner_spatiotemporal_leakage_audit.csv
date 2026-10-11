@@ -1,0 +1,49 @@
+outer_fold,inner_fold,model,check,status,detail
+1,1,logreg,inner_train_precedes_inner_val,PASS,"Train ends 2020-04-01, Val starts 2020-05-01"
+1,1,logreg,inner_val_no_outer_test_dates,PASS,Overlap count: 0
+1,1,logreg,inner_val_no_outer_test_districts,PASS,Overlap: 0
+1,1,logreg,preprocessing_fit_on_inner_train_only,PASS,Pipeline.fit() called on inner X_tr only
+1,2,logreg,inner_train_precedes_inner_val,PASS,"Train ends 2020-11-01, Val starts 2020-12-01"
+1,2,logreg,inner_val_no_outer_test_dates,PASS,Overlap count: 0
+1,2,logreg,inner_val_no_outer_test_districts,PASS,Overlap: 0
+1,2,logreg,preprocessing_fit_on_inner_train_only,PASS,Pipeline.fit() called on inner X_tr only
+2,1,logreg,inner_train_precedes_inner_val,PASS,"Train ends 2020-10-01, Val starts 2020-11-01"
+2,1,logreg,inner_val_no_outer_test_dates,PASS,Overlap count: 0
+2,1,logreg,inner_val_no_outer_test_districts,PASS,Overlap: 0
+2,1,logreg,preprocessing_fit_on_inner_train_only,PASS,Pipeline.fit() called on inner X_tr only
+2,2,logreg,inner_train_precedes_inner_val,PASS,"Train ends 2021-07-01, Val starts 2021-08-01"
+2,2,logreg,inner_val_no_outer_test_dates,PASS,Overlap count: 0
+2,2,logreg,inner_val_no_outer_test_districts,PASS,Overlap: 0
+2,2,logreg,preprocessing_fit_on_inner_train_only,PASS,Pipeline.fit() called on inner X_tr only
+3,1,logreg,inner_train_precedes_inner_val,PASS,"Train ends 2021-04-01, Val starts 2021-05-01"
+3,1,logreg,inner_val_no_outer_test_dates,PASS,Overlap count: 0
+3,1,logreg,inner_val_no_outer_test_districts,PASS,Overlap: 0
+3,1,logreg,preprocessing_fit_on_inner_train_only,PASS,Pipeline.fit() called on inner X_tr only
+3,2,logreg,inner_train_precedes_inner_val,PASS,"Train ends 2022-05-01, Val starts 2022-06-01"
+3,2,logreg,inner_val_no_outer_test_dates,PASS,Overlap count: 0
+3,2,logreg,inner_val_no_outer_test_districts,PASS,Overlap: 0
+3,2,logreg,preprocessing_fit_on_inner_train_only,PASS,Pipeline.fit() called on inner X_tr only
+1,1,xgboost,inner_train_precedes_inner_val,PASS,"Train ends 2020-04-01, Val starts 2020-05-01"
+1,1,xgboost,inner_val_no_outer_test_dates,PASS,Overlap count: 0
+1,1,xgboost,inner_val_no_outer_test_districts,PASS,Overlap: 0
+1,1,xgboost,preprocessing_fit_on_inner_train_only,PASS,Pipeline.fit() called on inner X_tr only
+1,2,xgboost,inner_train_precedes_inner_val,PASS,"Train ends 2020-11-01, Val starts 2020-12-01"
+1,2,xgboost,inner_val_no_outer_test_dates,PASS,Overlap count: 0
+1,2,xgboost,inner_val_no_outer_test_districts,PASS,Overlap: 0
+1,2,xgboost,preprocessing_fit_on_inner_train_only,PASS,Pipeline.fit() called on inner X_tr only
+2,1,xgboost,inner_train_precedes_inner_val,PASS,"Train ends 2020-10-01, Val starts 2020-11-01"
+2,1,xgboost,inner_val_no_outer_test_dates,PASS,Overlap count: 0
+2,1,xgboost,inner_val_no_outer_test_districts,PASS,Overlap: 0
+2,1,xgboost,preprocessing_fit_on_inner_train_only,PASS,Pipeline.fit() called on inner X_tr only
+2,2,xgboost,inner_train_precedes_inner_val,PASS,"Train ends 2021-07-01, Val starts 2021-08-01"
+2,2,xgboost,inner_val_no_outer_test_dates,PASS,Overlap count: 0
+2,2,xgboost,inner_val_no_outer_test_districts,PASS,Overlap: 0
+2,2,xgboost,preprocessing_fit_on_inner_train_only,PASS,Pipeline.fit() called on inner X_tr only
+3,1,xgboost,inner_train_precedes_inner_val,PASS,"Train ends 2021-04-01, Val starts 2021-05-01"
+3,1,xgboost,inner_val_no_outer_test_dates,PASS,Overlap count: 0
+3,1,xgboost,inner_val_no_outer_test_districts,PASS,Overlap: 0
+3,1,xgboost,preprocessing_fit_on_inner_train_only,PASS,Pipeline.fit() called on inner X_tr only
+3,2,xgboost,inner_train_precedes_inner_val,PASS,"Train ends 2022-05-01, Val starts 2022-06-01"
+3,2,xgboost,inner_val_no_outer_test_dates,PASS,Overlap count: 0
+3,2,xgboost,inner_val_no_outer_test_districts,PASS,Overlap: 0
+3,2,xgboost,preprocessing_fit_on_inner_train_only,PASS,Pipeline.fit() called on inner X_tr only

@@ -1,0 +1,2 @@
+table,rows_in,exact_duplicate_rows,duplicate_keys,rows_out,rows_removed,deduplication_key,keep_rule
+population_district,91,0,0,91,0,district_key,keep='first' after sort (deterministic)

@@ -1,0 +1,36 @@
+feature,corr_with_target
+price_spi_raw,0.3364
+spi_pct_dev,0.3364
+spi_lag_1,0.3214
+spi_pct_change_3m,0.2518
+spi_lag_2,0.2518
+price,0.084
+n_markets,0.0797
+n_price_obs,0.0797
+n_districts_reporting,0.0656
+commodity_Laundry soap,0.0109
+months_since_last_reported_price,0.0107
+commodity_Rice,0.01
+commodity_Sugar,0.0096
+commodity_Handwash soap,0.0094
+commodity_Oil (vegetable),0.0092
+month_of_year,0.0092
+month_num,0.0092
+country_median_price,0.0087
+commodity_Fish (kapenta),-0.0002
+commodity_Salt,-0.001
+commodity_Beans (sugar),-0.0017
+year,-0.0019
+commodity_Maize meal,-0.0041
+spi_winsorised,-0.0042
+is_food,-0.0074
+rainfall_3m_anomaly,-0.0076
+commodity_Toothpaste,-0.0088
+rainfall_1m,-0.0345
+rainfall_3m_total,-0.0379
+rainfall_6m_total,-0.0424
+commodity_OTHER,-0.0436
+log_population,-0.0595
+population,-0.0691
+is_urban,-0.0867
+rainfall_12m_total,-0.1118

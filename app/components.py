@@ -1,165 +1,127 @@
-"""Reusable UI components for the ZFPS dashboard."""
+"""Reusable UI components for the ZCPSC Option B dashboard.
+
+Matches the design specifications from ZCPSC_Dashboard_UI_Pages.pdf and
+the Complete ZCPSC Dashboard UI Implementation Prompt.
+"""
 from __future__ import annotations
 
 import html
-
-import numpy as np
-import pandas as pd
+import textwrap
 import streamlit as st
-
-from styles import COLORS, DESCRIPTION, DISCLAIMER, STRESS_COLOURS, SUBTITLE, TITLE
-
-
-# --------------------------------------------------------------------------------------
-# Headers
-# --------------------------------------------------------------------------------------
-def page_header(title: str, subtitle: str = "") -> None:
-    st.markdown(f"<div class='zfps-page-title'>{html.escape(title)}</div>", unsafe_allow_html=True)
-    if subtitle:
-        st.markdown(f"<div class='zfps-page-sub'>{html.escape(subtitle)}</div>",
-                    unsafe_allow_html=True)
+import numpy as np
 
 
-def section_title(title: str, sub: str = "") -> None:
-    st.markdown(f"<div class='zfps-section-title'>{html.escape(title)}</div>",
-                unsafe_allow_html=True)
-    if sub:
-        st.markdown(f"<div class='zfps-section-sub'>{html.escape(sub)}</div>",
-                    unsafe_allow_html=True)
+def render_html(raw_html: str) -> None:
+    """Render HTML safely without indentation causing markdown code blocks.
+
+    Blank lines terminate a CommonMark HTML block, so any following indented
+    line is parsed as an indented code block and shown as literal markup.
+    Dropping blank lines keeps the whole snippet inside one HTML block.
+    """
+    text = textwrap.dedent(raw_html).strip()
+    lines = [line.rstrip() for line in text.splitlines() if line.strip()]
+    st.markdown("\n".join(lines), unsafe_allow_html=True)
 
 
-def banner(title: str = TITLE, subtitle: str = SUBTITLE, description: str = DESCRIPTION) -> None:
-    st.markdown(
-        f"<div class='zfps-page-title'>{html.escape(title)}</div>"
-        f"<div class='zfps-page-sub'>{html.escape(subtitle)}</div>",
-        unsafe_allow_html=True)
+def kpi_card(title: str, value: str | int, icon: str = "📊", color: str = "blue") -> None:
+    """Render a modern KPI card with a circular colored icon on the left."""
+    render_html(f"""
+    <div class="zcpsc-kpi-card">
+        <div class="zcpsc-kpi-icon {color}">
+            <span>{icon}</span>
+        </div>
+        <div class="zcpsc-kpi-body">
+            <div class="zcpsc-kpi-title">{html.escape(title)}</div>
+            <div class="zcpsc-kpi-value">{html.escape(str(value))}</div>
+        </div>
+    </div>
+    """)
 
 
-# --------------------------------------------------------------------------------------
-# Sidebar
-# --------------------------------------------------------------------------------------
-def sidebar_brand() -> None:
-    st.markdown(
-        "<div class='zfps-brand'>"
-        "<div class='logo'>\U0001F33E ZFPS</div>"
-        "<div class='sub'>Food Price Stress</div>"
-        "</div>",
-        unsafe_allow_html=True)
+def prediction_summary_card(high_count: int, mod_count: int, low_count: int, total_districts: int) -> None:
+    """Render the Recent Prediction Summary card on Overview matching PDF Page 1."""
+    render_html(f"""
+    <div style="background:#FFFFFF; border:1px solid #E2E8F0; border-radius:12px; padding:20px; box-shadow:0 1px 3px rgba(0,0,0,0.04); height:100%; display:flex; flex-direction:column; justify-content:space-between;">
+        <div>
+            <div style="font-size:1.1rem; font-weight:700; color:#172A40; margin-bottom:2px;">Recent prediction summary</div>
+            <div style="font-size:0.83rem; color:#748397; margin-bottom:20px;">Number of districts in each predicted stress category for next month.</div>
+            
+            <div style="background:#F3F6FA; border:1px solid #E2E8F0; border-radius:10px; padding:12px 18px; margin-bottom:12px; display:flex; justify-content:space-between; align-items:center;">
+                <div style="background:#FCEBEC; color:#D94343; border:1px solid #D94343; padding:4px 14px; border-radius:999px; font-weight:600; font-size:0.82rem;">
+                    High probability
+                </div>
+                <div style="font-size:1.9rem; font-weight:800; color:#D94343; line-height:1;">
+                    {high_count}
+                </div>
+            </div>
+
+            <div style="background:#F3F6FA; border:1px solid #E2E8F0; border-radius:10px; padding:12px 18px; margin-bottom:12px; display:flex; justify-content:space-between; align-items:center;">
+                <div style="background:#FFF4D6; color:#F0B83F; border:1px solid #F0B83F; padding:4px 14px; border-radius:999px; font-weight:600; font-size:0.82rem;">
+                    Moderate probability
+                </div>
+                <div style="font-size:1.9rem; font-weight:800; color:#F0B83F; line-height:1;">
+                    {mod_count}
+                </div>
+            </div>
+
+            <div style="background:#F3F6FA; border:1px solid #E2E8F0; border-radius:10px; padding:12px 18px; margin-bottom:16px; display:flex; justify-content:space-between; align-items:center;">
+                <div style="background:#E8F6EF; color:#199B70; border:1px solid #199B70; padding:4px 14px; border-radius:999px; font-weight:600; font-size:0.82rem;">
+                    Lower probability
+                </div>
+                <div style="font-size:1.9rem; font-weight:800; color:#21A99F; line-height:1;">
+                    {low_count}
+                </div>
+            </div>
+        </div>
+
+        <div style="font-size:0.78rem; color:#748397; margin-top:14px; border-top:1px solid #E2E8F0; padding-top:10px;">
+            Out of {total_districts} monitored districts.
+        </div>
+    </div>
+    """)
 
 
-def sidebar_footer() -> None:
-    st.markdown(
-        "<div class='zfps-sidefoot'>"
-        "<div class='h'>Research Prototype</div>"
-        "Machine Learning Classification of Commodity-Level Food Price Stress in Zimbabwe."
-        "<div class='warn'>Not an official food-price assessment or early-warning system.</div>"
-        "</div>",
-        unsafe_allow_html=True)
+def workflow_steps(steps: list[tuple[int, str, str]]) -> None:
+    """Render the 3-step 'How the system works' card with numbered circles and arrows."""
+    items_html = []
+    for idx, (num, title, desc) in enumerate(steps):
+        step_html = f"""
+        <div class="zcpsc-step-item">
+            <div class="zcpsc-step-num">{num}</div>
+            <div>
+                <div class="zcpsc-step-title">{html.escape(title)}</div>
+                <div class="zcpsc-step-desc">{html.escape(desc)}</div>
+            </div>
+        </div>
+        """
+        items_html.append(step_html)
+        if idx < len(steps) - 1:
+            items_html.append('<div class="zcpsc-arrow">→</div>')
+
+    inner_html = "".join(items_html)
+    render_html(f"""
+    <div class="zcpsc-workflow-card">
+        <div style="font-size:1.05rem; font-weight:700; color:#172A40; margin-bottom:4px;">How the system works</div>
+        <div style="font-size:0.82rem; color:#748397; margin-bottom:16px;">A simple three-step workflow from input to insight.</div>
+        <div class="zcpsc-workflow-row">
+            {inner_html}
+        </div>
+    </div>
+    """)
 
 
-# --------------------------------------------------------------------------------------
-# Cards
-# --------------------------------------------------------------------------------------
-def kpi_card(label: str, value: object, foot: str = "", accent: str | None = None) -> None:
-    style = f" style='border-top-color:{accent}'" if accent else ""
-    st.markdown(
-        f"<div class='zfps-card zfps-kpi'{style}>"
-        f"<div class='label'>{html.escape(str(label))}</div>"
-        f"<div class='value'>{html.escape(str(value))}</div>"
-        f"<div class='foot'>{html.escape(str(foot))}</div>"
-        "</div>",
-        unsafe_allow_html=True)
-
-
-def kpi_row(items: list[tuple]) -> None:
-    """items: list of (label, value, foot) or (label, value, foot, accent)."""
-    cols = st.columns(len(items))
-    for col, item in zip(cols, items):
-        label, value, foot = item[0], item[1], item[2]
-        accent = item[3] if len(item) > 3 else None
-        with col:
-            kpi_card(label, value, foot, accent)
-
-
-def prediction_card(commodity: str, where: str, when: str, is_high: bool,
-                    probability: float | None) -> None:
-    klass = "high" if is_high else "low"
-    label = "High Price Stress" if is_high else "Low Price Stress"
-    if probability is not None and np.isfinite(probability):
-        prob_html = (f"<div class='prob'>{probability * 100:.0f}%</div>"
-                     f"<div class='prob-label'>Probability</div>")
-    else:
-        prob_html = "<div class='prob'>n/a</div><div class='prob-label'>Probability</div>"
-    st.markdown(
-        f"<div class='zfps-pred {klass}'>"
-        f"  <div>"
-        f"    <div class='comm'>{html.escape(str(commodity))}</div>"
-        f"    <div class='where'>{html.escape(str(where))}</div>"
-        f"    <div class='when'>{html.escape(str(when))}</div>"
-        f"  </div>"
-        f"  <div class='right'>"
-        f"    <div class='class {klass}'>{label}</div>"
-        f"    {prob_html}"
-        f"  </div>"
-        f"</div>",
-        unsafe_allow_html=True)
-
-
-def stress_pill(is_high: bool) -> str:
-    klass = "high" if is_high else "low"
-    label = "High Price Stress" if is_high else "Low Price Stress"
-    return f"<span class='zfps-pill {klass}'>{html.escape(label)}</span>"
-
-
-def info_panel(title: str, rows: list[tuple[str, str]], footer: str = "") -> None:
-    body = "".join(
-        f"<div class='row'><span class='k'>{html.escape(str(k))}</span>"
-        f"<span class='v'>{v}</span></div>" for k, v in rows)
-    foot = f"<div class='foot' style='margin-top:8px;color:#98A2B3'>{html.escape(footer)}</div>" if footer else ""
-    st.markdown(f"<div class='zfps-panel'><h4 style='margin:0 0 8px 0'>{html.escape(title)}</h4>"
-                f"{body}{foot}</div>", unsafe_allow_html=True)
-
-
-def disclaimer() -> None:
-    st.markdown(f"<div class='zfps-disclaimer'>{html.escape(DISCLAIMER)}</div>",
-                unsafe_allow_html=True)
-
-
-def missing_artifact(description: str, command: str | None = None) -> None:
-    st.warning(f"{description} is not available.")
-    if command:
-        st.code(command, language="powershell")
-
-
-# --------------------------------------------------------------------------------------
-# Formatting
-# --------------------------------------------------------------------------------------
-def fmt_month(value) -> str:
-    try:
-        return pd.Timestamp(value).strftime("%B %Y")
-    except Exception:
-        return str(value)
-
-
-def fmt_pct(value, digits: int = 1) -> str:
-    try:
-        v = float(value)
-        if not np.isfinite(v):
-            return "n/a"
-        return f"{100 * v:.{digits}f}%"
-    except Exception:
-        return "n/a"
-
-
-def fmt_num(value, digits: int = 2) -> str:
-    try:
-        v = float(value)
-        if not np.isfinite(v):
-            return "n/a"
-        return f"{v:,.{digits}f}"
-    except Exception:
-        return "n/a"
-
-
-def kpi_high_stress(df: pd.DataFrame) -> int:
-    return int((df["price_stress"] == 1).sum())
+def probability_meter(prob: float) -> None:
+    """Renders a horizontal probability meter bar: Low | Moderate | High with marker."""
+    pct = max(0.0, min(100.0, prob * 100))
+    render_html(f"""
+    <div style="margin: 14px 0 10px 0;">
+        <div style="display:flex; justify-content:space-between; font-size:0.75rem; color:#748397; margin-bottom:6px; font-weight:600;">
+            <span>Low</span>
+            <span>Moderate</span>
+            <span>High</span>
+        </div>
+        <div style="position:relative; width:100%; height:10px; background:linear-gradient(to right, #199B70 0%, #F0B83F 50%, #D94343 100%); border-radius:999px;">
+            <div style="position:absolute; top:-3px; left:calc({pct}% - 4px); width:8px; height:16px; background:#0B2743; border-radius:2px; border:1px solid #FFFFFF;"></div>
+        </div>
+    </div>
+    """)

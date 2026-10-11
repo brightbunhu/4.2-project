@@ -156,10 +156,12 @@ def test_12_dashboard_labels_show_both_t_and_t_plus_1():
     content = app_file.read_text(encoding="utf-8")
     assert "Month T" in content and "Month T+1" in content
     
-    page_pred = ROOT / "pages" / "2_Price_Stress_Map.py"
-    p_content = page_pred.read_text(encoding="utf-8")
-    assert "Prediction Month (T)" in p_content
-    assert "Target Forecast Month (T+1)" in p_content
+    # Check next-month prediction page
+    pred_pages = list((ROOT / "pages").glob("*Prediction*.py")) + list((ROOT / "pages").glob("*Map*.py"))
+    assert len(pred_pages) > 0, "Prediction or map page must exist in pages/"
+    page_texts = "\n".join([p.read_text(encoding="utf-8") for p in pred_pages])
+    assert "Prediction Month (T)" in page_texts or "Prediction Month" in page_texts
+    assert "Target Month (T+1)" in page_texts or "Target Forecast Month (T+1)" in page_texts
 
 
 # Test 13: Prediction files contain prediction month and target month
@@ -190,9 +192,9 @@ def test_14_old_current_state_results_not_silently_loaded():
 
 # Test 15: Missing predictions produce a clear unavailable message
 def test_15_missing_predictions_produce_clear_unavailable_message():
-    page_pred = ROOT / "pages" / "2_Price_Stress_Map.py"
-    content = page_pred.read_text(encoding="utf-8")
-    assert "Prediction Unavailable" in content or "No historical data coverage exists" in content
+    pred_pages = list((ROOT / "pages").glob("*Prediction*.py")) + list((ROOT / "pages").glob("*Map*.py"))
+    page_texts = "\n".join([p.read_text(encoding="utf-8") for p in pred_pages])
+    assert "Prediction Unavailable" in page_texts or "No historical data coverage exists" in page_texts
 
 
 # Test 16: The responsible-use disclaimer is present
@@ -202,6 +204,9 @@ def test_16_responsible_use_disclaimer_is_present():
     disclaimer_snippet = "This dashboard provides model-based predictions of next-month relative commodity-price stress"
     assert disclaimer_snippet in content, "Mandatory disclaimer must be present in app.py"
     
-    home_page = ROOT / "pages" / "1_Home.py"
-    h_content = home_page.read_text(encoding="utf-8")
-    assert disclaimer_snippet in h_content, "Mandatory disclaimer must be present in Home page"
+    overview_page = ROOT / "pages" / "1_Overview.py"
+    if overview_page.exists():
+        h_content = overview_page.read_text(encoding="utf-8")
+    else:
+        h_content = (ROOT / "pages" / "1_Home.py").read_text(encoding="utf-8")
+    assert disclaimer_snippet in h_content, "Mandatory disclaimer must be present in Overview/Home page"

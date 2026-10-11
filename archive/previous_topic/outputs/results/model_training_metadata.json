@@ -1,0 +1,47 @@
+[
+  {
+    "model": "dummy",
+    "model_path": "C:\\Users\\brigh\\Downloads\\another\\outputs\\models\\revised_dummy.joblib",
+    "file_size_bytes": 1857,
+    "sha256_hash": "fff2a0f065c58620505e499cbc6853b8b76453645f469c2a82630d3e214e71b3",
+    "training_date": "20261006_124736",
+    "final_training_period": "2017-01-01 00:00:00 to 2024-10-01 00:00:00",
+    "final_feature_count": 22,
+    "final_observation_count": 10107,
+    "target_prevalence": 0.13752844563174038,
+    "hyperparameters": "{}",
+    "sklearn_version": "1.9.1",
+    "xgboost_version": "N/A",
+    "prediction_verification": "PASS"
+  },
+  {
+    "model": "logreg",
+    "model_path": "C:\\Users\\brigh\\Downloads\\another\\outputs\\models\\revised_logreg.joblib",
+    "file_size_bytes": 3201,
+    "sha256_hash": "db15f514deb4ac18e30b106b24c67cb54aa92cf5e9923b28bd57a8dddef988a7",
+    "training_date": "20261006_124736",
+    "final_training_period": "2017-01-01 00:00:00 to 2024-10-01 00:00:00",
+    "final_feature_count": 22,
+    "final_observation_count": 10107,
+    "target_prevalence": 0.13752844563174038,
+    "hyperparameters": "{\"classifier__C\": 0.01, \"classifier__class_weight\": \"balanced\"}",
+    "sklearn_version": "1.9.1",
+    "xgboost_version": "N/A",
+    "prediction_verification": "PASS"
+  },
+  {
+    "model": "xgboost",
+    "model_path": "C:\\Users\\brigh\\Downloads\\another\\outputs\\models\\revised_xgboost.joblib",
+    "file_size_bytes": 127603,
+    "sha256_hash": "cc27afa63d17c6d1c00e437759bc5e5ed96769758715ea85fd72b9c486750ce7",
+    "training_date": "20261006_124736",
+    "final_training_period": "2017-01-01 00:00:00 to 2024-10-01 00:00:00",
+    "final_feature_count": 22,
+    "final_observation_count": 10107,
+    "target_prevalence": 0.13752844563174038,
+    "hyperparameters": "{\"classifier__colsample_bytree\": 0.7, \"classifier__learning_rate\": 0.1, \"classifier__max_depth\": 3, \"classifier__n_estimators\": 100, \"classifier__subsample\": 0.8}",
+    "sklearn_version": "1.9.1",
+    "xgboost_version": "3.4.1",
+    "prediction_verification": "PASS"
+  }
+]

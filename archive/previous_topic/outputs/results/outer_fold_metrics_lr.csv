@@ -1,0 +1,6 @@
+fold,model,balanced_accuracy,macro_f1,roc_auc,best_params
+1,logreg,0.7200588317691554,0.7221404730287477,0.7921630061185421,"{'classifier__solver': 'lbfgs', 'classifier__penalty': 'l2', 'classifier__max_iter': 2000, 'classifier__class_weight': None, 'classifier__C': 1000}"
+2,logreg,0.769330529984911,0.7731206432192649,0.8377713185095077,"{'classifier__solver': 'lbfgs', 'classifier__penalty': 'l2', 'classifier__max_iter': 2000, 'classifier__class_weight': 'balanced', 'classifier__C': 10}"
+3,logreg,0.7596619203308551,0.7597738831329912,0.8321194115673967,"{'classifier__solver': 'lbfgs', 'classifier__penalty': 'l2', 'classifier__max_iter': 2000, 'classifier__class_weight': 'balanced', 'classifier__C': 10}"
+4,logreg,0.7582452725250278,0.7484894198020835,0.826909209466457,"{'classifier__solver': 'lbfgs', 'classifier__penalty': 'l2', 'classifier__max_iter': 2000, 'classifier__class_weight': 'balanced', 'classifier__C': 10}"
+5,logreg,0.7419143847857409,0.7418309593217374,0.8152422644512984,"{'classifier__solver': 'lbfgs', 'classifier__penalty': 'l2', 'classifier__max_iter': 2000, 'classifier__class_weight': 'balanced', 'classifier__C': 10}"

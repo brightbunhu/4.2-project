@@ -1,0 +1,2 @@
+observation_id,prediction_month,district_key,commodity_name,currency_code,spi_lag_1,spi_lag_2,spi_pct_change_3m,months_since_last_reported_price,rainfall_1m,rainfall_3m_total,rainfall_6m_total,rainfall_12m_total,rainfall_3m_anomaly,log_population,is_urban
+OBS_SAMPLE_001,2024-09,BEITBRIDGE,Beans,USD,1.05,1.02,4.5,1.0,45.2,120.5,450.0,780.0,0.12,11.52,0

@@ -1,0 +1,13 @@
+feature_name,description,data_source,leakage_risk
+rainfall_1m,1-month calendar rainfall depth (mm),CHIRPS,None
+rainfall_3m_total,3-month cumulative rainfall total (mm),CHIRPS,None
+rainfall_6m_total,6-month cumulative rainfall total (mm),CHIRPS,None
+rainfall_12m_total,12-month cumulative rainfall total (mm),CHIRPS,None
+rainfall_3m_anomaly,3-month rainfall anomaly relative to long-term average,CHIRPS,None
+spi_lag_1,1-period lagged Spatial Price Index,WFP Price,None
+spi_lag_2,2-period lagged Spatial Price Index,WFP Price,None
+spi_pct_change_3m,3-period percentage change in SPI,WFP Price,None
+months_since_last_reported_price,Reporting gap (calendar months) since previous reported price (<=2m),WFP Price,None
+log_population,Log-transformed baseline district population,UNFPA Baseline,None
+year,Calendar year index,WFP Price,None
+commodity_*,One-hot indicator columns for top commodities and OTHER,WFP Price,None

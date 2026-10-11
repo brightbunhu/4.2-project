@@ -1,0 +1,9 @@
+figure_number,proposed_caption,filename,source,chapter,verified_status,insertion_location
+Figure 4.1,Target Class Distribution and Monthly Prevalence Timeline (2017-2024),option_b_target_distribution.png,outputs/option_b/figures/option_b_target_distribution.png,Chapter 4,VERIFIED,Section 4.3 Target Analysis
+Figure 4.2,Out-of-Sample ROC Curves Across Forward-Chaining Folds,option_b_roc_curves.png,outputs/option_b/figures/option_b_roc_curves.png,Chapter 4,VERIFIED,Section 4.6 ROC & AUC Analysis
+Figure 4.3,Precision-Recall Curves with Empirical Prevalence Baseline,option_b_pr_curves.png,outputs/option_b/figures/option_b_pr_curves.png,Chapter 4,VERIFIED,Section 4.6 Precision-Recall Analysis
+Figure 4.4,Probability Calibration Curves for Logistic Regression and XGBoost,option_b_calibration_curves.png,outputs/option_b/figures/option_b_calibration_curves.png,Chapter 4,VERIFIED,Section 4.7 Calibration Analysis
+Figure 4.5,Confusion Matrices on Held-Out Forward-Chaining Validation Data,option_b_confusion_matrices.png,outputs/option_b/figures/option_b_confusion_matrices.png,Chapter 4,VERIFIED,Section 4.5 Classification Matrices
+Figure 4.6,Global Feature Importance (Mean Absolute TreeSHAP Values),option_b_feature_importance.png,outputs/option_b/figures/option_b_feature_importance.png,Chapter 4,VERIFIED,Section 4.8 Feature Attribution
+Figure 4.7,TreeSHAP Summary Beeswarm Plot Across Predictor Distributions,option_b_shap_summary.png,outputs/option_b/figures/option_b_shap_summary.png,Chapter 4,VERIFIED,Section 4.8 Explainability
+Figure 4.8,Interactive Multipage Dashboard: Next-Month Prediction Query Interface,dashboard_prediction_interface.png,app/pages/2_Next_Month_Prediction.py,Chapter 4,VERIFIED,Section 4.9 Prototype Artefact

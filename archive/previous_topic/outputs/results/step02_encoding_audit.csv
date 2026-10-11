@@ -1,0 +1,3 @@
+column,n_levels,encoding
+province,10,"one-hot, drop_first -> 9 columns"
+district_type,2,"one-hot, drop_first -> 1 columns"

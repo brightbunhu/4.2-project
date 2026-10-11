@@ -1,0 +1,13 @@
+month,mean_rainfall_mm,expected
+1,188.6,wet
+2,131.2,wet
+3,74.3,wet
+4,43.8,shoulder
+5,12.3,dry
+6,3.7,dry
+7,2.1,dry
+8,1.6,dry
+9,2.9,dry
+10,15.2,shoulder
+11,72.6,wet
+12,120.0,wet

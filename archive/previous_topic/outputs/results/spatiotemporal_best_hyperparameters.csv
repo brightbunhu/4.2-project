@@ -1,0 +1,10 @@
+model,fold,best_score,best_params
+dummy,1,-1.0,{}
+dummy,2,-1.0,{}
+dummy,3,-1.0,{}
+logreg,1,0.7218495142188497,"{""classifier__C"": 1.0, ""classifier__class_weight"": null}"
+logreg,2,0.704445128836875,"{""classifier__C"": 1.0, ""classifier__class_weight"": ""balanced""}"
+logreg,3,0.7216984502686385,"{""classifier__C"": 0.1, ""classifier__class_weight"": ""balanced""}"
+xgboost,1,0.7155545383650358,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}"
+xgboost,2,0.7017823021604932,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}"
+xgboost,3,0.7366040922876118,"{""classifier__colsample_bytree"": 0.7, ""classifier__learning_rate"": 0.05, ""classifier__max_depth"": 3, ""classifier__n_estimators"": 300, ""classifier__subsample"": 0.8}"
